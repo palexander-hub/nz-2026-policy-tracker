@@ -1,0 +1,828 @@
+{
+  "metadata": {
+    "title": "NZ 2026 Policy Tracker",
+    "lastUpdated": "2026-05-05",
+    "note": "Official-source summaries collected from party websites. Check each source before relying on an entry as a final 2026 manifesto commitment.",
+    "jurisdiction": "New Zealand",
+    "election": "2026 General Election"
+  },
+  "statuses": [
+    "Published policy",
+    "Announcement",
+    "Government record",
+    "Historic/older policy",
+    "Needs review"
+  ],
+  "topics": [
+    "Tax & Economy",
+    "Health",
+    "Education",
+    "Climate & Environment",
+    "Law & Justice",
+    "Housing & Infrastructure",
+    "Te Tiriti & Constitution"
+  ],
+  "parties": [
+    {
+      "id": "national",
+      "name": "National",
+      "color": "#145da0",
+      "website": "https://www.national.org.nz",
+      "officialDomains": [
+        "national.org.nz"
+      ]
+    },
+    {
+      "id": "labour",
+      "name": "Labour",
+      "color": "#d71920",
+      "website": "https://www.labour.org.nz",
+      "officialDomains": [
+        "labour.org.nz"
+      ]
+    },
+    {
+      "id": "act",
+      "name": "ACT",
+      "color": "#ffd400",
+      "website": "https://www.act.org.nz",
+      "officialDomains": [
+        "act.org.nz"
+      ]
+    },
+    {
+      "id": "nz-first",
+      "name": "New Zealand First",
+      "color": "#111111",
+      "website": "https://www.nzfirst.nz",
+      "officialDomains": [
+        "nzfirst.nz"
+      ]
+    },
+    {
+      "id": "green",
+      "name": "Green Party",
+      "color": "#098137",
+      "website": "https://www.greens.org.nz",
+      "officialDomains": [
+        "greens.org.nz"
+      ]
+    },
+    {
+      "id": "te-pati-maori",
+      "name": "Te Pāti Māori",
+      "color": "#b32024",
+      "website": "https://www.maoriparty.org.nz",
+      "officialDomains": [
+        "maoriparty.org.nz"
+      ]
+    }
+  ],
+  "watchSources": [
+    {
+      "partyId": "national",
+      "url": "https://www.national.org.nz/"
+    },
+    {
+      "partyId": "national",
+      "url": "https://www.national.org.nz/plan"
+    },
+    {
+      "partyId": "labour",
+      "url": "https://www.labour.org.nz/our-policies/"
+    },
+    {
+      "partyId": "act",
+      "url": "https://www.act.org.nz/policies"
+    },
+    {
+      "partyId": "nz-first",
+      "url": "https://www.nzfirst.nz/policy"
+    },
+    {
+      "partyId": "green",
+      "url": "https://www.greens.org.nz/policy"
+    },
+    {
+      "partyId": "te-pati-maori",
+      "url": "https://www.maoriparty.org.nz/policy"
+    }
+  ],
+  "policies": [
+    {
+      "id": "national-economy-current",
+      "partyId": "national",
+      "topic": "Tax & Economy",
+      "subtopic": "Economic management",
+      "title": "Economy and cost of living delivery record",
+      "status": "Government record",
+      "sourceType": "Official party current record page",
+      "lastChecked": "2026-05-05",
+      "summary": "National says its current work is focused on rebuilding the economy, easing cost pressures, cutting red tape, supporting trade and investment, and creating conditions for higher incomes.",
+      "officialSource": {
+        "label": "National economy page",
+        "url": "https://www.national.org.nz/economy"
+      },
+      "tags": [
+        "economy",
+        "cost of living",
+        "red tape",
+        "trade"
+      ]
+    },
+    {
+      "id": "national-tax-older-fiscal",
+      "partyId": "national",
+      "topic": "Tax & Economy",
+      "subtopic": "Fiscal plan",
+      "title": "Fiscal plan and tax relief",
+      "status": "Historic/older policy",
+      "sourceType": "Official party 2023 policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "National's older fiscal plan set out a disciplined-spending, lower-tax, lower-debt approach while maintaining funding for frontline services and infrastructure.",
+      "officialSource": {
+        "label": "National fiscal plan",
+        "url": "https://www.national.org.nz/policies/fiscal-plan"
+      },
+      "tags": [
+        "tax",
+        "spending",
+        "debt"
+      ]
+    },
+    {
+      "id": "national-health-current",
+      "partyId": "national",
+      "topic": "Health",
+      "subtopic": "Healthcare delivery",
+      "title": "Quality, timely healthcare",
+      "status": "Government record",
+      "sourceType": "Official party current record page",
+      "lastChecked": "2026-05-05",
+      "summary": "National says it is delivering more doctors, nurses, medicines, health targets, local urgent care, and easier access to healthcare as part of its current government programme.",
+      "officialSource": {
+        "label": "National healthcare page",
+        "url": "https://www.national.org.nz/healthcare"
+      },
+      "tags": [
+        "health",
+        "doctors",
+        "nurses",
+        "medicines"
+      ]
+    },
+    {
+      "id": "national-education-current",
+      "partyId": "national",
+      "topic": "Education",
+      "subtopic": "Schools",
+      "title": "Teaching the Basics Brilliantly",
+      "status": "Government record",
+      "sourceType": "Official party current record page",
+      "lastChecked": "2026-05-05",
+      "summary": "National says it has mandated daily reading, writing and maths, banned cell-phone use in schools, introduced structured teaching, proposed replacing NCEA, and expanded learning support.",
+      "officialSource": {
+        "label": "National education page",
+        "url": "https://www.national.org.nz/education"
+      },
+      "tags": [
+        "schools",
+        "reading",
+        "writing",
+        "maths",
+        "NCEA"
+      ]
+    },
+    {
+      "id": "national-law-current",
+      "partyId": "national",
+      "topic": "Law & Justice",
+      "subtopic": "Crime and policing",
+      "title": "Restoring law and order",
+      "status": "Government record",
+      "sourceType": "Official party current record page",
+      "lastChecked": "2026-05-05",
+      "summary": "National says it has reduced violent crime and ram raids, increased police patrols, restricted gang patches, restored Three Strikes, capped sentence discounts, and agreed a methamphetamine harm plan.",
+      "officialSource": {
+        "label": "National law and order page",
+        "url": "https://www.national.org.nz/lawandorder"
+      },
+      "tags": [
+        "crime",
+        "police",
+        "gangs",
+        "sentencing"
+      ]
+    },
+    {
+      "id": "national-environment-older",
+      "partyId": "national",
+      "topic": "Climate & Environment",
+      "subtopic": "Environment",
+      "title": "Blueprint for a Better Environment",
+      "status": "Historic/older policy",
+      "sourceType": "Official party 2023 policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "National's older environment policy covered freshwater, biodiversity, climate, oceans, waste and planning-law reform, with an emphasis on environmental outcomes alongside growth.",
+      "officialSource": {
+        "label": "National environment policy",
+        "url": "https://www.national.org.nz/policies/blueprint-for-a-better-environment"
+      },
+      "tags": [
+        "environment",
+        "freshwater",
+        "biodiversity",
+        "climate"
+      ]
+    },
+    {
+      "id": "labour-medicard-gp",
+      "partyId": "labour",
+      "topic": "Health",
+      "subtopic": "Primary care",
+      "title": "Three free doctor's visits with Medicard",
+      "status": "Announcement",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "Labour says every New Zealander would receive three free doctor's visits each year through a new Medicard, funded by targeted property tax changes.",
+      "officialSource": {
+        "label": "Labour Medicard policy",
+        "url": "https://www.labour.org.nz/medicard"
+      },
+      "tags": [
+        "health",
+        "GP",
+        "doctor visits",
+        "Medicard"
+      ]
+    },
+    {
+      "id": "labour-capital-gains-tax",
+      "partyId": "labour",
+      "topic": "Tax & Economy",
+      "subtopic": "Capital gains tax",
+      "title": "Targeted capital gains tax",
+      "status": "Announcement",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "Labour proposes a 28% tax on profit made after 1 July 2027 when commercial or residential investment property is sold, excluding the family home, farms, KiwiSaver, shares, businesses, inheritances and personal items.",
+      "officialSource": {
+        "label": "Labour Medicard and tax policy",
+        "url": "https://www.labour.org.nz/medicard"
+      },
+      "tags": [
+        "capital gains tax",
+        "property",
+        "tax",
+        "health funding"
+      ]
+    },
+    {
+      "id": "labour-future-fund",
+      "partyId": "labour",
+      "topic": "Tax & Economy",
+      "subtopic": "Investment",
+      "title": "New Zealand Future Fund",
+      "status": "Announcement",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "Labour says the New Zealand Future Fund would invest in infrastructure and innovative New Zealand businesses to support secure jobs and keep more ideas, wealth and people in New Zealand.",
+      "officialSource": {
+        "label": "Labour Future Fund",
+        "url": "https://www.labour.org.nz/futurefund"
+      },
+      "tags": [
+        "future fund",
+        "investment",
+        "infrastructure",
+        "jobs"
+      ]
+    },
+    {
+      "id": "labour-cervical-screening",
+      "partyId": "labour",
+      "topic": "Health",
+      "subtopic": "Screening",
+      "title": "Free cervical screening",
+      "status": "Announcement",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "Labour says cervical screening would be free for people aged 25 to 69, loaded onto the Medicard, and funded from baseline health funding from the 2027/28 financial year.",
+      "officialSource": {
+        "label": "Labour cervical screening policy",
+        "url": "https://www.labour.org.nz/cervicalscreening"
+      },
+      "tags": [
+        "health",
+        "screening",
+        "cervical screening",
+        "Medicard"
+      ]
+    },
+    {
+      "id": "labour-family-doctor-loan",
+      "partyId": "labour",
+      "topic": "Health",
+      "subtopic": "Primary care workforce",
+      "title": "Family Doctor Loan Scheme",
+      "status": "Announcement",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "Labour proposes up to 50 loans each year to help doctors buy into or establish owner-operated general practices, prioritising areas with no GPs or closed books, with 10-year repayment and interest-free first two years.",
+      "officialSource": {
+        "label": "Labour Family Doctor Loan Scheme",
+        "url": "https://www.labour.org.nz/familydoctorloanscheme"
+      },
+      "tags": [
+        "health",
+        "GP",
+        "family doctor",
+        "loans"
+      ]
+    },
+    {
+      "id": "act-economy-tax",
+      "partyId": "act",
+      "topic": "Tax & Economy",
+      "subtopic": "Tax and regulation",
+      "title": "Flatter tax and less regulation",
+      "status": "Published policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "ACT says it wants careful government spending, lower taxes, less red tape, a two-rate income tax system with a 28% top rate, and fewer barriers to investment, jobs and wage growth.",
+      "officialSource": {
+        "label": "ACT economy policy",
+        "url": "https://www.act.org.nz/economy"
+      },
+      "tags": [
+        "tax",
+        "economy",
+        "red tape",
+        "spending"
+      ]
+    },
+    {
+      "id": "act-health",
+      "partyId": "act",
+      "topic": "Health",
+      "subtopic": "Health system",
+      "title": "Health accountability and public-private delivery",
+      "status": "Published policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "ACT says health services should be timely and based on individual need, with public-private partnerships, measurable Health NZ targets, transparency, and less bureaucracy.",
+      "officialSource": {
+        "label": "ACT health policy",
+        "url": "https://www.act.org.nz/health"
+      },
+      "tags": [
+        "health",
+        "targets",
+        "public-private",
+        "Health NZ"
+      ]
+    },
+    {
+      "id": "act-law-order",
+      "partyId": "act",
+      "topic": "Law & Justice",
+      "subtopic": "Sentencing and policing",
+      "title": "Restoring law and order",
+      "status": "Published policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "ACT says government should protect safety and property, restore consequences for offenders, focus police on frontline crime-fighting, and use rehabilitation incentives for prisoners who gain skills.",
+      "officialSource": {
+        "label": "ACT law and order policy",
+        "url": "https://www.act.org.nz/law-order"
+      },
+      "tags": [
+        "crime",
+        "sentencing",
+        "police",
+        "rehabilitation"
+      ]
+    },
+    {
+      "id": "act-education",
+      "partyId": "act",
+      "topic": "Education",
+      "subtopic": "School choice",
+      "title": "Education choice and accountability",
+      "status": "Published policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "ACT supports parent choice across public, private and partnership schools, core knowledge in reading, writing, maths, science and history, stronger NCEA accountability, and a Student Education Account system.",
+      "officialSource": {
+        "label": "ACT education policy",
+        "url": "https://www.act.org.nz/education"
+      },
+      "tags": [
+        "education",
+        "schools",
+        "partnership schools",
+        "NCEA"
+      ]
+    },
+    {
+      "id": "act-infrastructure",
+      "partyId": "act",
+      "topic": "Housing & Infrastructure",
+      "subtopic": "Infrastructure delivery",
+      "title": "Infrastructure planning and delivery",
+      "status": "Published policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "ACT says infrastructure should be delivered efficiently with long-term planning, lower red tape, private investment where appropriate, user-pays approaches, property-rights protections, and decentralised decision-making.",
+      "officialSource": {
+        "label": "ACT infrastructure policy",
+        "url": "https://www.act.org.nz/infrastructure"
+      },
+      "tags": [
+        "infrastructure",
+        "planning",
+        "red tape",
+        "investment"
+      ]
+    },
+    {
+      "id": "nzfirst-policy-index",
+      "partyId": "nz-first",
+      "topic": "Tax & Economy",
+      "subtopic": "Policy status",
+      "title": "Policy page and coalition agreement",
+      "status": "Government record",
+      "sourceType": "Official party policy index",
+      "lastChecked": "2026-05-05",
+      "summary": "New Zealand First's policy page currently points readers to its 2023 election policies and to the coalition agreement commitments it says are supported by National and ACT in government.",
+      "officialSource": {
+        "label": "NZ First policy page",
+        "url": "https://www.nzfirst.nz/policy"
+      },
+      "tags": [
+        "policy",
+        "coalition agreement",
+        "government"
+      ]
+    },
+    {
+      "id": "nzfirst-achievements-economy",
+      "partyId": "nz-first",
+      "topic": "Tax & Economy",
+      "subtopic": "Coalition commitments",
+      "title": "Economic coalition achievements",
+      "status": "Government record",
+      "sourceType": "Official party achievements page",
+      "lastChecked": "2026-05-05",
+      "summary": "New Zealand First lists achieved coalition commitments including a banking competition inquiry, assessing inflation's effect on average tax rates by or before 2026, and increased funding for IRD tax audits.",
+      "officialSource": {
+        "label": "NZ First achievements",
+        "url": "https://www.nzfirst.nz/our_achievements"
+      },
+      "tags": [
+        "economy",
+        "banking",
+        "tax",
+        "IRD"
+      ]
+    },
+    {
+      "id": "nzfirst-law-order-older",
+      "partyId": "nz-first",
+      "topic": "Law & Justice",
+      "subtopic": "Police and sentencing",
+      "title": "Law and order 2023 policy",
+      "status": "Historic/older policy",
+      "sourceType": "Official party 2023 policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "NZ First's 2023 policy proposed at least 500 new frontline police in the first 18 months, more Youth Aid officers, mandatory sentences for assaults on first responders, and stronger sentencing policies.",
+      "officialSource": {
+        "label": "NZ First 2023 policies",
+        "url": "https://www.nzfirst.nz/2023_policies"
+      },
+      "tags": [
+        "police",
+        "crime",
+        "sentencing",
+        "youth justice"
+      ]
+    },
+    {
+      "id": "nzfirst-health-older",
+      "partyId": "nz-first",
+      "topic": "Health",
+      "subtopic": "Primary care and medicines",
+      "title": "Health and PHARMAC 2023 policy",
+      "status": "Historic/older policy",
+      "sourceType": "Official party 2023 policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "NZ First's 2023 health policy proposed revisiting GP funding, increasing primary-care funding, mobile health buses, more diagnostic access, and a larger PHARMAC budget with rapid access funding for innovative medicines.",
+      "officialSource": {
+        "label": "NZ First 2023 policies",
+        "url": "https://www.nzfirst.nz/2023_policies"
+      },
+      "tags": [
+        "health",
+        "GP",
+        "PHARMAC",
+        "medicines"
+      ]
+    },
+    {
+      "id": "nzfirst-education-older",
+      "partyId": "nz-first",
+      "topic": "Education",
+      "subtopic": "Education and skills",
+      "title": "Education and skills 2023 policy",
+      "status": "Historic/older policy",
+      "sourceType": "Official party 2023 policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "NZ First's 2023 policy emphasised core skills, learning support, links between education and employment, STEM incentives, third-year fees-free tertiary study, and free apprenticeships for in-demand vocations.",
+      "officialSource": {
+        "label": "NZ First 2023 policies",
+        "url": "https://www.nzfirst.nz/2023_policies"
+      },
+      "tags": [
+        "education",
+        "skills",
+        "STEM",
+        "apprenticeships"
+      ]
+    },
+    {
+      "id": "nzfirst-agriculture-older",
+      "partyId": "nz-first",
+      "topic": "Climate & Environment",
+      "subtopic": "Agriculture emissions",
+      "title": "Agriculture and emissions 2023 policy",
+      "status": "Historic/older policy",
+      "sourceType": "Official party 2023 policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "NZ First's 2023 agriculture policy opposed agriculture emissions pricing unless adopted by trading partners, supported farm-level reporting, and proposed incentives for emissions-reduction technologies.",
+      "officialSource": {
+        "label": "NZ First agriculture policy",
+        "url": "https://www.nzfirst.nz/2023-agriculture-policy"
+      },
+      "tags": [
+        "agriculture",
+        "emissions",
+        "freshwater",
+        "farming"
+      ]
+    },
+    {
+      "id": "green-budget-2025",
+      "partyId": "green",
+      "topic": "Tax & Economy",
+      "subtopic": "Alternative budget",
+      "title": "Green Budget 2025",
+      "status": "Announcement",
+      "sourceType": "Official party budget page",
+      "lastChecked": "2026-05-05",
+      "summary": "The Green Budget 2025 sets out an alternative budget with free GPs and dental, free early childhood education, nature restoration, clean energy, whenua return, and a fairer tax system to fund it.",
+      "officialSource": {
+        "label": "Green Budget 2025",
+        "url": "https://www.greens.org.nz/green_budget_2025"
+      },
+      "tags": [
+        "budget",
+        "tax",
+        "health",
+        "education",
+        "climate"
+      ]
+    },
+    {
+      "id": "green-fiscal-strategy",
+      "partyId": "green",
+      "topic": "Tax & Economy",
+      "subtopic": "Fiscal strategy",
+      "title": "Fiscal Strategy",
+      "status": "Published policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "The Green fiscal strategy argues for fiscal management focused on wellbeing, climate resilience, public investment, economic sovereignty, and recognising the costs of underinvestment.",
+      "officialSource": {
+        "label": "Green fiscal strategy",
+        "url": "https://www.greens.org.nz/fiscal_strategy"
+      },
+      "tags": [
+        "fiscal strategy",
+        "public investment",
+        "wellbeing",
+        "debt"
+      ]
+    },
+    {
+      "id": "green-health",
+      "partyId": "green",
+      "topic": "Health",
+      "subtopic": "Health system",
+      "title": "Health Policy",
+      "status": "Published policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "The Green health policy calls for preventive care, reducing disparities, fully funded public provision of dental care, GP clinics, ambulance, emergency, aged, palliative and mental-health services, plus fair conditions for health workers.",
+      "officialSource": {
+        "label": "Green health policy",
+        "url": "https://www.greens.org.nz/health_policy"
+      },
+      "tags": [
+        "health",
+        "dental",
+        "GP",
+        "mental health",
+        "equity"
+      ]
+    },
+    {
+      "id": "green-education",
+      "partyId": "green",
+      "topic": "Education",
+      "subtopic": "Education system",
+      "title": "Education Policy",
+      "status": "Published policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "The Green education policy supports inclusive, accessible and democratic education, free quality education, Te Tiriti-centred learning, fully funded free ECE, fees-free tertiary education, and writing off student loan debt.",
+      "officialSource": {
+        "label": "Green education policy",
+        "url": "https://www.greens.org.nz/education_policy"
+      },
+      "tags": [
+        "education",
+        "ECE",
+        "tertiary",
+        "student loans",
+        "Te Tiriti"
+      ]
+    },
+    {
+      "id": "green-climate",
+      "partyId": "green",
+      "topic": "Climate & Environment",
+      "subtopic": "Climate change",
+      "title": "Climate Change Policy",
+      "status": "Published policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "The Green climate policy calls for Te Tiriti-based climate solutions, energy sufficiency and democratisation, sustainable transport, phasing out fossil fuels, agricultural diversification, adaptation planning, and just transitions.",
+      "officialSource": {
+        "label": "Green climate policy",
+        "url": "https://www.greens.org.nz/climate_change_policy"
+      },
+      "tags": [
+        "climate",
+        "emissions",
+        "fossil fuels",
+        "adaptation"
+      ]
+    },
+    {
+      "id": "green-livelihoods",
+      "partyId": "green",
+      "topic": "Tax & Economy",
+      "subtopic": "Income support",
+      "title": "Livelihoods Policy",
+      "status": "Published policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "The Green livelihoods policy supports liveable income support, accessible welfare services, a legal right to a minimum income, protections against exploitative lending, and basic services that support wellbeing.",
+      "officialSource": {
+        "label": "Green livelihoods policy",
+        "url": "https://www.greens.org.nz/household_livelihoods_policy"
+      },
+      "tags": [
+        "income",
+        "welfare",
+        "minimum income",
+        "debt"
+      ]
+    },
+    {
+      "id": "tpm-policy-status",
+      "partyId": "te-pati-maori",
+      "topic": "Tax & Economy",
+      "subtopic": "Current platform",
+      "title": "2026 policy platform status",
+      "status": "Needs review",
+      "sourceType": "Official party policy index",
+      "lastChecked": "2026-05-05",
+      "summary": "Te Pāti Māori's main policy page currently says the party is working on its policies and will be back soon, so current 2026 policy entries should be reviewed when the platform is published.",
+      "officialSource": {
+        "label": "Te Pāti Māori policy page",
+        "url": "https://www.maoriparty.org.nz/policy"
+      },
+      "tags": [
+        "policy platform",
+        "needs review",
+        "2026"
+      ]
+    },
+    {
+      "id": "tpm-mana-motuhake",
+      "partyId": "te-pati-maori",
+      "topic": "Te Tiriti & Constitution",
+      "subtopic": "Constitutional transformation",
+      "title": "Mana Motuhake",
+      "status": "Historic/older policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "The Mana Motuhake policy calls for constitutional transformation, a Māori Parliament, implementing Matike Mai recommendations, recognising Aotearoa as the official name, land return measures, binding Waitangi Tribunal recommendations, and stronger Te Tiriti oversight.",
+      "officialSource": {
+        "label": "Te Pāti Māori Mana Motuhake",
+        "url": "https://www.maoriparty.org.nz/mana_motuhake"
+      },
+      "tags": [
+        "Te Tiriti",
+        "constitution",
+        "mana motuhake",
+        "Māori Parliament"
+      ]
+    },
+    {
+      "id": "tpm-education-training",
+      "partyId": "te-pati-maori",
+      "topic": "Education",
+      "subtopic": "Māori education",
+      "title": "Education and training",
+      "status": "Historic/older policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-05-05",
+      "summary": "Te Pāti Māori's education policy centres on resourcing kaupapa Māori education, overhauling the mainstream system, directing more budget to Māori models of delivery, free digital access, and pathways through STEM, trades and apprenticeships.",
+      "officialSource": {
+        "label": "Te Pāti Māori education policy",
+        "url": "https://www.maoriparty.org.nz/education_training"
+      },
+      "tags": [
+        "education",
+        "kaupapa Māori",
+        "training",
+        "apprenticeships"
+      ]
+    },
+    {
+      "id": "tpm-law-prisons",
+      "partyId": "te-pati-maori",
+      "topic": "Law & Justice",
+      "subtopic": "Prisons",
+      "title": "Prisons position statement",
+      "status": "Announcement",
+      "sourceType": "Official party news page",
+      "lastChecked": "2026-05-05",
+      "summary": "A January 2026 Te Pāti Māori statement says the party stands behind its policy of creating an Aotearoa where prisons are not needed, arguing prisons do not address root causes such as poverty, inequality, unemployment, homelessness, racism, poor mental health and trauma.",
+      "officialSource": {
+        "label": "Te Pāti Māori prisons statement",
+        "url": "https://www.maoriparty.org.nz/if_you_re_not_trying_to_abolish_prisons_in_aotearoa_what_are_you_doing_in_parliament"
+      },
+      "tags": [
+        "justice",
+        "prisons",
+        "rehabilitation",
+        "poverty"
+      ]
+    },
+    {
+      "id": "tpm-health-gender-affirming-care",
+      "partyId": "te-pati-maori",
+      "topic": "Health",
+      "subtopic": "Gender-affirming healthcare",
+      "title": "Call to publish gender-affirming care guidelines",
+      "status": "Announcement",
+      "sourceType": "Official party news page",
+      "lastChecked": "2026-05-05",
+      "summary": "Te Pāti Māori has called for Te Whatu Ora to publish updated gender-affirming healthcare guidelines, saying clinical guidance should be led by experts and that withholding the guidelines causes harm to trans and non-binary people.",
+      "officialSource": {
+        "label": "Te Pāti Māori gender-affirming care statement",
+        "url": "https://www.maoriparty.org.nz/te_p_ti_m_ori_call_on_te_whatu_ora_to_immediately_publish_gender_affirming_care_guidelines"
+      },
+      "tags": [
+        "health",
+        "gender-affirming care",
+        "trans",
+        "Te Whatu Ora"
+      ]
+    },
+    {
+      "id": "tpm-te-tiriti-2026-statement",
+      "partyId": "te-pati-maori",
+      "topic": "Te Tiriti & Constitution",
+      "subtopic": "Te Tiriti in government",
+      "title": "2026 State of the Nation response",
+      "status": "Announcement",
+      "sourceType": "Official party news page",
+      "lastChecked": "2026-05-05",
+      "summary": "Te Pāti Māori's January 2026 response to the Prime Minister's State of the Nation speech argues the Government is building a post-Treaty state and criticises the absence of Te Tiriti, tangata whenua, rangatiratanga, iwi, hapū, whānau, kaitiakitanga and mana motuhake from the speech.",
+      "officialSource": {
+        "label": "Te Pāti Māori State of the Nation response",
+        "url": "https://www.maoriparty.org.nz/fixing_the_basics_building_a_future_without_m_ori_is_not_a_future_at_all"
+      },
+      "tags": [
+        "Te Tiriti",
+        "constitution",
+        "rangatiratanga",
+        "2026"
+      ]
+    }
+  ]
+}
