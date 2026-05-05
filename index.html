@@ -10,23 +10,71 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="header-inner">
-        <div>
-          <p class="eyebrow">Official sources only</p>
-          <h1>NZ 2026 Policy Tracker</h1>
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">NZ 2026 election guide</p>
+          <h1>Luxon vs Hipkins, policy by policy.</h1>
           <p class="lede">
-            Compare party policy positions by topic, source status, and last checked date.
+            A neutral tracker for the 2026 election, built from official party sources and organised around the topics voters actually search for.
           </p>
+          <div class="hero-actions" aria-label="Primary dashboard actions">
+            <a class="button-link primary" href="#leader-matchup">Compare leaders</a>
+            <a class="button-link" href="#policy-map">Browse topics</a>
+          </div>
         </div>
-        <div class="header-card" aria-label="Data freshness summary">
-          <span class="muted">Dataset</span>
-          <strong id="dataset-date">Loading...</strong>
-          <span id="dataset-note">Neutral summaries with official links.</span>
+        <div class="leader-feature" aria-label="Featured leaders">
+          <article class="leader-portrait national-portrait">
+            <span class="leader-party">National</span>
+            <strong>Christopher Luxon</strong>
+            <span>Prime Minister</span>
+          </article>
+          <article class="leader-portrait labour-portrait">
+            <span class="leader-party">Labour</span>
+            <strong>Chris Hipkins</strong>
+            <span>Leader of the Opposition</span>
+          </article>
         </div>
       </div>
     </header>
 
     <main>
+      <section class="dashboard-strip" aria-label="Dataset summary">
+        <div class="freshness-card" aria-label="Data freshness summary">
+          <span class="muted">Last checked</span>
+          <strong id="dataset-date">Loading...</strong>
+          <span id="dataset-note">Neutral summaries with official links.</span>
+        </div>
+        <div class="stats-grid" aria-label="Summary counts">
+          <article>
+            <span>Visible policies</span>
+            <strong id="visible-count">0</strong>
+          </article>
+          <article>
+            <span>Parties tracked</span>
+            <strong id="party-count">0</strong>
+          </article>
+          <article>
+            <span>Topics covered</span>
+            <strong id="topic-count">0</strong>
+          </article>
+          <article>
+            <span>Needs review</span>
+            <strong id="review-count">0</strong>
+          </article>
+        </div>
+      </section>
+
+      <section id="leader-matchup" class="leader-matchup" aria-labelledby="leader-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Main contest</p>
+            <h2 id="leader-title">Luxon and Hipkins on the selected topic</h2>
+          </div>
+          <p class="muted">Use the topic selector below to change the matchup.</p>
+        </div>
+        <div id="leader-grid" class="leader-grid" aria-live="polite"></div>
+      </section>
+
       <section class="toolbar" aria-label="Dashboard filters">
         <label class="search-field">
           <span>Search</span>
@@ -54,30 +102,22 @@
         </button>
       </section>
 
-      <section class="stats-grid" aria-label="Summary counts">
-        <article>
-          <span>Visible policies</span>
-          <strong id="visible-count">0</strong>
-        </article>
-        <article>
-          <span>Parties tracked</span>
-          <strong id="party-count">0</strong>
-        </article>
-        <article>
-          <span>Topics covered</span>
-          <strong id="topic-count">0</strong>
-        </article>
-        <article>
-          <span>Needs review</span>
-          <strong id="review-count">0</strong>
-        </article>
+      <section id="policy-map" class="topic-map-section" aria-labelledby="policy-map-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Topic guide</p>
+            <h2 id="policy-map-title">Policy Map</h2>
+          </div>
+          <p class="muted">Inspired by a reader-first policy guide: topic first, party details underneath.</p>
+        </div>
+        <div id="topic-panels" class="topic-panels" aria-live="polite"></div>
       </section>
 
       <section class="compare-section" aria-labelledby="compare-title">
         <div class="section-heading">
           <div>
             <p class="eyebrow">Side-by-side</p>
-            <h2 id="compare-title">Compare by Topic</h2>
+            <h2 id="compare-title">All Parties by Topic</h2>
           </div>
           <div class="compare-controls">
             <label>
@@ -96,8 +136,8 @@
       <section class="results-section" aria-labelledby="results-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Policy entries</p>
-            <h2 id="results-title">Filtered Results</h2>
+            <p class="eyebrow">Source database</p>
+            <h2 id="results-title">Official Policy Entries</h2>
           </div>
           <p id="result-summary" class="muted"></p>
         </div>
