@@ -272,11 +272,11 @@ function renderWatch() {
   els.sourceWatchBody.innerHTML = rows
     .map((row) => `
       <tr>
-        <td>${escapeHtml(row.party)}</td>
-        <td><a href="${escapeAttr(row.sourceUrl)}" target="_blank" rel="noopener">${escapeHtml(shortUrl(row.sourceUrl))}</a></td>
-        <td>${escapeHtml(row.pageTitle || "Untitled")}</td>
-        <td>${escapeHtml(row.lastChecked || "Not checked")}</td>
-        <td>${changePill(row.contentChanged)}</td>
+        <td data-label="Party">${escapeHtml(row.party)}</td>
+        <td data-label="Source"><a href="${escapeAttr(row.sourceUrl)}" target="_blank" rel="noopener">${escapeHtml(shortUrl(row.sourceUrl))}</a></td>
+        <td data-label="Title">${escapeHtml(row.pageTitle || "Untitled")}</td>
+        <td data-label="Checked">${escapeHtml(row.lastChecked || "Not checked")}</td>
+        <td data-label="Changed">${changePill(row.contentChanged)}</td>
       </tr>
     `)
     .join("");
