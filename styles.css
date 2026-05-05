@@ -217,8 +217,7 @@ h3 {
 .stats-grid article,
 .policy-card,
 .compare-card,
-.leader-card,
-.topic-panel {
+.leader-card {
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -451,57 +450,78 @@ button:hover {
 
 .topic-panels {
   display: grid;
+  grid-template-columns: repeat(7, minmax(220px, 1fr));
   gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scroll-snap-type: x mandatory;
 }
 
-.topic-panel {
-  overflow: hidden;
-}
-
-.topic-panel summary {
+.topic-tile {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 56px;
-  gap: 14px;
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr) 42px;
+  gap: 8px 12px;
+  align-content: start;
+  min-height: 168px;
   padding: 16px;
-  cursor: pointer;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: left;
+  scroll-snap-align: start;
 }
 
-.topic-panel summary::-webkit-details-marker {
-  display: none;
+.topic-tile.is-active {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
-.topic-panel summary strong {
+.topic-tile span {
+  min-width: 0;
+}
+
+.topic-tile strong {
   display: block;
-  font-size: 1.22rem;
+  font-size: 1.18rem;
+  line-height: 1.1;
 }
 
-.topic-panel summary em {
+.topic-tile em {
   display: block;
-  margin-top: 4px;
+  margin-top: 8px;
   color: var(--muted);
   font-style: normal;
+  font-weight: 560;
 }
 
-.topic-panel summary b {
+.topic-tile.is-active em {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.topic-tile b {
   display: grid;
   place-items: center;
-  min-height: 48px;
+  min-height: 42px;
   color: #fff;
   background: var(--accent);
   border-radius: 7px;
-  font-size: 1.35rem;
+  font-size: 1.15rem;
 }
 
-.topic-panel-body {
-  display: grid;
-  gap: 14px;
-  padding: 0 16px 16px;
+.topic-tile.is-active b {
+  color: var(--accent);
+  background: #fff;
 }
 
-.topic-panel-body button {
-  width: fit-content;
-  align-self: start;
+.topic-tile small {
+  grid-column: 1 / -1;
+  align-self: end;
+  color: inherit;
+  font-weight: 760;
+  opacity: 0.78;
 }
 
 .topic-party-grid {
@@ -831,8 +851,8 @@ footer {
     padding: 14px;
   }
 
-  .topic-party-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .topic-panels {
+    grid-template-columns: repeat(7, minmax(min(82vw, 320px), 1fr));
   }
 
   .section-heading {
@@ -980,17 +1000,9 @@ footer {
     flex-basis: min(calc(100vw - 48px), 420px);
   }
 
-  .topic-party-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .topic-panel summary {
-    grid-template-columns: minmax(0, 1fr) 48px;
+  .topic-tile {
+    min-height: 150px;
     padding: 14px;
-  }
-
-  .topic-panel summary b {
-    min-height: 42px;
   }
 
   .policy-meta {

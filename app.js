@@ -83,6 +83,11 @@ function bindEvents() {
 
   els.topicFilter.addEventListener("change", (event) => {
     state.topic = event.target.value;
+    if (state.topic !== "all") {
+      state.compareTopic = state.topic;
+      state.compareSubtopic = "all";
+      els.compareTopic.value = state.compareTopic;
+    }
     render();
   });
 
@@ -94,8 +99,7 @@ function bindEvents() {
   els.compareTopic.addEventListener("change", (event) => {
     state.compareTopic = event.target.value;
     state.compareSubtopic = "all";
-    renderCompareControls();
-    renderCompare();
+    render();
   });
 
   els.compareSubtopic.addEventListener("change", (event) => {
@@ -294,41 +298,20 @@ function renderLeaderMatchup() {
 }
 
 function renderTopicPanels() {
-  els.topicPanels.innerHTML = state.data.topics.map((topic, index) => {
+  els.topicPanels.innerHTML = state.data.topics.map((topic) => {
     const policies = state.data.policies.filter((policy) => policy.topic === topic);
-    const parties = [...new Set(policies.map((policy) => policy.partyId))];
-    const byParty = parties
-      .map((partyId) => {
-        const party = getParty(partyId);
-        const partyPolicies = policies.filter((policy) => policy.partyId === partyId).slice(0, 4);
-        return `
-          <div class="topic-party-block">
-            <div class="party-line">
-              <span class="party-dot" style="background:${escapeAttr(party.color)}"></span>
-              <strong>${escapeHtml(party.name)}</strong>
-            </div>
-            <ul>
-              ${partyPolicies.map((policy) => `<li>${escapeHtml(policy.title)} ${statusPill(policy.status)}</li>`).join("")}
-            </ul>
-          </div>
-        `;
-      })
-      .join("");
+    const parties = new Set(policies.map((policy) => policy.partyId));
+    const isActive = state.compareTopic === topic;
 
     return `
-      <details class="topic-panel" ${index === 0 ? "open" : ""}>
-        <summary>
-          <span>
-            <strong>${escapeHtml(topic)}</strong>
-            <em>${escapeHtml(TOPIC_NOTES[topic] || "Official party positions grouped for easier comparison.")}</em>
-          </span>
-          <b>${policies.length}</b>
-        </summary>
-        <div class="topic-panel-body">
-          <button type="button" data-topic-select="${escapeAttr(topic)}">Compare this topic</button>
-          <div class="topic-party-grid">${byParty}</div>
-        </div>
-      </details>
+      <button class="topic-tile ${isActive ? "is-active" : ""}" type="button" data-topic-select="${escapeAttr(topic)}">
+        <span>
+          <strong>${escapeHtml(topic)}</strong>
+          <em>${escapeHtml(TOPIC_NOTES[topic] || "Official party positions grouped for easier comparison.")}</em>
+        </span>
+        <b>${policies.length}</b>
+        <small>${parties.size} parties</small>
+      </button>
     `;
   }).join("");
 }
