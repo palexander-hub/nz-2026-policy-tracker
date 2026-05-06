@@ -61,6 +61,19 @@ main,
 footer {
   width: min(var(--max), calc(100% - 32px));
   margin: 0 auto;
+  max-width: 100%;
+  min-width: 0;
+}
+
+main > *,
+.hero-grid > *,
+.intro-band,
+.issue-chapter,
+.source-database,
+.watch-section,
+.topic-rail {
+  min-width: 0;
+  max-width: 100%;
 }
 
 .hero-grid {
@@ -85,6 +98,7 @@ h3 {
   margin: 0;
   line-height: 1.02;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 h1 {
@@ -93,7 +107,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(2rem, 4vw, 4.1rem);
+  font-size: clamp(2rem, 3.5vw, 3.4rem);
 }
 
 h3 {
@@ -330,11 +344,13 @@ main {
 
 .topic-nav {
   display: grid;
-  grid-template-columns: repeat(7, minmax(215px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
   gap: 10px;
   overflow-x: auto;
   padding-bottom: 4px;
   scroll-snap-type: x mandatory;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .topic-card {
@@ -350,6 +366,7 @@ main {
   box-shadow: 0 12px 28px rgba(15, 25, 22, 0.08);
   text-align: left;
   scroll-snap-align: start;
+  min-width: 0;
 }
 
 .topic-card.is-active {
@@ -805,7 +822,13 @@ footer {
   }
 
   .topic-nav {
-    grid-template-columns: repeat(7, minmax(min(84vw, 320px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    overflow-x: visible;
+    padding-bottom: 0;
+  }
+
+  .topic-card {
+    min-height: 150px;
   }
 
   .section-heading,
@@ -816,16 +839,10 @@ footer {
   }
 
   .other-parties {
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
-    margin: 0 -24px;
-    padding: 0 24px 8px;
-    scroll-snap-type: x mandatory;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .party-card {
-    flex: 0 0 min(calc(100vw - 48px), 440px);
     scroll-snap-align: start;
   }
 
@@ -890,7 +907,16 @@ footer {
   }
 
   h1 {
-    font-size: clamp(2.55rem, 15vw, 4.4rem);
+    font-size: clamp(2.35rem, 13vw, 3.45rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 10vw, 2.65rem);
+    line-height: 1.06;
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 7vw, 1.75rem);
   }
 
   .hero-actions {
@@ -903,6 +929,22 @@ footer {
   .source-database,
   .watch-section {
     padding: 16px;
+  }
+
+  .intro-copy,
+  .chapter-note,
+  .muted,
+  .hero-deck {
+    font-size: 1rem;
+  }
+
+  .topic-card {
+    min-height: auto;
+  }
+
+  .topic-nav,
+  .other-parties {
+    grid-template-columns: 1fr;
   }
 
   .intro-stats,
