@@ -68,6 +68,18 @@ The workflow runs once per day and can also be started manually from the Actions
 
 The workflow commits changes to `data/source-watch.json` automatically. It does not scrape media sites and does not use paid services.
 
+## Review Queue
+
+The site has a **Review queue** section near the top.
+
+When the daily checker finds that an official source page changed:
+
+- the changed source appears in the Review queue on the website
+- GitHub Actions opens a GitHub Issue called `Review policy source change: Party Name`
+- the issue includes the source link, page title, last checked time, and a short review checklist
+
+This keeps monitoring automatic while keeping policy summaries human-reviewed. The checker should not automatically add political summaries to `data/policies.json`, because page changes can be layout edits, typos, partial announcements, old material, or context that needs a person to verify.
+
 ## Keep The Data Accurate
 
 - Use official party websites, official party documents, or official government record pages only.

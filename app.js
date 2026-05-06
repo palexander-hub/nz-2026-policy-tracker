@@ -76,6 +76,7 @@ function bindElements() {
     "reset-button",
     "policy-list",
     "result-summary",
+    "review-list",
     "source-watch-body"
   ].forEach((id) => {
     els[toCamel(id)] = document.getElementById(id);
@@ -169,6 +170,7 @@ function renderAll() {
   renderTopicNav();
   renderActiveTopic();
   renderDatabase();
+  renderReviewQueue();
   renderWatch();
 }
 
@@ -359,6 +361,37 @@ function renderWatch() {
       <td data-label="Changed">${changePill(row.contentChanged)}</td>
     </tr>
   `).join("");
+}
+
+function renderReviewQueue() {
+  const rows = state.watch?.sources || [];
+  const changed = rows.filter((row) => row.contentChanged === true);
+
+  if (!changed.length) {
+    els.reviewList.innerHTML = `
+      <article class="review-empty">
+        <strong>No changed official sources waiting for review.</strong>
+        <p>The daily checker will add items here when an official party page changes.</p>
+      </article>
+    `;
+    return;
+  }
+
+  els.reviewList.innerHTML = changed.map((row) => {
+    return `
+      <article class="review-card review-card-change">
+        <div>
+          <span>Changed source</span>
+          <h3>${escapeHtml(row.party)}</h3>
+          <p>${escapeHtml(row.pageTitle || "Untitled source")}</p>
+        </div>
+        <div class="review-actions">
+          <a href="${escapeAttr(row.sourceUrl)}" target="_blank" rel="noopener">Open official source</a>
+          <small>Checked ${escapeHtml(row.lastChecked || "not checked")}</small>
+        </div>
+      </article>
+    `;
+  }).join("");
 }
 
 function policyDetail(policy, open) {

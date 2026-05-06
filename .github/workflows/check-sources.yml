@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   check-sources:
@@ -22,6 +23,79 @@ jobs:
 
       - name: Check official sources
         run: python scripts/check_sources.py
+
+      - name: Open review issues for changed sources
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require("fs");
+            const data = JSON.parse(fs.readFileSync("data/source-watch.json", "utf8"));
+            const sources = (data.sources || []).filter((source) => source.contentChanged === true);
+
+            if (!sources.length) {
+              core.info("No changed official sources need review.");
+              return;
+            }
+
+            try {
+              await github.rest.issues.createLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: "source-review",
+                color: "f0c437",
+                description: "Official source changed and needs a human policy review"
+              });
+            } catch (error) {
+              if (error.status !== 422) throw error;
+            }
+
+            const openIssues = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              per_page: 100
+            });
+
+            for (const source of sources) {
+              const title = `Review policy source change: ${source.party}`;
+              const alreadyOpen = openIssues.some((issue) =>
+                issue.title === title && issue.body && issue.body.includes(source.sourceUrl)
+              );
+
+              if (alreadyOpen) {
+                core.info(`Review issue already open for ${source.sourceUrl}`);
+                continue;
+              }
+
+              const body = [
+                "An official policy source changed in the daily checker.",
+                "",
+                `- Party: ${source.party}`,
+                `- Source: ${source.sourceUrl}`,
+                `- Page title: ${source.pageTitle || "Untitled"}`,
+                `- Last checked: ${source.lastChecked || data.generatedAt || "Unknown"}`,
+                "",
+                "Review checklist:",
+                "",
+                "- Open the official source link.",
+                "- Decide whether the change is a new policy, updated policy, layout edit, typo, or old material.",
+                "- If policy data should change, update `data/policies.json` neutrally with the official source link.",
+                "- Keep uncertain entries marked as `Needs review`.",
+                "- Close this issue when reviewed.",
+                "",
+                "Suggested message for Codex:",
+                "",
+                `> Source watch flagged ${source.party}. Please review ${source.sourceUrl} and update the tracker if needed.`
+              ].join("\n");
+
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ["source-review"]
+              });
+            }
 
       - name: Commit source-watch updates
         run: |
