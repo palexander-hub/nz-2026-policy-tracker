@@ -3,58 +3,67 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A neutral dashboard for tracking official New Zealand 2026 election policy sources.">
-    <title>NZ 2026 Policy Tracker</title>
+    <meta name="description" content="A neutral, official-source policy guide for the 2026 New Zealand general election.">
+    <title>NZ 2026 Election Policy Tracker</title>
     <link rel="stylesheet" href="styles.css">
     <script src="app.js" defer></script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="hero-shell">
+    <header class="story-hero">
+      <div class="hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">NZ 2026 election guide</p>
-          <h1>Luxon vs Hipkins, policy by policy.</h1>
-          <p class="lede">
-            A neutral tracker for the 2026 election, built from official party sources and organised around the topics voters actually search for.
+          <p class="kicker">Official-source election guide</p>
+          <h1>NZ 2026 policy tracker</h1>
+          <p class="hero-deck">
+            A neutral, source-led guide to the policies shaping New Zealand's 2026 election, issue by issue.
           </p>
-          <div class="hero-actions" aria-label="Primary dashboard actions">
-            <a class="button-link primary" href="#leader-matchup">Compare leaders</a>
-            <a class="button-link" href="#policy-map">Browse topics</a>
+          <div class="hero-meta" aria-label="Election and data summary">
+            <span>General election: 7 Nov 2026</span>
+            <span>Last checked: <strong id="dataset-date">Loading...</strong></span>
+            <span><strong id="policy-total">0</strong> official-source entries</span>
+          </div>
+          <p class="hero-note">
+            Start with the Luxon-Hipkins contest, then compare ACT, New Zealand First, the Greens and Te Pāti Māori in the same policy area.
+          </p>
+          <div class="hero-actions">
+            <a class="button-link primary" href="#tracker">Start comparing</a>
+            <a class="button-link" href="#sources">Check sources</a>
           </div>
         </div>
-        <div class="leader-feature" aria-label="Featured leaders">
-          <article class="leader-portrait national-portrait">
-            <span class="leader-party">National</span>
+
+        <div class="leader-art" aria-label="Luxon and Hipkins feature graphic">
+          <article class="leader-panel leader-panel-national">
+            <i class="leader-mark" aria-hidden="true"></i>
+            <span>National</span>
             <strong>Christopher Luxon</strong>
-            <span>Prime Minister</span>
+            <em>Prime Minister</em>
+            <b aria-hidden="true">CL</b>
           </article>
-          <article class="leader-portrait labour-portrait">
-            <span class="leader-party">Labour</span>
+          <article class="leader-panel leader-panel-labour">
+            <i class="leader-mark" aria-hidden="true"></i>
+            <span>Labour</span>
             <strong>Chris Hipkins</strong>
-            <span>Leader of the Opposition</span>
+            <em>Leader of the Opposition</em>
+            <b aria-hidden="true">CH</b>
           </article>
         </div>
       </div>
     </header>
 
-    <main>
-      <section class="dashboard-strip" aria-label="Dataset summary">
-        <div class="freshness-card" aria-label="Data freshness summary">
-          <span class="muted">Last checked</span>
-          <strong id="dataset-date">Loading...</strong>
-          <span id="dataset-note">Neutral summaries with official links.</span>
-        </div>
-        <div class="stats-grid" aria-label="Summary counts">
+    <main id="tracker">
+      <section class="intro-band" aria-labelledby="intro-title">
+        <p class="kicker">How to read this</p>
+        <h2 id="intro-title">Choose an issue. Compare the policy. Open the official source.</h2>
+        <p class="intro-copy">
+          This is built for normal people, not politics tragics. Each policy card gives the summary, status, last checked date and official link so you can go deeper when something matters.
+        </p>
+        <div class="intro-stats" aria-label="Tracker statistics">
           <article>
-            <span>Visible policies</span>
-            <strong id="visible-count">0</strong>
-          </article>
-          <article>
-            <span>Parties tracked</span>
+            <span>Parties</span>
             <strong id="party-count">0</strong>
           </article>
           <article>
-            <span>Topics covered</span>
+            <span>Policy areas</span>
             <strong id="topic-count">0</strong>
           </article>
           <article>
@@ -64,93 +73,103 @@
         </div>
       </section>
 
-      <section id="policy-map" class="topic-map-section" aria-labelledby="policy-map-title">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Start here</p>
-            <h2 id="policy-map-title">Choose a policy area</h2>
-          </div>
-          <p class="muted">Tap a topic to update the comparison below.</p>
+      <nav class="topic-rail" aria-label="Policy areas">
+        <div id="topic-nav" class="topic-nav"></div>
+      </nav>
+
+      <section class="issue-chapter" aria-labelledby="active-topic-title">
+        <div class="chapter-heading">
+          <p class="kicker">Selected policy area</p>
+          <h2 id="active-topic-title">Loading...</h2>
+          <p id="active-topic-note" class="chapter-note"></p>
         </div>
-        <div id="topic-panels" class="topic-panels" aria-live="polite"></div>
-      </section>
 
-      <section id="leader-matchup" class="leader-matchup" aria-labelledby="leader-title">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Policy comparison</p>
-            <h2 id="leader-title">National and Labour, side by side</h2>
-          </div>
-          <p class="muted">Policy summaries first, detail and official sources underneath.</p>
+        <div class="chapter-summary" aria-label="Selected topic summary">
+          <article>
+            <span>Entries in this area</span>
+            <strong id="active-topic-count">0</strong>
+          </article>
+          <article>
+            <span>Parties with entries</span>
+            <strong id="active-party-count">0</strong>
+          </article>
+          <article>
+            <span>Current status mix</span>
+            <strong id="active-status-count">0</strong>
+          </article>
         </div>
-        <div id="leader-grid" class="leader-grid" aria-live="polite"></div>
+
+        <div id="issue-brief" class="issue-brief" aria-live="polite"></div>
+
+        <section class="main-compare" aria-labelledby="main-compare-title">
+          <div class="section-heading">
+            <div>
+              <p class="kicker">Main comparison</p>
+              <h3 id="main-compare-title">Luxon and Hipkins</h3>
+            </div>
+            <p class="muted">National and Labour entries are shown first because they frame the main government contest.</p>
+          </div>
+          <div id="lead-compare" class="lead-compare" aria-live="polite"></div>
+        </section>
+
+        <section class="party-positions" aria-labelledby="party-positions-title">
+          <div class="section-heading">
+            <div>
+              <p class="kicker">Party-by-party</p>
+              <h3 id="party-positions-title">Where the rest stand</h3>
+            </div>
+            <p class="muted">ACT, New Zealand First, Greens and Te Pāti Māori are kept in the same policy area for quick comparison.</p>
+          </div>
+          <div id="other-parties" class="other-parties" aria-live="polite"></div>
+        </section>
       </section>
 
-      <section class="compare-section" aria-labelledby="compare-title">
+      <section class="source-database" aria-labelledby="database-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Other parties</p>
-            <h2 id="compare-title">How every party compares</h2>
-          </div>
-          <div class="compare-controls">
-            <label>
-              <span>Topic</span>
-              <select id="compare-topic"></select>
-            </label>
-            <label>
-              <span>Subtopic</span>
-              <select id="compare-subtopic"></select>
-            </label>
-          </div>
-        </div>
-        <div id="compare-grid" class="compare-grid" aria-live="polite"></div>
-      </section>
-
-      <section class="toolbar" aria-label="Dashboard filters">
-        <label class="search-field">
-          <span>Search all policies</span>
-          <input id="search-input" type="search" placeholder="capital gains tax, health, schools">
-        </label>
-
-        <label>
-          <span>Party</span>
-          <select id="party-filter"></select>
-        </label>
-
-        <label>
-          <span>Topic</span>
-          <select id="topic-filter"></select>
-        </label>
-
-        <label>
-          <span>Status</span>
-          <select id="status-filter"></select>
-        </label>
-
-        <button id="reset-button" type="button" title="Clear filters" aria-label="Clear filters">
-          <span aria-hidden="true">↺</span>
-          Reset
-        </button>
-      </section>
-
-      <section class="results-section" aria-labelledby="results-title">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Source database</p>
-            <h2 id="results-title">Official Policy Entries</h2>
+            <p class="kicker">Source database</p>
+            <h2 id="database-title">Search every policy entry</h2>
           </div>
           <p id="result-summary" class="muted"></p>
         </div>
+
+        <section class="toolbar" aria-label="Policy database filters">
+          <label class="search-field">
+            <span>Search policies</span>
+            <input id="search-input" type="search" placeholder="capital gains tax, GP visits, schools">
+          </label>
+
+          <label>
+            <span>Party</span>
+            <select id="party-filter"></select>
+          </label>
+
+          <label>
+            <span>Topic</span>
+            <select id="topic-filter"></select>
+          </label>
+
+          <label>
+            <span>Status</span>
+            <select id="status-filter"></select>
+          </label>
+
+          <button id="reset-button" type="button" title="Clear filters" aria-label="Clear filters">
+            <span aria-hidden="true">↺</span>
+            Reset
+          </button>
+        </section>
+
         <div id="policy-list" class="policy-list" aria-live="polite"></div>
       </section>
 
-      <section class="watch-section" aria-labelledby="watch-title">
+      <section id="sources" class="watch-section" aria-labelledby="watch-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Daily source check</p>
-            <h2 id="watch-title">Official Source Watch</h2>
+            <p class="kicker">Daily source check</p>
+            <h2 id="watch-title">Official source watch</h2>
           </div>
-          <p class="muted">Generated by GitHub Actions from official party websites only.</p>
+          <p class="muted">Generated from official party websites only. Changed pages should be reviewed by a person.</p>
         </div>
         <div class="table-wrap">
           <table>
@@ -171,7 +190,7 @@
 
     <footer>
       <p>
-        Neutral public tracker. Summaries should be verified against official party sources before sharing as current policy.
+        Neutral tracker. All summaries should be checked against official party sources before being treated as final 2026 election commitments.
       </p>
     </footer>
   </body>
