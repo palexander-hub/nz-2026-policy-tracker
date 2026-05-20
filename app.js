@@ -13,35 +13,33 @@ const LEADERS = [
     partyId: "national",
     name: "Christopher Luxon",
     role: "Prime Minister",
-    initials: "CL",
-    frame: "National's official material is mostly current government record and plan-based."
+    frame: "National's entries are mostly current government record and plan pages."
   },
   {
     partyId: "labour",
     name: "Chris Hipkins",
     role: "Leader of the Opposition",
-    initials: "CH",
-    frame: "Labour's official material includes recent 2026 campaign-style announcements."
+    frame: "Labour's entries include recent policy announcements and campaign-style pages."
   }
 ];
 
 const TOPIC_NOTES = {
-  "Tax & Economy": "Cost of living, tax settings, investment and economic management.",
-  "Health": "GP access, screening, medicines, workforce and public health delivery.",
-  "Education": "Schools, curriculum, tertiary education, skills and training.",
-  "Climate & Environment": "Climate policy, farming, biodiversity, freshwater and adaptation.",
-  "Law & Justice": "Crime, policing, sentencing, prisons, courts and rehabilitation.",
-  "Housing & Infrastructure": "Housing supply, transport, infrastructure funding and planning.",
+  "Tax & Economy": "Tax settings, public spending, investment, productivity and cost-of-living promises.",
+  "Health": "Primary care, screening, medicines, workforce, hospitals and public health delivery.",
+  "Education": "Schools, curriculum, tertiary education, apprenticeships, learning support and skills.",
+  "Climate & Environment": "Emissions, farming, freshwater, biodiversity, adaptation and energy transition.",
+  "Law & Justice": "Crime, policing, sentencing, courts, prisons, rehabilitation and public safety.",
+  "Housing & Infrastructure": "Housing supply, planning, transport, infrastructure funding and delivery.",
   "Te Tiriti & Constitution": "Te Tiriti, constitutional settings, rangatiratanga and governance."
 };
 
 const TOPIC_QUESTIONS = {
-  "Tax & Economy": "Who would change tax, public spending, investment settings or the cost-of-living response?",
-  "Health": "What would change for GP access, screening, medicines and frontline services?",
-  "Education": "What would change in classrooms, curriculum, tertiary education or skills training?",
-  "Climate & Environment": "How would parties handle emissions, farming, freshwater and conservation?",
-  "Law & Justice": "What would change for policing, courts, sentencing, prisons and rehabilitation?",
-  "Housing & Infrastructure": "What would change in housing supply, transport, planning and infrastructure funding?",
+  "Tax & Economy": "Who would change tax, investment settings, spending discipline or the cost-of-living response?",
+  "Health": "What would change for doctor access, screening, medicines and frontline services?",
+  "Education": "What would change in classrooms, curriculum, tertiary study and skills training?",
+  "Climate & Environment": "How would parties handle emissions, farming, freshwater, conservation and adaptation?",
+  "Law & Justice": "What would change for police, courts, sentencing, prisons and rehabilitation?",
+  "Housing & Infrastructure": "What would change in housing supply, planning, transport and infrastructure funding?",
   "Te Tiriti & Constitution": "What would change in Te Tiriti, governance, rangatiratanga and constitutional settings?"
 };
 
@@ -57,27 +55,23 @@ function bindElements() {
   [
     "dataset-date",
     "policy-total",
-    "party-count",
-    "topic-count",
-    "review-count",
     "topic-nav",
+    "active-topic-count",
     "active-topic-title",
     "active-topic-note",
-    "active-topic-count",
-    "active-party-count",
-    "active-status-count",
-    "issue-brief",
+    "issue-snapshot",
     "lead-compare",
     "other-parties",
+    "subtopic-map",
+    "archive-count",
     "search-input",
     "party-filter",
     "topic-filter",
     "status-filter",
     "reset-button",
     "policy-list",
-    "result-summary",
     "review-list",
-    "source-watch-body"
+    "source-watch-list"
   ].forEach((id) => {
     els[toCamel(id)] = document.getElementById(id);
   });
@@ -92,23 +86,23 @@ function bindEvents() {
 
   els.searchInput.addEventListener("input", (event) => {
     state.search = event.target.value.trim().toLowerCase();
-    renderDatabase();
+    renderArchive();
   });
 
   els.partyFilter.addEventListener("change", (event) => {
     state.party = event.target.value;
-    renderDatabase();
+    renderArchive();
   });
 
   els.topicFilter.addEventListener("change", (event) => {
     state.topic = event.target.value;
     if (state.topic !== "all") setActiveTopic(state.topic, false);
-    renderDatabase();
+    renderArchive();
   });
 
   els.statusFilter.addEventListener("change", (event) => {
     state.status = event.target.value;
-    renderDatabase();
+    renderArchive();
   });
 
   els.resetButton.addEventListener("click", () => {
@@ -120,7 +114,7 @@ function bindEvents() {
     els.partyFilter.value = "all";
     els.topicFilter.value = "all";
     els.statusFilter.value = "all";
-    renderDatabase();
+    renderArchive();
   });
 }
 
@@ -131,7 +125,9 @@ async function loadData() {
       fetch("data/source-watch.json", { cache: "no-store" })
     ]);
 
-    if (!policiesResponse.ok) throw new Error(`Could not load policies.json (${policiesResponse.status})`);
+    if (!policiesResponse.ok) {
+      throw new Error(`Could not load policies.json (${policiesResponse.status})`);
+    }
 
     state.data = await policiesResponse.json();
     state.watch = watchResponse.ok ? await watchResponse.json() : { sources: [] };
@@ -140,7 +136,7 @@ async function loadData() {
     populateFilters();
     renderAll();
   } catch (error) {
-    els.policyList.innerHTML = `<div class="empty">Unable to load dashboard data. ${escapeHtml(error.message)}</div>`;
+    els.issueSnapshot.innerHTML = `<article class="empty">Unable to load policy data. ${escapeHtml(error.message)}</article>`;
   }
 }
 
@@ -160,167 +156,255 @@ function populateFilters() {
 }
 
 function renderAll() {
-  const reviewCount = state.data.policies.filter((policy) => policy.status === "Needs review").length;
-  els.datasetDate.textContent = state.data.metadata.lastUpdated;
+  els.datasetDate.textContent = formatDate(state.data.metadata.lastUpdated);
   els.policyTotal.textContent = state.data.policies.length;
-  els.partyCount.textContent = state.data.parties.length;
-  els.topicCount.textContent = state.data.topics.length;
-  els.reviewCount.textContent = reviewCount;
 
   renderTopicNav();
   renderActiveTopic();
-  renderDatabase();
+  renderArchive();
   renderReviewQueue();
-  renderWatch();
-}
-
-function setActiveTopic(topic, scrollToChapter) {
-  state.activeTopic = topic;
-  if (els.topicFilter.value !== "all") els.topicFilter.value = topic;
-  renderTopicNav();
-  renderActiveTopic();
-  if (scrollToChapter) {
-    document.querySelector(".issue-chapter").scrollIntoView({ behavior: "smooth", block: "start" });
-  }
+  renderSourceWatch();
 }
 
 function renderTopicNav() {
-  els.topicNav.innerHTML = state.data.topics.map((topic) => {
+  els.topicNav.innerHTML = state.data.topics.map((topic, index) => {
     const policies = policiesFor({ topic });
-    const parties = new Set(policies.map((policy) => policy.partyId));
+    const partyCount = new Set(policies.map((policy) => policy.partyId)).size;
     const active = topic === state.activeTopic;
 
     return `
-      <button class="topic-card ${active ? "is-active" : ""}" type="button" data-topic="${escapeAttr(topic)}">
+      <button class="topic-chip ${active ? "is-active" : ""}" type="button" data-topic="${escapeAttr(topic)}" aria-pressed="${active}">
+        <span class="topic-index">${String(index + 1).padStart(2, "0")}</span>
         <span>
           <strong>${escapeHtml(topic)}</strong>
-          <em>${escapeHtml(TOPIC_NOTES[topic] || "Official policy entries grouped by topic.")}</em>
+          <em>${escapeHtml(policies.length)} entries / ${escapeHtml(partyCount)} parties</em>
         </span>
-        <b>${policies.length}</b>
-        <small>${parties.size} parties</small>
       </button>
     `;
   }).join("");
 }
 
+function setActiveTopic(topic, shouldScroll) {
+  state.activeTopic = topic;
+  if (els.topicFilter.value !== "all") els.topicFilter.value = topic;
+  renderTopicNav();
+  renderActiveTopic();
+  if (shouldScroll) {
+    document.querySelector(".chapter").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
 function renderActiveTopic() {
-  const topicPolicies = policiesFor({ topic: state.activeTopic });
-  const parties = new Set(topicPolicies.map((policy) => policy.partyId));
-  const statuses = new Set(topicPolicies.map((policy) => policy.status));
+  const policies = policiesFor({ topic: state.activeTopic });
+  const parties = new Set(policies.map((policy) => policy.partyId));
+  const statuses = new Set(policies.map((policy) => policy.status));
+  const officialLinks = new Set(policies.map((policy) => policy.officialSource?.url).filter(Boolean));
+  const latestCheck = latestDate(policies.map((policy) => policy.lastChecked));
 
   els.activeTopicTitle.textContent = state.activeTopic;
-  els.activeTopicNote.textContent = TOPIC_NOTES[state.activeTopic] || "Official policy entries grouped by topic.";
-  els.activeTopicCount.textContent = topicPolicies.length;
-  els.activePartyCount.textContent = parties.size;
-  els.activeStatusCount.textContent = statuses.size;
+  els.activeTopicNote.textContent = TOPIC_NOTES[state.activeTopic] || "Official policy entries grouped by issue.";
+  els.activeTopicCount.textContent = `${policies.length} ${policies.length === 1 ? "entry" : "entries"}`;
+
+  els.issueSnapshot.innerHTML = `
+    <article>
+      <span>Policy question</span>
+      <strong>${escapeHtml(TOPIC_QUESTIONS[state.activeTopic] || "What do official party sources say in this area?")}</strong>
+    </article>
+    <article>
+      <span>Coverage</span>
+      <strong>${escapeHtml(parties.size)} parties, ${escapeHtml(officialLinks.size)} official links</strong>
+    </article>
+    <article>
+      <span>Status mix</span>
+      <strong>${escapeHtml([...statuses].join(", ") || "No status yet")}</strong>
+      <em>Latest check: ${escapeHtml(formatDate(latestCheck) || "Not checked")}</em>
+    </article>
+  `;
 
   renderLeadCompare();
   renderOtherParties();
-  renderIssueBrief(topicPolicies, parties, statuses);
-}
-
-function renderIssueBrief(topicPolicies, parties, statuses) {
-  const partyNames = [...parties].map((partyId) => getParty(partyId)?.name).filter(Boolean);
-  const statusList = [...statuses].join(", ");
-  const checkedDates = topicPolicies
-    .map((policy) => policy.lastChecked)
-    .sort();
-  const newestDate = checkedDates[checkedDates.length - 1];
-
-  els.issueBrief.innerHTML = `
-    <article>
-      <span>Policy question</span>
-      <strong>${escapeHtml(TOPIC_QUESTIONS[state.activeTopic] || "What are the official policy positions in this area?")}</strong>
-    </article>
-    <article>
-      <span>Loaded here</span>
-      <strong>${escapeHtml(topicPolicies.length)} entries from ${escapeHtml(partyNames.length ? partyNames.join(", ") : "no parties yet")}</strong>
-    </article>
-    <article>
-      <span>Evidence status</span>
-      <strong>${escapeHtml(statusList || "No status yet")}</strong>
-      <em>Latest check in this issue: ${escapeHtml(newestDate || "Not checked")}</em>
-    </article>
-  `;
+  renderSubtopicMap();
 }
 
 function renderLeadCompare() {
   els.leadCompare.innerHTML = LEADERS.map((leader) => {
     const party = getParty(leader.partyId);
     const policies = policiesFor({ partyId: leader.partyId, topic: state.activeTopic });
-    const items = policies.length
-      ? policies.map((policy, index) => policyDetail(policy, index === 0)).join("")
-      : '<p class="empty-inline">No official entry for this topic yet.</p>';
+    const body = policies.length
+      ? policies.map((policy) => policyArticle(policy, "leader")).join("")
+      : emptyPolicy(party.name, state.activeTopic);
 
     return `
-      <article class="leader-policy leader-policy-${escapeAttr(leader.partyId)}">
-        <div class="leader-policy-head">
+      <article class="leader-card ${escapeAttr(leader.partyId)}">
+        <div class="leader-name">
+          <span class="party-rule" style="background:${escapeAttr(party.color)}"></span>
           <div>
-            <p class="kicker">${escapeHtml(party.name)}</p>
-            <h3>${escapeHtml(leader.name)}</h3>
-            <p class="muted">${escapeHtml(leader.role)}</p>
+            <p class="eyebrow">${escapeHtml(party.name)}</p>
+            <h4>${escapeHtml(leader.name)}</h4>
+            <p>${escapeHtml(leader.role)}</p>
           </div>
-          <span class="leader-badge" style="border-color:${escapeAttr(party.color)}">${escapeHtml(leader.initials)}</span>
         </div>
         <p class="leader-frame">${escapeHtml(leader.frame)}</p>
-        <div class="policy-stack">${items}</div>
+        <div class="policy-thread">${body}</div>
       </article>
     `;
   }).join("");
 }
 
 function renderOtherParties() {
-  const secondaryParties = state.data.parties.filter((party) => !["national", "labour"].includes(party.id));
-  els.otherParties.innerHTML = secondaryParties.map((party) => {
+  const parties = state.data.parties.filter((party) => !["national", "labour"].includes(party.id));
+
+  els.otherParties.innerHTML = parties.map((party) => {
     const policies = policiesFor({ partyId: party.id, topic: state.activeTopic });
+    const summary = `${policies.length} ${policies.length === 1 ? "entry" : "entries"}`;
     const body = policies.length
-      ? policies.map((policy, index) => policyDetail(policy, index === 0)).join("")
-      : '<p class="empty-inline">No official entry for this topic yet.</p>';
+      ? policies.map((policy) => policyArticle(policy, "compact")).join("")
+      : emptyPolicy(party.name, state.activeTopic);
 
     return `
-      <article class="party-card">
-        <div class="party-line">
-          <span class="party-dot" style="background:${escapeAttr(party.color)}"></span>
+      <details class="party-drawer" ${policies.length ? "open" : ""}>
+        <summary>
+          <span class="party-rule" style="background:${escapeAttr(party.color)}"></span>
           <strong>${escapeHtml(party.name)}</strong>
+          <em>${escapeHtml(summary)}</em>
+        </summary>
+        <div class="policy-thread">${body}</div>
+      </details>
+    `;
+  }).join("");
+}
+
+function renderSubtopicMap() {
+  const policies = policiesFor({ topic: state.activeTopic });
+  const groups = groupBy(policies, (policy) => policy.subtopic || "General");
+
+  if (!groups.length) {
+    els.subtopicMap.innerHTML = '<article class="empty">No subtopics for this issue yet.</article>';
+    return;
+  }
+
+  els.subtopicMap.innerHTML = groups.map(([subtopic, rows]) => {
+    const parties = rows.map((row) => getParty(row.partyId)?.name).filter(Boolean);
+    const statuses = [...new Set(rows.map((row) => row.status))];
+    return `
+      <article class="subtopic-row">
+        <div>
+          <span>${escapeHtml(rows.length)} ${rows.length === 1 ? "entry" : "entries"}</span>
+          <h4>${escapeHtml(subtopic)}</h4>
+          <p>${escapeHtml(parties.join(", "))}</p>
         </div>
-        <div class="policy-stack compact">${body}</div>
+        <div class="status-cloud">
+          ${statuses.map((status) => statusPill(status)).join("")}
+        </div>
       </article>
     `;
   }).join("");
 }
 
-function renderDatabase() {
+function renderArchive() {
   const filtered = getFilteredPolicies();
-  els.resultSummary.textContent = `${filtered.length} of ${state.data.policies.length} official-source entries shown`;
+  els.archiveCount.textContent = `${filtered.length} of ${state.data.policies.length} entries`;
 
   if (!filtered.length) {
-    els.policyList.innerHTML = '<div class="empty">No matching policy entries.</div>';
+    els.policyList.innerHTML = '<article class="empty">No matching policy entries.</article>';
     return;
   }
 
   els.policyList.innerHTML = filtered.map((policy) => {
     const party = getParty(policy.partyId);
     return `
-      <article class="policy-card">
-        <div class="party-line">
-          <span class="party-dot" style="background:${escapeAttr(party.color)}"></span>
-          <strong>${escapeHtml(party.name)}</strong>
-        </div>
-        <p class="subtopic">${escapeHtml(policy.topic)} · ${escapeHtml(policy.subtopic)}</p>
+      <article class="archive-card">
+        <span class="party-rule" style="background:${escapeAttr(party.color)}"></span>
+        <p class="eyebrow">${escapeHtml(party.name)} / ${escapeHtml(policy.topic)}</p>
         <h3>${escapeHtml(policy.title)}</h3>
-        <div class="policy-meta">
+        <p>${escapeHtml(policy.summary)}</p>
+        <div class="card-meta">
           ${statusPill(policy.status)}
-          <span class="checked">Last checked ${escapeHtml(policy.lastChecked)}</span>
+          <span>${escapeHtml(policy.subtopic)}</span>
+          <span>Checked ${escapeHtml(formatDate(policy.lastChecked))}</span>
         </div>
-        <p class="summary">${escapeHtml(policy.summary)}</p>
-        <div class="tags">${(policy.tags || []).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div>
-        <div class="source-row">
-          <a href="${escapeAttr(policy.officialSource.url)}" target="_blank" rel="noopener">${escapeHtml(policy.officialSource.label)}</a>
-          <span class="checked">${escapeHtml(policy.sourceType)}</span>
-        </div>
+        <a href="${escapeAttr(policy.officialSource.url)}" target="_blank" rel="noopener">${escapeHtml(policy.officialSource.label)}</a>
       </article>
     `;
   }).join("");
+}
+
+function renderReviewQueue() {
+  const rows = state.watch?.sources || [];
+  const changed = rows.filter((row) => row.contentChanged === true);
+  const errors = rows.filter((row) => row.status && row.status !== "ok");
+  const reviewRows = [...changed, ...errors].slice(0, 8);
+
+  if (!reviewRows.length) {
+    els.reviewList.innerHTML = `
+      <article class="review-card calm">
+        <strong>No changed official sources waiting for review.</strong>
+        <p>The daily checker will add items here and open a GitHub Issue when an official source changes.</p>
+      </article>
+    `;
+    return;
+  }
+
+  els.reviewList.innerHTML = reviewRows.map((row) => {
+    const kind = row.contentChanged === true ? "Changed source" : "Check error";
+    return `
+      <article class="review-card">
+        <div>
+          <span>${escapeHtml(kind)}</span>
+          <strong>${escapeHtml(row.party)}</strong>
+          <p>${escapeHtml(row.pageTitle || row.status || "Official source")}</p>
+        </div>
+        <a href="${escapeAttr(row.sourceUrl)}" target="_blank" rel="noopener">Open source</a>
+      </article>
+    `;
+  }).join("");
+}
+
+function renderSourceWatch() {
+  const rows = state.watch?.sources || [];
+  if (!rows.length) {
+    els.sourceWatchList.innerHTML = '<article class="empty">No source watch data yet.</article>';
+    return;
+  }
+
+  els.sourceWatchList.innerHTML = rows.map((row) => `
+    <article class="source-row">
+      <div>
+        <span>${escapeHtml(row.party)}</span>
+        <h3>${escapeHtml(row.pageTitle || "Untitled source")}</h3>
+        <a href="${escapeAttr(row.sourceUrl)}" target="_blank" rel="noopener">${escapeHtml(shortUrl(row.sourceUrl))}</a>
+      </div>
+      <div class="source-status">
+        ${changePill(row.contentChanged)}
+        <small>${escapeHtml(row.status || "unknown")}</small>
+        <small>Checked ${escapeHtml(formatDateTime(row.lastChecked))}</small>
+      </div>
+    </article>
+  `).join("");
+}
+
+function policyArticle(policy, variant) {
+  const linkText = variant === "leader" ? policy.officialSource.label : "Official source";
+  return `
+    <article class="policy-note">
+      <div class="policy-note-head">
+        <div>
+          <span>${escapeHtml(policy.subtopic)}</span>
+          <h5>${escapeHtml(policy.title)}</h5>
+        </div>
+        ${statusPill(policy.status)}
+      </div>
+      <p>${escapeHtml(policy.summary)}</p>
+      <div class="policy-source">
+        <a href="${escapeAttr(policy.officialSource.url)}" target="_blank" rel="noopener">${escapeHtml(linkText)}</a>
+        <span>${escapeHtml(policy.sourceType)} / checked ${escapeHtml(formatDate(policy.lastChecked))}</span>
+      </div>
+    </article>
+  `;
+}
+
+function emptyPolicy(partyName, topic) {
+  return `<article class="empty">No official ${escapeHtml(partyName)} entry for ${escapeHtml(topic)} yet.</article>`;
 }
 
 function getFilteredPolicies() {
@@ -345,78 +429,20 @@ function getFilteredPolicies() {
   });
 }
 
-function renderWatch() {
-  const rows = state.watch?.sources || [];
-  if (!rows.length) {
-    els.sourceWatchBody.innerHTML = '<tr><td colspan="5">No source watch data yet.</td></tr>';
-    return;
-  }
-
-  els.sourceWatchBody.innerHTML = rows.map((row) => `
-    <tr>
-      <td data-label="Party">${escapeHtml(row.party)}</td>
-      <td data-label="Source"><a href="${escapeAttr(row.sourceUrl)}" target="_blank" rel="noopener">${escapeHtml(shortUrl(row.sourceUrl))}</a></td>
-      <td data-label="Title">${escapeHtml(row.pageTitle || "Untitled")}</td>
-      <td data-label="Checked">${escapeHtml(row.lastChecked || "Not checked")}</td>
-      <td data-label="Changed">${changePill(row.contentChanged)}</td>
-    </tr>
-  `).join("");
-}
-
-function renderReviewQueue() {
-  const rows = state.watch?.sources || [];
-  const changed = rows.filter((row) => row.contentChanged === true);
-
-  if (!changed.length) {
-    els.reviewList.innerHTML = `
-      <article class="review-empty">
-        <strong>No changed official sources waiting for review.</strong>
-        <p>The daily checker will add items here when an official party page changes.</p>
-      </article>
-    `;
-    return;
-  }
-
-  els.reviewList.innerHTML = changed.map((row) => {
-    return `
-      <article class="review-card review-card-change">
-        <div>
-          <span>Changed source</span>
-          <h3>${escapeHtml(row.party)}</h3>
-          <p>${escapeHtml(row.pageTitle || "Untitled source")}</p>
-        </div>
-        <div class="review-actions">
-          <a href="${escapeAttr(row.sourceUrl)}" target="_blank" rel="noopener">Open official source</a>
-          <small>Checked ${escapeHtml(row.lastChecked || "not checked")}</small>
-        </div>
-      </article>
-    `;
-  }).join("");
-}
-
-function policyDetail(policy, open) {
-  return `
-    <details class="policy-detail" ${open ? "open" : ""}>
-      <summary>
-        <span>
-          <strong>${escapeHtml(policy.title)}</strong>
-          <em>${escapeHtml(policy.subtopic)}</em>
-        </span>
-        ${statusPill(policy.status)}
-      </summary>
-      <p>${escapeHtml(policy.summary)}</p>
-      <div class="detail-footer">
-        <a href="${escapeAttr(policy.officialSource.url)}" target="_blank" rel="noopener">Official source</a>
-        <span>Checked ${escapeHtml(policy.lastChecked)}</span>
-      </div>
-    </details>
-  `;
-}
-
 function policiesFor({ partyId, topic }) {
   return state.data.policies.filter((policy) => {
     return (!partyId || policy.partyId === partyId) && (!topic || policy.topic === topic);
   });
+}
+
+function groupBy(rows, getter) {
+  const map = new Map();
+  rows.forEach((row) => {
+    const key = getter(row);
+    if (!map.has(key)) map.set(key, []);
+    map.get(key).push(row);
+  });
+  return [...map.entries()].sort((a, b) => a[0].localeCompare(b[0]));
 }
 
 function statusPill(status) {
@@ -426,7 +452,7 @@ function statusPill(status) {
 function changePill(changed) {
   if (changed === true) return '<span class="change-pill change-yes">Changed</span>';
   if (changed === false) return '<span class="change-pill change-no">No change</span>';
-  return '<span class="change-pill">Unknown</span>';
+  return '<span class="change-pill change-warn">Review</span>';
 }
 
 function setOptions(select, options) {
@@ -436,7 +462,31 @@ function setOptions(select, options) {
 }
 
 function getParty(id) {
-  return state.data.parties.find((party) => party.id === id);
+  return state.data.parties.find((party) => party.id === id) || { name: id, color: "#444" };
+}
+
+function latestDate(values) {
+  return values.filter(Boolean).sort().at(-1) || "";
+}
+
+function formatDate(value) {
+  if (!value) return "";
+  const date = new Date(value);
+  if (Number.isNaN(date.valueOf())) return value;
+  return date.toLocaleDateString("en-NZ", { day: "numeric", month: "short", year: "numeric" });
+}
+
+function formatDateTime(value) {
+  if (!value) return "not checked";
+  const date = new Date(value);
+  if (Number.isNaN(date.valueOf())) return value;
+  return date.toLocaleString("en-NZ", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit"
+  });
 }
 
 function shortUrl(url) {
