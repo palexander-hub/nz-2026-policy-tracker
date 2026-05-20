@@ -1,120 +1,81 @@
 const state = {
   data: null,
   watch: null,
-  activeTopic: "",
-  search: "",
-  party: "all",
-  topic: "all",
-  status: "all"
+  activeParty: "all",
+  activeTopic: ""
 };
 
-const LEADERS = [
-  {
-    partyId: "national",
-    name: "Christopher Luxon",
-    role: "Prime Minister",
-    frame: "National's entries are mostly current government record and plan pages."
+const PARTY_ORDER = ["all", "national", "labour", "act", "nz-first", "green", "te-pati-maori"];
+
+const TOPIC_COPY = {
+  "Tax & Economy": {
+    label: "Cost of living",
+    icon: "piggy",
+    note: "Tax, public spending, investment, productivity and cost-of-living settings.",
+    question: "What would each party change about household costs, tax, spending or economic management?"
   },
-  {
-    partyId: "labour",
-    name: "Chris Hipkins",
-    role: "Leader of the Opposition",
-    frame: "Labour's entries include recent policy announcements and campaign-style pages."
+  "Health": {
+    label: "Health",
+    icon: "heart",
+    note: "Primary care, screening, medicines, workforce, hospitals and public health delivery.",
+    question: "What would change for doctor access, screening, medicines and frontline services?"
+  },
+  "Education": {
+    label: "Education",
+    icon: "cap",
+    note: "Schools, curriculum, tertiary study, apprenticeships, learning support and skills.",
+    question: "What would change in classrooms, curriculum, tertiary study or skills training?"
+  },
+  "Climate & Environment": {
+    label: "Environment and Energy",
+    icon: "leaf",
+    note: "Emissions, farming, freshwater, biodiversity, adaptation and energy transition.",
+    question: "How would parties handle emissions, farming, freshwater, conservation and adaptation?"
+  },
+  "Law & Justice": {
+    label: "Public safety",
+    icon: "shield",
+    note: "Crime, policing, sentencing, courts, prisons, rehabilitation and public safety.",
+    question: "What would change for policing, courts, sentencing, prisons and rehabilitation?"
+  },
+  "Housing & Infrastructure": {
+    label: "Housing",
+    icon: "home",
+    note: "Housing supply, planning, transport, infrastructure funding and delivery.",
+    question: "What would change in housing supply, planning, transport and infrastructure funding?"
+  },
+  "Te Tiriti & Constitution": {
+    label: "Te Tiriti",
+    icon: "forum",
+    note: "Te Tiriti, constitutional settings, rangatiratanga and governance.",
+    question: "What would change in Te Tiriti, governance, rangatiratanga and constitutional settings?"
   }
-];
-
-const TOPIC_NOTES = {
-  "Tax & Economy": "Tax settings, public spending, investment, productivity and cost-of-living promises.",
-  "Health": "Primary care, screening, medicines, workforce, hospitals and public health delivery.",
-  "Education": "Schools, curriculum, tertiary education, apprenticeships, learning support and skills.",
-  "Climate & Environment": "Emissions, farming, freshwater, biodiversity, adaptation and energy transition.",
-  "Law & Justice": "Crime, policing, sentencing, courts, prisons, rehabilitation and public safety.",
-  "Housing & Infrastructure": "Housing supply, planning, transport, infrastructure funding and delivery.",
-  "Te Tiriti & Constitution": "Te Tiriti, constitutional settings, rangatiratanga and governance."
-};
-
-const TOPIC_QUESTIONS = {
-  "Tax & Economy": "Who would change tax, investment settings, spending discipline or the cost-of-living response?",
-  "Health": "What would change for doctor access, screening, medicines and frontline services?",
-  "Education": "What would change in classrooms, curriculum, tertiary study and skills training?",
-  "Climate & Environment": "How would parties handle emissions, farming, freshwater, conservation and adaptation?",
-  "Law & Justice": "What would change for police, courts, sentencing, prisons and rehabilitation?",
-  "Housing & Infrastructure": "What would change in housing supply, planning, transport and infrastructure funding?",
-  "Te Tiriti & Constitution": "What would change in Te Tiriti, governance, rangatiratanga and constitutional settings?"
 };
 
 const els = {};
 
 document.addEventListener("DOMContentLoaded", async () => {
   bindElements();
-  bindEvents();
   await loadData();
 });
 
 function bindElements() {
   [
-    "dataset-date",
+    "party-tabs",
+    "topic-buttons",
     "policy-total",
-    "topic-nav",
-    "active-topic-count",
+    "dataset-date",
+    "source-total",
     "active-topic-title",
     "active-topic-note",
-    "issue-snapshot",
-    "lead-compare",
-    "other-parties",
-    "subtopic-map",
-    "archive-count",
-    "search-input",
-    "party-filter",
-    "topic-filter",
-    "status-filter",
-    "reset-button",
-    "policy-list",
+    "active-topic-count",
+    "policy-summary",
+    "party-policy-list",
+    "review-count",
     "review-list",
     "source-watch-list"
   ].forEach((id) => {
     els[toCamel(id)] = document.getElementById(id);
-  });
-}
-
-function bindEvents() {
-  els.topicNav.addEventListener("click", (event) => {
-    const button = event.target.closest("[data-topic]");
-    if (!button) return;
-    setActiveTopic(button.dataset.topic, true);
-  });
-
-  els.searchInput.addEventListener("input", (event) => {
-    state.search = event.target.value.trim().toLowerCase();
-    renderArchive();
-  });
-
-  els.partyFilter.addEventListener("change", (event) => {
-    state.party = event.target.value;
-    renderArchive();
-  });
-
-  els.topicFilter.addEventListener("change", (event) => {
-    state.topic = event.target.value;
-    if (state.topic !== "all") setActiveTopic(state.topic, false);
-    renderArchive();
-  });
-
-  els.statusFilter.addEventListener("change", (event) => {
-    state.status = event.target.value;
-    renderArchive();
-  });
-
-  els.resetButton.addEventListener("click", () => {
-    state.search = "";
-    state.party = "all";
-    state.topic = "all";
-    state.status = "all";
-    els.searchInput.value = "";
-    els.partyFilter.value = "all";
-    els.topicFilter.value = "all";
-    els.statusFilter.value = "all";
-    renderArchive();
   });
 }
 
@@ -125,313 +86,200 @@ async function loadData() {
       fetch("data/source-watch.json", { cache: "no-store" })
     ]);
 
-    if (!policiesResponse.ok) {
-      throw new Error(`Could not load policies.json (${policiesResponse.status})`);
-    }
+    if (!policiesResponse.ok) throw new Error(`Could not load policies.json (${policiesResponse.status})`);
 
     state.data = await policiesResponse.json();
     state.watch = watchResponse.ok ? await watchResponse.json() : { sources: [] };
     state.activeTopic = state.data.topics[0] || "";
 
-    populateFilters();
     renderAll();
   } catch (error) {
-    els.issueSnapshot.innerHTML = `<article class="empty">Unable to load policy data. ${escapeHtml(error.message)}</article>`;
+    els.partyPolicyList.innerHTML = `<article class="empty">Unable to load policy data. ${escapeHtml(error.message)}</article>`;
   }
-}
-
-function populateFilters() {
-  setOptions(
-    els.partyFilter,
-    [{ value: "all", label: "All parties" }, ...state.data.parties.map((party) => ({ value: party.id, label: party.name }))]
-  );
-  setOptions(
-    els.topicFilter,
-    [{ value: "all", label: "All topics" }, ...state.data.topics.map((topic) => ({ value: topic, label: topic }))]
-  );
-  setOptions(
-    els.statusFilter,
-    [{ value: "all", label: "All statuses" }, ...state.data.statuses.map((status) => ({ value: status, label: status }))]
-  );
 }
 
 function renderAll() {
-  els.datasetDate.textContent = formatDate(state.data.metadata.lastUpdated);
   els.policyTotal.textContent = state.data.policies.length;
+  els.datasetDate.textContent = formatDate(state.data.metadata.lastUpdated);
+  els.sourceTotal.textContent = (state.watch?.sources || []).length;
 
-  renderTopicNav();
-  renderActiveTopic();
-  renderArchive();
-  renderReviewQueue();
-  renderSourceWatch();
+  renderPartyTabs();
+  renderTopicButtons();
+  renderPolicyPanel();
+  renderSourceLedger();
 }
 
-function renderTopicNav() {
-  els.topicNav.innerHTML = state.data.topics.map((topic, index) => {
-    const policies = policiesFor({ topic });
-    const partyCount = new Set(policies.map((policy) => policy.partyId)).size;
-    const active = topic === state.activeTopic;
+function renderPartyTabs() {
+  const parties = [
+    { id: "all", name: "All", color: "#ffffff" },
+    ...PARTY_ORDER.slice(1).map((id) => getParty(id)).filter(Boolean)
+  ];
 
+  els.partyTabs.innerHTML = parties.map((party) => {
+    const active = party.id === state.activeParty;
     return `
-      <button class="topic-chip ${active ? "is-active" : ""}" type="button" data-topic="${escapeAttr(topic)}" aria-pressed="${active}">
-        <span class="topic-index">${String(index + 1).padStart(2, "0")}</span>
-        <span>
-          <strong>${escapeHtml(topic)}</strong>
-          <em>${escapeHtml(policies.length)} entries / ${escapeHtml(partyCount)} parties</em>
-        </span>
+      <button
+        class="party-tab ${active ? "is-active" : ""}"
+        type="button"
+        data-party="${escapeAttr(party.id)}"
+        style="--party:${escapeAttr(party.color)}"
+        aria-pressed="${active}"
+      >
+        ${escapeHtml(shortPartyName(party.name))}
       </button>
     `;
   }).join("");
+
+  els.partyTabs.querySelectorAll("[data-party]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.activeParty = button.dataset.party;
+      renderPartyTabs();
+      renderTopicButtons();
+      renderPolicyPanel();
+    });
+  });
 }
 
-function setActiveTopic(topic, shouldScroll) {
-  state.activeTopic = topic;
-  if (els.topicFilter.value !== "all") els.topicFilter.value = topic;
-  renderTopicNav();
-  renderActiveTopic();
-  if (shouldScroll) {
-    document.querySelector(".chapter").scrollIntoView({ behavior: "smooth", block: "start" });
-  }
+function renderTopicButtons() {
+  els.topicButtons.innerHTML = state.data.topics.map((topic) => {
+    const policies = policiesForTopic(topic);
+    const filtered = filteredPoliciesForTopic(topic);
+    const active = topic === state.activeTopic;
+    const copy = topicCopy(topic);
+
+    return `
+      <button
+        class="topic-button ${active ? "is-active" : ""}"
+        type="button"
+        data-topic="${escapeAttr(topic)}"
+        aria-pressed="${active}"
+      >
+        ${topicIcon(copy.icon)}
+        <span>${escapeHtml(copy.label)}</span>
+        <b>${escapeHtml(filtered.length || policies.length)}</b>
+      </button>
+    `;
+  }).join("");
+
+  els.topicButtons.querySelectorAll("[data-topic]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.activeTopic = button.dataset.topic;
+      renderTopicButtons();
+      renderPolicyPanel(true);
+    });
+  });
 }
 
-function renderActiveTopic() {
-  const policies = policiesFor({ topic: state.activeTopic });
-  const parties = new Set(policies.map((policy) => policy.partyId));
-  const statuses = new Set(policies.map((policy) => policy.status));
-  const officialLinks = new Set(policies.map((policy) => policy.officialSource?.url).filter(Boolean));
-  const latestCheck = latestDate(policies.map((policy) => policy.lastChecked));
+function renderPolicyPanel(shouldFocus) {
+  const topic = state.activeTopic;
+  const copy = topicCopy(topic);
+  const filtered = filteredPoliciesForTopic(topic);
+  const allTopicPolicies = policiesForTopic(topic);
+  const visibleParties = groupBy(filtered, (policy) => policy.partyId);
+  const dates = filtered.map((policy) => policy.lastChecked);
+  const sourceCount = new Set(filtered.map((policy) => policy.officialSource?.url).filter(Boolean)).size;
 
-  els.activeTopicTitle.textContent = state.activeTopic;
-  els.activeTopicNote.textContent = TOPIC_NOTES[state.activeTopic] || "Official policy entries grouped by issue.";
-  els.activeTopicCount.textContent = `${policies.length} ${policies.length === 1 ? "entry" : "entries"}`;
+  els.activeTopicTitle.textContent = copy.label;
+  els.activeTopicNote.textContent = copy.note;
+  els.activeTopicCount.textContent = `${filtered.length || allTopicPolicies.length}`;
 
-  els.issueSnapshot.innerHTML = `
+  els.policySummary.innerHTML = `
     <article>
       <span>Policy question</span>
-      <strong>${escapeHtml(TOPIC_QUESTIONS[state.activeTopic] || "What do official party sources say in this area?")}</strong>
+      <strong>${escapeHtml(copy.question)}</strong>
     </article>
     <article>
       <span>Coverage</span>
-      <strong>${escapeHtml(parties.size)} parties, ${escapeHtml(officialLinks.size)} official links</strong>
+      <strong>${escapeHtml(filtered.length)} entries from ${escapeHtml(visibleParties.length)} parties</strong>
     </article>
     <article>
-      <span>Status mix</span>
-      <strong>${escapeHtml([...statuses].join(", ") || "No status yet")}</strong>
-      <em>Latest check: ${escapeHtml(formatDate(latestCheck) || "Not checked")}</em>
+      <span>Evidence</span>
+      <strong>${escapeHtml(sourceCount)} official links</strong>
+      <em>Latest check: ${escapeHtml(formatDate(latestDate(dates)) || "Not checked")}</em>
     </article>
   `;
 
-  renderLeadCompare();
-  renderOtherParties();
-  renderSubtopicMap();
-}
-
-function renderLeadCompare() {
-  els.leadCompare.innerHTML = LEADERS.map((leader) => {
-    const party = getParty(leader.partyId);
-    const policies = policiesFor({ partyId: leader.partyId, topic: state.activeTopic });
-    const body = policies.length
-      ? policies.map((policy) => policyArticle(policy, "leader")).join("")
-      : emptyPolicy(party.name, state.activeTopic);
-
-    return `
-      <article class="leader-card ${escapeAttr(leader.partyId)}">
-        <div class="leader-name">
-          <span class="party-rule" style="background:${escapeAttr(party.color)}"></span>
-          <div>
-            <p class="eyebrow">${escapeHtml(party.name)}</p>
-            <h4>${escapeHtml(leader.name)}</h4>
-            <p>${escapeHtml(leader.role)}</p>
-          </div>
-        </div>
-        <p class="leader-frame">${escapeHtml(leader.frame)}</p>
-        <div class="policy-thread">${body}</div>
-      </article>
-    `;
-  }).join("");
-}
-
-function renderOtherParties() {
-  const parties = state.data.parties.filter((party) => !["national", "labour"].includes(party.id));
-
-  els.otherParties.innerHTML = parties.map((party) => {
-    const policies = policiesFor({ partyId: party.id, topic: state.activeTopic });
-    const summary = `${policies.length} ${policies.length === 1 ? "entry" : "entries"}`;
-    const body = policies.length
-      ? policies.map((policy) => policyArticle(policy, "compact")).join("")
-      : emptyPolicy(party.name, state.activeTopic);
-
-    return `
-      <details class="party-drawer" ${policies.length ? "open" : ""}>
-        <summary>
-          <span class="party-rule" style="background:${escapeAttr(party.color)}"></span>
-          <strong>${escapeHtml(party.name)}</strong>
-          <em>${escapeHtml(summary)}</em>
-        </summary>
-        <div class="policy-thread">${body}</div>
-      </details>
-    `;
-  }).join("");
-}
-
-function renderSubtopicMap() {
-  const policies = policiesFor({ topic: state.activeTopic });
-  const groups = groupBy(policies, (policy) => policy.subtopic || "General");
-
-  if (!groups.length) {
-    els.subtopicMap.innerHTML = '<article class="empty">No subtopics for this issue yet.</article>';
-    return;
-  }
-
-  els.subtopicMap.innerHTML = groups.map(([subtopic, rows]) => {
-    const parties = rows.map((row) => getParty(row.partyId)?.name).filter(Boolean);
-    const statuses = [...new Set(rows.map((row) => row.status))];
-    return `
-      <article class="subtopic-row">
-        <div>
-          <span>${escapeHtml(rows.length)} ${rows.length === 1 ? "entry" : "entries"}</span>
-          <h4>${escapeHtml(subtopic)}</h4>
-          <p>${escapeHtml(parties.join(", "))}</p>
-        </div>
-        <div class="status-cloud">
-          ${statuses.map((status) => statusPill(status)).join("")}
-        </div>
-      </article>
-    `;
-  }).join("");
-}
-
-function renderArchive() {
-  const filtered = getFilteredPolicies();
-  els.archiveCount.textContent = `${filtered.length} of ${state.data.policies.length} entries`;
-
   if (!filtered.length) {
-    els.policyList.innerHTML = '<article class="empty">No matching policy entries.</article>';
-    return;
+    const party = state.activeParty === "all" ? "No party" : getParty(state.activeParty)?.name || "This party";
+    els.partyPolicyList.innerHTML = `<article class="empty">${escapeHtml(party)} has no official entry for ${escapeHtml(copy.label)} yet.</article>`;
+  } else {
+    els.partyPolicyList.innerHTML = visibleParties.map(([partyId, policies]) => partySection(partyId, policies)).join("");
   }
 
-  els.policyList.innerHTML = filtered.map((policy) => {
-    const party = getParty(policy.partyId);
-    return `
-      <article class="archive-card">
-        <span class="party-rule" style="background:${escapeAttr(party.color)}"></span>
-        <p class="eyebrow">${escapeHtml(party.name)} / ${escapeHtml(policy.topic)}</p>
-        <h3>${escapeHtml(policy.title)}</h3>
-        <p>${escapeHtml(policy.summary)}</p>
-        <div class="card-meta">
-          ${statusPill(policy.status)}
-          <span>${escapeHtml(policy.subtopic)}</span>
-          <span>Checked ${escapeHtml(formatDate(policy.lastChecked))}</span>
-        </div>
+  if (shouldFocus) {
+    document.getElementById("policy-panel").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+function partySection(partyId, policies) {
+  const party = getParty(partyId);
+  return `
+    <section class="party-block" style="--party:${escapeAttr(party.color)}">
+      <h3>${escapeHtml(party.name)}</h3>
+      <ul>
+        ${policies.map(policyListItem).join("")}
+      </ul>
+    </section>
+  `;
+}
+
+function policyListItem(policy) {
+  return `
+    <li>
+      <strong>${escapeHtml(policy.title)}:</strong>
+      ${escapeHtml(policy.summary)}
+      <span class="policy-meta">
+        ${statusPill(policy.status)}
         <a href="${escapeAttr(policy.officialSource.url)}" target="_blank" rel="noopener">${escapeHtml(policy.officialSource.label)}</a>
-      </article>
-    `;
-  }).join("");
+        <em>Checked ${escapeHtml(formatDate(policy.lastChecked))}</em>
+      </span>
+    </li>
+  `;
 }
 
-function renderReviewQueue() {
+function renderSourceLedger() {
   const rows = state.watch?.sources || [];
-  const changed = rows.filter((row) => row.contentChanged === true);
-  const errors = rows.filter((row) => row.status && row.status !== "ok");
-  const reviewRows = [...changed, ...errors].slice(0, 8);
+  const reviewRows = rows.filter((row) => row.contentChanged === true || (row.status && row.status !== "ok"));
 
-  if (!reviewRows.length) {
-    els.reviewList.innerHTML = `
-      <article class="review-card calm">
-        <strong>No changed official sources waiting for review.</strong>
-        <p>The daily checker will add items here and open a GitHub Issue when an official source changes.</p>
-      </article>
-    `;
-    return;
-  }
-
-  els.reviewList.innerHTML = reviewRows.map((row) => {
-    const kind = row.contentChanged === true ? "Changed source" : "Check error";
-    return `
-      <article class="review-card">
-        <div>
-          <span>${escapeHtml(kind)}</span>
-          <strong>${escapeHtml(row.party)}</strong>
-          <p>${escapeHtml(row.pageTitle || row.status || "Official source")}</p>
-        </div>
-        <a href="${escapeAttr(row.sourceUrl)}" target="_blank" rel="noopener">Open source</a>
-      </article>
-    `;
-  }).join("");
-}
-
-function renderSourceWatch() {
-  const rows = state.watch?.sources || [];
-  if (!rows.length) {
-    els.sourceWatchList.innerHTML = '<article class="empty">No source watch data yet.</article>';
-    return;
-  }
+  els.reviewCount.textContent = `${reviewRows.length} to review`;
+  els.reviewList.innerHTML = reviewRows.length
+    ? reviewRows.slice(0, 10).map(reviewItem).join("")
+    : '<article class="empty">No changed official sources waiting for review.</article>';
 
   els.sourceWatchList.innerHTML = rows.map((row) => `
-    <article class="source-row">
+    <article class="source-item">
       <div>
         <span>${escapeHtml(row.party)}</span>
-        <h3>${escapeHtml(row.pageTitle || "Untitled source")}</h3>
+        <strong>${escapeHtml(row.pageTitle || "Untitled source")}</strong>
         <a href="${escapeAttr(row.sourceUrl)}" target="_blank" rel="noopener">${escapeHtml(shortUrl(row.sourceUrl))}</a>
       </div>
-      <div class="source-status">
+      <div>
         ${changePill(row.contentChanged)}
         <small>${escapeHtml(row.status || "unknown")}</small>
-        <small>Checked ${escapeHtml(formatDateTime(row.lastChecked))}</small>
+        <small>${escapeHtml(formatDateTime(row.lastChecked))}</small>
       </div>
     </article>
   `).join("");
 }
 
-function policyArticle(policy, variant) {
-  const linkText = variant === "leader" ? policy.officialSource.label : "Official source";
+function reviewItem(row) {
+  const label = row.contentChanged === true ? "Changed source" : "Check error";
   return `
-    <article class="policy-note">
-      <div class="policy-note-head">
-        <div>
-          <span>${escapeHtml(policy.subtopic)}</span>
-          <h5>${escapeHtml(policy.title)}</h5>
-        </div>
-        ${statusPill(policy.status)}
-      </div>
-      <p>${escapeHtml(policy.summary)}</p>
-      <div class="policy-source">
-        <a href="${escapeAttr(policy.officialSource.url)}" target="_blank" rel="noopener">${escapeHtml(linkText)}</a>
-        <span>${escapeHtml(policy.sourceType)} / checked ${escapeHtml(formatDate(policy.lastChecked))}</span>
-      </div>
+    <article class="review-item">
+      <span>${escapeHtml(label)}</span>
+      <strong>${escapeHtml(row.party)}</strong>
+      <a href="${escapeAttr(row.sourceUrl)}" target="_blank" rel="noopener">${escapeHtml(row.pageTitle || shortUrl(row.sourceUrl))}</a>
     </article>
   `;
 }
 
-function emptyPolicy(partyName, topic) {
-  return `<article class="empty">No official ${escapeHtml(partyName)} entry for ${escapeHtml(topic)} yet.</article>`;
+function policiesForTopic(topic) {
+  return state.data.policies.filter((policy) => policy.topic === topic);
 }
 
-function getFilteredPolicies() {
-  return state.data.policies.filter((policy) => {
-    const party = getParty(policy.partyId);
-    const searchable = [
-      policy.title,
-      policy.topic,
-      policy.subtopic,
-      policy.summary,
-      policy.status,
-      party?.name,
-      ...(policy.tags || [])
-    ].join(" ").toLowerCase();
-
-    return (
-      (state.search === "" || searchable.includes(state.search)) &&
-      (state.party === "all" || policy.partyId === state.party) &&
-      (state.topic === "all" || policy.topic === state.topic) &&
-      (state.status === "all" || policy.status === state.status)
-    );
-  });
-}
-
-function policiesFor({ partyId, topic }) {
-  return state.data.policies.filter((policy) => {
-    return (!partyId || policy.partyId === partyId) && (!topic || policy.topic === topic);
+function filteredPoliciesForTopic(topic) {
+  return policiesForTopic(topic).filter((policy) => {
+    return state.activeParty === "all" || policy.partyId === state.activeParty;
   });
 }
 
@@ -442,27 +290,63 @@ function groupBy(rows, getter) {
     if (!map.has(key)) map.set(key, []);
     map.get(key).push(row);
   });
-  return [...map.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+
+  return [...map.entries()].sort((a, b) => {
+    return partySortIndex(a[0]) - partySortIndex(b[0]);
+  });
 }
 
-function statusPill(status) {
-  return `<span class="status-pill status-${slug(status)}">${escapeHtml(status)}</span>`;
-}
-
-function changePill(changed) {
-  if (changed === true) return '<span class="change-pill change-yes">Changed</span>';
-  if (changed === false) return '<span class="change-pill change-no">No change</span>';
-  return '<span class="change-pill change-warn">Review</span>';
-}
-
-function setOptions(select, options) {
-  select.innerHTML = options
-    .map((option) => `<option value="${escapeAttr(option.value)}">${escapeHtml(option.label)}</option>`)
-    .join("");
+function partySortIndex(partyId) {
+  const index = PARTY_ORDER.indexOf(partyId);
+  return index === -1 ? 999 : index;
 }
 
 function getParty(id) {
-  return state.data.parties.find((party) => party.id === id) || { name: id, color: "#444" };
+  return state.data.parties.find((party) => party.id === id);
+}
+
+function topicCopy(topic) {
+  return TOPIC_COPY[topic] || {
+    label: topic,
+    icon: "forum",
+    note: "Official policy entries grouped by issue.",
+    question: "What do official party sources say in this area?"
+  };
+}
+
+function shortPartyName(name) {
+  if (name === "New Zealand First") return "NZ First";
+  if (name === "Green Party") return "Greens";
+  if (name === "Te Pāti Māori") return "Te Pāti Māori";
+  return name;
+}
+
+function statusPill(status) {
+  return `<span class="status status-${slug(status)}">${escapeHtml(status)}</span>`;
+}
+
+function changePill(changed) {
+  if (changed === true) return '<span class="change changed">Changed</span>';
+  if (changed === false) return '<span class="change unchanged">No change</span>';
+  return '<span class="change review">Review</span>';
+}
+
+function topicIcon(name) {
+  const paths = {
+    heart: '<path d="M20.8 5.8a5.4 5.4 0 0 0-7.6 0L12 7 10.8 5.8a5.4 5.4 0 0 0-7.6 7.6L12 22l8.8-8.6a5.4 5.4 0 0 0 0-7.6Z"/><path d="M3 12h4l2-4 4 8 2-4h6"/>',
+    piggy: '<path d="M19 7h1a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-1"/><path d="M6 10h.01"/><path d="M10 17v3h3v-3"/><path d="M16 17v3h3v-4"/><path d="M18 8a7 7 0 0 0-13.8 2H2v5h3.3A7 7 0 0 0 12 19h4a5 5 0 0 0 5-5v-1a5 5 0 0 0-3-5Z"/>',
+    cap: '<path d="m22 10-10-5-10 5 10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/><path d="M22 10v6"/>',
+    leaf: '<path d="M11 20A7 7 0 0 1 4 13C4 6 12 4 21 4c0 9-2 17-9 17Z"/><path d="M4 20c5-5 9-7 16-8"/>',
+    shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="M9 12h6"/>',
+    home: '<path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/>',
+    forum: '<path d="M4 6h16v10H7l-3 3V6Z"/><path d="M8 10h8"/><path d="M8 13h5"/>'
+  };
+
+  return `
+    <svg class="topic-icon" viewBox="0 0 24 24" aria-hidden="true">
+      ${paths[name] || paths.forum}
+    </svg>
+  `;
 }
 
 function latestDate(values) {

@@ -10,154 +10,70 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    <header class="site-head" aria-label="Site navigation">
-      <a class="wordmark" href="#top">NZ Policy Tracker</a>
+    <div class="fixed-stage" aria-hidden="true"></div>
+    <div class="stage-wash" aria-hidden="true"></div>
+
+    <header class="topbar" aria-label="Site navigation">
+      <a href="#top" class="brand">NZ Policy Tracker</a>
       <nav>
-        <a href="#issues">Issues</a>
-        <a href="#archive">Archive</a>
+        <a href="#top">Tracker</a>
         <a href="#sources">Sources</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <img class="hero-image" src="assets/hero-policy-tracker.png" alt="Stylised editorial portrait of two political leaders in profile with a New Zealand civic backdrop.">
-        <div class="hero-scrim" aria-hidden="true"></div>
-        <div class="hero-copy">
-          <p class="eyebrow">Official-source guide</p>
-          <h1 id="hero-title">NZ 2026 Policy Tracker</h1>
-          <p>
-            A neutral, visual guide to what parties are saying in official sources, built around issues rather than campaign noise.
-          </p>
-          <dl class="hero-facts" aria-label="Tracker summary">
-            <div>
-              <dt>Election</dt>
-              <dd>2026 general election</dd>
-            </div>
-            <div>
-              <dt>Last data update</dt>
-              <dd id="dataset-date">Loading...</dd>
-            </div>
-            <div>
-              <dt>Official entries</dt>
-              <dd id="policy-total">0</dd>
-            </div>
-          </dl>
-        </div>
-        <div class="hero-contest" aria-label="Major contest">
-          <article>
-            <span>National</span>
-            <strong>Christopher Luxon</strong>
-            <small>Government record and official policy sources</small>
-          </article>
-          <article>
-            <span>Labour</span>
-            <strong>Chris Hipkins</strong>
-            <small>Opposition announcements and official policy sources</small>
-          </article>
+    <main id="top" class="story-shell">
+      <section class="hero-copy" aria-labelledby="page-title">
+        <h1 id="page-title">Policy tracker</h1>
+        <p>
+          Your guide to official policy promises and source-backed positions ahead of New Zealand's 2026 election.
+        </p>
+
+        <div id="party-tabs" class="party-tabs" aria-label="Filter by party"></div>
+
+        <div class="facts" aria-label="Tracker status">
+          <span><strong id="policy-total">0</strong> official entries</span>
+          <span>Updated <strong id="dataset-date">Loading...</strong></span>
+          <span><strong id="source-total">0</strong> watched sources</span>
         </div>
       </section>
 
-      <section id="issues" class="issue-picker" aria-labelledby="issue-picker-title">
-        <div class="section-intro">
-          <p class="eyebrow">Start with an issue</p>
-          <h2 id="issue-picker-title">Compare parties by topic, then open the source when a claim matters.</h2>
-        </div>
-        <div id="topic-nav" class="topic-nav" aria-label="Policy topics"></div>
+      <section class="topic-cloud" aria-labelledby="topics-title">
+        <h2 id="topics-title" class="sr-only">Policy topics</h2>
+        <div id="topic-buttons" class="topic-buttons"></div>
       </section>
 
-      <section class="chapter" aria-labelledby="active-topic-title">
-        <div class="chapter-kicker">
-          <p class="eyebrow">Selected issue</p>
-          <span id="active-topic-count">0 entries</span>
+      <section id="policy-panel" class="policy-panel" aria-live="polite" aria-labelledby="active-topic-title">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Selected issue</p>
+            <h2 id="active-topic-title">Loading...</h2>
+            <p id="active-topic-note"></p>
+          </div>
+          <span id="active-topic-count" class="count-badge">0</span>
         </div>
-        <div class="chapter-title">
-          <h2 id="active-topic-title">Loading...</h2>
-          <p id="active-topic-note"></p>
-        </div>
 
-        <div id="issue-snapshot" class="issue-snapshot" aria-live="polite"></div>
-
-        <section class="leader-section" aria-labelledby="leader-section-title">
-          <div class="section-intro compact">
-            <p class="eyebrow">Major-party lens</p>
-            <h3 id="leader-section-title">Luxon and Hipkins, side by side</h3>
-          </div>
-          <div id="lead-compare" class="lead-compare" aria-live="polite"></div>
-        </section>
-
-        <section class="party-section" aria-labelledby="party-section-title">
-          <div class="section-intro compact">
-            <p class="eyebrow">Wider field</p>
-            <h3 id="party-section-title">Other official party positions</h3>
-          </div>
-          <div id="other-parties" class="party-accordions" aria-live="polite"></div>
-        </section>
-
-        <section class="subtopic-section" aria-labelledby="subtopic-title">
-          <div class="section-intro compact">
-            <p class="eyebrow">Subtopic map</p>
-            <h3 id="subtopic-title">What this issue breaks into</h3>
-          </div>
-          <div id="subtopic-map" class="subtopic-map" aria-live="polite"></div>
-        </section>
+        <div id="policy-summary" class="policy-summary"></div>
+        <div id="party-policy-list" class="party-policy-list"></div>
       </section>
 
-      <section id="archive" class="archive" aria-labelledby="archive-title">
+      <section id="sources" class="source-ledger" aria-labelledby="sources-title">
         <details>
           <summary>
             <span>
-              <span class="eyebrow">Full archive</span>
-              <strong id="archive-title">Search the underlying policy file</strong>
+              <span class="eyebrow">Source watch</span>
+              <strong id="sources-title">Daily checks and review queue</strong>
             </span>
-            <em id="archive-count">0 entries</em>
+            <em id="review-count">0 to review</em>
           </summary>
-
-          <div class="archive-tools" aria-label="Archive filters">
-            <label>
-              <span>Search</span>
-              <input id="search-input" type="search" placeholder="GP visits, capital gains, prisons">
-            </label>
-            <label>
-              <span>Party</span>
-              <select id="party-filter"></select>
-            </label>
-            <label>
-              <span>Topic</span>
-              <select id="topic-filter"></select>
-            </label>
-            <label>
-              <span>Status</span>
-              <select id="status-filter"></select>
-            </label>
-            <button id="reset-button" type="button">Reset</button>
-          </div>
-
-          <div id="policy-list" class="policy-list" aria-live="polite"></div>
+          <div id="review-list" class="review-list"></div>
+          <div id="source-watch-list" class="source-watch-list"></div>
         </details>
-      </section>
-
-      <section class="review-strip" aria-labelledby="review-title">
-        <div class="section-intro compact">
-          <p class="eyebrow">Review queue</p>
-          <h2 id="review-title">Official source changes needing human review</h2>
-        </div>
-        <div id="review-list" class="review-list" aria-live="polite"></div>
-      </section>
-
-      <section id="sources" class="sources" aria-labelledby="sources-title">
-        <div class="section-intro">
-          <p class="eyebrow">Source ledger</p>
-          <h2 id="sources-title">Daily checks of official party pages</h2>
-          <p>Generated by the repo's source checker. Changed pages are for human review, not automatic rewriting.</p>
-        </div>
-        <div id="source-watch-list" class="source-watch-list" aria-live="polite"></div>
       </section>
     </main>
 
     <footer>
       <p>
-        Neutral static tracker. Summaries are evidence pointers to official party sources and should be checked before being treated as final 2026 manifesto commitments.
+        Static, neutral, official-source tracker. Changed source pages are queued for human review; policy summaries are not automatically rewritten.
       </p>
     </footer>
   </body>
