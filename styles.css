@@ -557,9 +557,9 @@ summary:focus-visible {
 @media (max-width: 760px) {
   .fixed-stage {
     background-color: #101010;
-    background-position: center 58px;
+    background-position: center 44px;
     background-repeat: no-repeat;
-    background-size: 135vw auto;
+    background-size: 128vw auto;
   }
 
   .stage-wash {
@@ -568,51 +568,128 @@ summary:focus-visible {
   }
 
   .topbar {
-    align-items: flex-start;
+    min-height: 44px;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 10px;
   }
 
   .brand {
-    max-width: 130px;
+    max-width: 112px;
+    font-size: 0.9rem;
+    line-height: 1.05;
+  }
+
+  .topbar nav {
+    gap: 6px;
+  }
+
+  .topbar nav a {
+    min-height: 32px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
   }
 
   .story-shell {
     width: calc(100vw - 18px);
-    padding-top: 34px;
+    padding-top: 22px;
   }
 
   .hero-copy {
-    min-height: 48svh;
+    min-height: 40svh;
     justify-items: stretch;
     text-align: left;
+    gap: 12px;
   }
 
   h1 {
-    font-size: clamp(2.35rem, 10.8vw, 3rem);
+    font-size: clamp(2.05rem, 9.2vw, 2.7rem);
   }
 
   .hero-copy p {
     max-width: 360px;
-    font-size: 1rem;
+    font-size: 0.92rem;
   }
 
-  .party-tabs,
-  .facts {
+  .party-tabs {
+    flex-wrap: nowrap;
     justify-content: flex-start;
+    gap: 8px;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 3px 2px 6px;
+    scrollbar-width: none;
+  }
+
+  .party-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .party-tab {
+    flex: 0 0 auto;
+    min-height: 32px;
+    padding: 5px 10px;
+    font-size: 0.86rem;
+  }
+
+  .facts {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 6px;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 0 2px 6px;
+    scrollbar-width: none;
+  }
+
+  .facts::-webkit-scrollbar {
+    display: none;
+  }
+
+  .facts span {
+    flex: 0 0 auto;
+    padding: 6px 9px;
+    font-size: 0.78rem;
   }
 
   .topic-cloud {
-    min-height: 28svh;
+    min-height: auto;
+    padding-top: 4px;
   }
 
   .topic-buttons {
-    justify-content: flex-start;
-    gap: 12px;
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    padding: 0 4px 22px;
   }
 
   .topic-button {
-    min-height: 46px;
-    padding: 9px 12px;
-    font-size: 1.04rem;
+    width: 100%;
+    min-height: 44px;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 9px 11px;
+    font-size: clamp(0.92rem, 4.7vw, 1.04rem);
+  }
+
+  .topic-button[data-topic="Climate & Environment"],
+  .topic-button[data-topic="Infrastructure"] {
+    grid-column: 1 / -1;
+  }
+
+  .topic-button span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .topic-button b {
+    top: -10px;
+    right: 6px;
+    min-width: 28px;
+    height: 28px;
+    font-size: 0.72rem;
   }
 
   .topic-icon {

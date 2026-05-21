@@ -38,11 +38,17 @@ const TOPIC_COPY = {
     note: "Crime, policing, sentencing, courts, prisons, rehabilitation and public safety.",
     question: "What would change for policing, courts, sentencing, prisons and rehabilitation?"
   },
-  "Housing & Infrastructure": {
-    label: "Housing",
-    icon: "home",
-    note: "Housing supply, planning, transport, infrastructure funding and delivery.",
-    question: "What would change in housing supply, planning, transport and infrastructure funding?"
+  "Infrastructure": {
+    label: "Infrastructure",
+    icon: "road",
+    note: "Roads, transport, planning, infrastructure delivery and investment.",
+    question: "What would change in roads, transport, planning, infrastructure delivery and investment?"
+  },
+  "Public Service": {
+    label: "Public service",
+    icon: "building",
+    note: "Public-sector workforce, department structure, state-sector savings, digital government and bureaucracy.",
+    question: "What would change in public-sector staffing, state-sector structure, back-office spending and digital government?"
   },
   "Te Tiriti & Constitution": {
     label: "Te Tiriti",
@@ -339,6 +345,8 @@ function topicIcon(name) {
     leaf: '<path d="M11 20A7 7 0 0 1 4 13C4 6 12 4 21 4c0 9-2 17-9 17Z"/><path d="M4 20c5-5 9-7 16-8"/>',
     shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="M9 12h6"/>',
     home: '<path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/>',
+    road: '<path d="M6 21 9 3"/><path d="m18 21-3-18"/><path d="M12 8v2"/><path d="M12 14v2"/><path d="M12 20v1"/>',
+    building: '<path d="M4 21V7l8-4 8 4v14"/><path d="M9 21v-8h6v8"/><path d="M8 9h.01"/><path d="M12 9h.01"/><path d="M16 9h.01"/>',
     forum: '<path d="M4 6h16v10H7l-3 3V6Z"/><path d="M8 10h8"/><path d="M8 13h5"/>'
   };
 

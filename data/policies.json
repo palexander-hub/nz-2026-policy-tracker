@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-05-05",
+    "lastUpdated": "2026-05-21",
     "note": "Official-source summaries collected from party websites. Check each source before relying on an entry as a final 2026 manifesto commitment.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -19,7 +19,8 @@
     "Education",
     "Climate & Environment",
     "Law & Justice",
-    "Housing & Infrastructure",
+    "Infrastructure",
+    "Public Service",
     "Te Tiriti & Constitution"
   ],
   "parties": [
@@ -236,6 +237,29 @@
       ]
     },
     {
+      "id": "national-public-service-overhaul-2026",
+      "partyId": "national",
+      "topic": "Public Service",
+      "subtopic": "Public service workforce",
+      "title": "Public service overhaul and workforce target",
+      "status": "Announcement",
+      "sourceType": "Official party news page",
+      "lastChecked": "2026-05-21",
+      "summary": "National says the Government will overhaul the core public service by reducing the number of departments, expanding digital and AI tools, restoring core public service staffing to about 55,000 by mid-2029, and targeting $2.4 billion in savings over four years.",
+      "officialSource": {
+        "label": "National public service overhaul",
+        "url": "https://www.national.org.nz/news/20260519-honnicolawillis"
+      },
+      "tags": [
+        "public service",
+        "civil servants",
+        "state sector",
+        "digital government",
+        "AI",
+        "savings"
+      ]
+    },
+    {
       "id": "labour-medicard-gp",
       "partyId": "labour",
       "topic": "Health",
@@ -427,7 +451,7 @@
     {
       "id": "act-infrastructure",
       "partyId": "act",
-      "topic": "Housing & Infrastructure",
+      "topic": "Infrastructure",
       "subtopic": "Infrastructure delivery",
       "title": "Infrastructure planning and delivery",
       "status": "Published policy",
