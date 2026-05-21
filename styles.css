@@ -559,7 +559,7 @@ summary:focus-visible {
     background-color: #101010;
     background-position: center 44px;
     background-repeat: no-repeat;
-    background-size: 128vw auto;
+    background-size: 122vw auto;
   }
 
   .stage-wash {
@@ -597,17 +597,18 @@ summary:focus-visible {
 
   .hero-copy {
     min-height: 40svh;
-    justify-items: stretch;
-    text-align: left;
+    justify-items: center;
+    text-align: center;
     gap: 12px;
   }
 
   h1 {
     font-size: clamp(2.05rem, 9.2vw, 2.7rem);
+    max-width: 11ch;
   }
 
   .hero-copy p {
-    max-width: 360px;
+    max-width: min(30ch, calc(100vw - 42px));
     font-size: 0.92rem;
   }
 
