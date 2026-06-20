@@ -1,6 +1,6 @@
 # NZ 2026 Policy Tracker
 
-A free static dashboard for comparing New Zealand 2026 election policy positions from official party sources only.
+A free static tracker for comparing New Zealand 2026 election policy positions from official party sources only.
 
 Tracked parties:
 
@@ -15,13 +15,17 @@ This is a neutral public tracker. It is not a political opinion site.
 
 ## Files
 
-- `index.html` - dashboard markup
+- `index.html` - tracker markup
 - `styles.css` - responsive visual design
 - `app.js` - filtering, search, comparison, and rendering
 - `data/policies.json` - editable policy data
 - `data/source-watch.json` - generated source monitoring output
 - `scripts/check_sources.py` - daily official source checker
+- `scripts/verify_setup.sh` - local setup and edit sanity checks
+- `scripts/serve_local.sh` - local static server helper
+- `scripts/push_main.sh` - repo SSH-key-aware push helper
 - `.github/workflows/check-sources.yml` - GitHub Actions schedule
+- `HANDOFF.md` - migration, maintenance, and new-machine setup guide
 
 ## Add Or Edit Policies
 
@@ -30,7 +34,7 @@ Edit `data/policies.json`.
 Each policy entry needs:
 
 - `partyId` matching one of the party IDs
-- `topic` matching one of the dashboard topics
+- `topic` matching one of the tracker topics
 - `subtopic`
 - `title`
 - `status`: `Published policy`, `Announcement`, `Government record`, `Historic/older policy`, or `Needs review`
@@ -49,7 +53,7 @@ Keep summaries short, factual, and attributable to the official source. If a cur
 3. In GitHub, go to `Settings` -> `Pages`.
 4. Set source to `Deploy from a branch`.
 5. Choose branch `main` and folder `/root`.
-6. Save. GitHub will publish the dashboard at the Pages URL shown in settings.
+6. Save. GitHub will publish the tracker at the Pages URL shown in settings.
 
 No backend, database, paid API, secrets, or build step is needed.
 
