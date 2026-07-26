@@ -1,8 +1,8 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-07-26",
-    "note": "Official-source summaries collected from party websites. Check each source before relying on an entry as a final 2026 manifesto commitment.",
+    "lastUpdated": "2026-07-27",
+    "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
   },
@@ -1540,6 +1540,329 @@
         "url": "https://www.nzfirst.nz/future_proofing_our_fuel_security"
       },
       "tags": ["fuel security", "geothermal", "energy", "geological survey"]
+    },
+    {
+      "id": "top-breakthrough-economy-2026",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Tax & Economy",
+      "subtopic": "Innovation and competition",
+      "title": "Breakthrough Economy",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-27",
+      "summary": "Opportunity proposes lifting research and development spending to at least 2% of GDP, expanding technology and accelerator support, strengthening Commerce Commission powers over uncompetitive markets, and supporting small businesses.",
+      "officialSource": {
+        "label": "Opportunity Breakthrough Economy policy",
+        "url": "https://www.opportunity.org.nz/breakthrough-economy"
+      },
+      "tags": ["innovation", "research and development", "competition", "small business"]
+    },
+    {
+      "id": "top-citizens-voice-2026",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Te Tiriti & Constitution",
+      "subtopic": "Democratic reform",
+      "title": "Citizens' Voice",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-27",
+      "summary": "Opportunity proposes representative, paid Citizens' Assemblies for difficult long-term issues and an independent Parliamentary Commissioner to convene them and report on the Government's response.",
+      "officialSource": {
+        "label": "Opportunity Citizens' Voice policy",
+        "url": "https://www.opportunity.org.nz/citizens-voice"
+      },
+      "tags": ["citizens assemblies", "democracy", "Parliament", "public participation"]
+    },
+    {
+      "id": "top-clean-up-politics-2026",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Public Service",
+      "subtopic": "Political integrity",
+      "title": "Clean up Politics",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-27",
+      "summary": "Opportunity proposes tighter political-donation rules, regulation of lobbyists, an independent Anti-Corruption Commission, stronger select committees and Official Information law, and limits on Parliament's use of urgency.",
+      "officialSource": {
+        "label": "Opportunity Clean up Politics policy",
+        "url": "https://www.opportunity.org.nz/clean_up_politics"
+      },
+      "tags": ["political donations", "lobbying", "anti-corruption", "Official Information Act"]
+    },
+    {
+      "id": "top-healthy-land-2026",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Climate & Environment",
+      "subtopic": "Land and biodiversity",
+      "title": "Healthy Land",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-27",
+      "summary": "Opportunity proposes more conservation and biosecurity funding, stronger water-quality oversight, support for lower-impact land use, investment in native forestry and biodiversity markets, and a circular plastics economy.",
+      "officialSource": {
+        "label": "Opportunity Healthy Land policy",
+        "url": "https://www.opportunity.org.nz/healthy_land"
+      },
+      "tags": ["biodiversity", "water quality", "land use", "plastics"]
+    },
+    {
+      "id": "top-climate-action-2026",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Climate & Environment",
+      "subtopic": "Emissions and adaptation",
+      "title": "Climate Action",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-27",
+      "summary": "Opportunity proposes strengthening the Emissions Trading Scheme, adding agricultural emissions, excluding new exotic forestry, supporting sector adaptation and local flood resilience, and rewarding carbon storage in soil, wetlands and native ecosystems.",
+      "officialSource": {
+        "label": "Opportunity Climate Action policy",
+        "url": "https://www.opportunity.org.nz/climate_action"
+      },
+      "tags": ["emissions trading", "agriculture", "adaptation", "native ecosystems"]
+    },
+    {
+      "id": "top-affordable-housing-2026",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Infrastructure",
+      "subtopic": "Housing supply and affordability",
+      "title": "Affordable Housing",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-27",
+      "summary": "Opportunity proposes using its land value tax to reduce land banking, simplifying zoning and small-home construction, underwriting reputable affordable developments, and supporting low-cost finance and council infrastructure funding for quality builds.",
+      "officialSource": {
+        "label": "Opportunity Affordable Housing policy",
+        "url": "https://www.opportunity.org.nz/affordable_housing"
+      },
+      "tags": ["housing", "land value tax", "zoning", "construction"]
+    },
+    {
+      "id": "tepati-mokopuna-maori-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Public Service",
+      "subtopic": "Child and whānau care",
+      "title": "Mokopuna Māori",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-07-27",
+      "summary": "Te Pāti Māori proposes ending the removal pipeline for Māori children, restoring whānau authority, investing in whānau-led care, and making the state accountable for harm caused through uplifts and placements.",
+      "officialSource": {
+        "label": "Te Pāti Māori Mokopuna Māori policy",
+        "url": "https://www.maoriparty.org.nz/mokopuna_m_ori"
+      },
+      "tags": ["mokopuna", "whānau care", "uplifts", "state accountability"]
+    },
+    {
+      "id": "tepati-disabilities-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Health",
+      "subtopic": "Disability support",
+      "title": "Disabilities",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-07-27",
+      "summary": "Te Pāti Māori proposes supporting Māori-led disability services and decision-making, simplifying access to support, and funding assistance that fits whānau circumstances.",
+      "officialSource": {
+        "label": "Te Pāti Māori disabilities policy",
+        "url": "https://www.maoriparty.org.nz/disabilities"
+      },
+      "tags": ["disability", "Māori-led services", "access", "whānau"]
+    },
+    {
+      "id": "tepati-housing-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Infrastructure",
+      "subtopic": "Housing",
+      "title": "Housing",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-07-27",
+      "summary": "Te Pāti Māori proposes building more public and affordable homes, making it easier to build on Māori and ancestral land, and acting against speculation, land banking and vacant properties.",
+      "officialSource": {
+        "label": "Te Pāti Māori housing policy",
+        "url": "https://www.maoriparty.org.nz/housing"
+      },
+      "tags": ["housing", "public housing", "Māori land", "land banking"]
+    },
+    {
+      "id": "tepati-toi-maori-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Te Tiriti & Constitution",
+      "subtopic": "Arts and cultural rights",
+      "title": "Toi Māori",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-07-27",
+      "summary": "Te Pāti Māori proposes investing in Toi Māori and Māori creative industries, protecting Māori cultural rights and expressions, and supporting Māori-led arts infrastructure, funding and career pathways.",
+      "officialSource": {
+        "label": "Te Pāti Māori Toi Māori policy",
+        "url": "https://www.maoriparty.org.nz/toi_maori"
+      },
+      "tags": ["Toi Māori", "arts", "cultural rights", "creative industries"]
+    },
+    {
+      "id": "tepati-te-reo-maori-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Te Tiriti & Constitution",
+      "subtopic": "Language revitalisation",
+      "title": "Te Reo Māori",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-07-27",
+      "summary": "Te Pāti Māori proposes strengthening and normalising te reo Māori, investing in learning and community-led revitalisation, and making the state accountable for protecting the language.",
+      "officialSource": {
+        "label": "Te Pāti Māori te reo policy",
+        "url": "https://www.maoriparty.org.nz/te_reo_maori"
+      },
+      "tags": ["te reo Māori", "language", "revitalisation", "state accountability"]
+    },
+    {
+      "id": "tepati-sports-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Health",
+      "subtopic": "Community sport",
+      "title": "Sports",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-07-27",
+      "summary": "Te Pāti Māori proposes investing in sport and community initiatives and supporting rangatahi pathways through local clubs, programmes and facilities.",
+      "officialSource": {
+        "label": "Te Pāti Māori sports policy",
+        "url": "https://www.maoriparty.org.nz/sports"
+      },
+      "tags": ["sport", "rangatahi", "community clubs", "facilities"]
+    },
+    {
+      "id": "tepati-cost-of-living-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Tax & Economy",
+      "subtopic": "Household costs and incomes",
+      "title": "Cost of living",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-07-27",
+      "summary": "Te Pāti Māori proposes lifting incomes, strengthening welfare support and providing practical cost-of-living relief, including more affordable transport.",
+      "officialSource": {
+        "label": "Te Pāti Māori cost-of-living policy",
+        "url": "https://www.maoriparty.org.nz/cost_of_living"
+      },
+      "tags": ["cost of living", "incomes", "welfare", "transport"]
+    },
+    {
+      "id": "tepati-takatapui-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Public Service",
+      "subtopic": "Inclusive services",
+      "title": "Takatāpui",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-07-27",
+      "summary": "Te Pāti Māori proposes protecting the wellbeing, safety and dignity of takatāpui Māori and making public services inclusive, accessible and accountable.",
+      "officialSource": {
+        "label": "Te Pāti Māori takatāpui policy",
+        "url": "https://www.maoriparty.org.nz/takat_pui"
+      },
+      "tags": ["takatāpui", "inclusive services", "safety", "accessibility"]
+    },
+    {
+      "id": "tepati-military-neutrality-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Te Tiriti & Constitution",
+      "subtopic": "Foreign policy and sovereignty",
+      "title": "Military neutrality",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-07-27",
+      "summary": "Te Pāti Māori proposes declaring Aotearoa militarily neutral, reviewing military alignments, resetting foreign policy around Pacific and Indigenous relationships, and refocusing Defence on protection, disaster response and Pacific support.",
+      "officialSource": {
+        "label": "Te Pāti Māori military-neutrality policy",
+        "url": "https://www.maoriparty.org.nz/military_neutrality"
+      },
+      "tags": ["military neutrality", "foreign policy", "Defence Force", "Pacific"]
+    },
+    {
+      "id": "tepati-freshwater-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Climate & Environment",
+      "subtopic": "Freshwater governance",
+      "title": "Freshwater",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-07-27",
+      "summary": "Te Pāti Māori proposes asserting Māori rights and authority over freshwater, requiring Māori consent in decisions, protecting water resources and sharing benefits fairly.",
+      "officialSource": {
+        "label": "Te Pāti Māori freshwater policy",
+        "url": "https://www.maoriparty.org.nz/freshwater_policy"
+      },
+      "tags": ["freshwater", "Māori authority", "consent", "resource protection"]
+    },
+    {
+      "id": "tepati-climate-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Climate & Environment",
+      "subtopic": "Climate resilience and extraction",
+      "title": "Climate",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party policy page",
+      "lastChecked": "2026-07-27",
+      "summary": "Te Pāti Māori proposes banning seabed mining, protecting whenua and moana from extractive industries, investing in resilience for at-risk communities, and supporting regenerative approaches aligned with Māori values.",
+      "officialSource": {
+        "label": "Te Pāti Māori climate policy",
+        "url": "https://www.maoriparty.org.nz/climate"
+      },
+      "tags": ["climate", "seabed mining", "resilience", "regenerative approaches"]
+    },
+    {
+      "id": "green-automatic-union-membership-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Tax & Economy",
+      "subtopic": "Employment relations",
+      "title": "Default union membership for new employees",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election commitment",
+      "lastChecked": "2026-07-27",
+      "summary": "The Greens propose making union membership the default for new employees, with workers able to opt out, and say the policy will be taken into the 2026 election.",
+      "officialSource": {
+        "label": "Green automatic union membership policy",
+        "url": "https://www.greens.org.nz/green_party_calls_for_union_membership_as_default_setting_for_new_employees"
+      },
+      "tags": ["unions", "employment", "workers", "opt out"]
+    },
+    {
+      "id": "nzfirst-exit-paris-agreement-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Climate & Environment",
+      "subtopic": "International climate policy",
+      "title": "Withdraw from the Paris Agreement",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party campaign announcement",
+      "lastChecked": "2026-07-27",
+      "summary": "New Zealand First says it will campaign in the 2026 election for New Zealand to withdraw from the Paris Agreement.",
+      "officialSource": {
+        "label": "NZ First Paris Agreement campaign announcement",
+        "url": "https://www.nzfirst.nz/winston_peters_keep_hope_alive"
+      },
+      "tags": ["Paris Agreement", "climate", "international commitments", "withdrawal"]
     }
   ]
 }
