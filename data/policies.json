@@ -1,12 +1,13 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-05-21",
+    "lastUpdated": "2026-07-26",
     "note": "Official-source summaries collected from party websites. Check each source before relying on an entry as a final 2026 manifesto commitment.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
   },
   "statuses": [
+    "Confirmed 2026 policy",
     "Published policy",
     "Announcement",
     "Government record",
@@ -77,6 +78,15 @@
       "officialDomains": [
         "maoriparty.org.nz"
       ]
+    },
+    {
+      "id": "top",
+      "name": "The Opportunity Party (TOP)",
+      "color": "#00bfb5",
+      "website": "https://www.opportunity.org.nz",
+      "officialDomains": [
+        "opportunity.org.nz"
+      ]
     }
   ],
   "watchSources": [
@@ -107,6 +117,10 @@
     {
       "partyId": "te-pati-maori",
       "url": "https://www.maoriparty.org.nz/policy"
+    },
+    {
+      "partyId": "top",
+      "url": "https://www.opportunity.org.nz/policy"
     }
   ],
   "policies": [
@@ -261,11 +275,12 @@
     },
     {
       "id": "labour-medicard-gp",
+      "electionYear": 2026,
       "partyId": "labour",
       "topic": "Health",
       "subtopic": "Primary care",
       "title": "Three free doctor's visits with Medicard",
-      "status": "Announcement",
+      "status": "Confirmed 2026 policy",
       "sourceType": "Official party policy page",
       "lastChecked": "2026-05-05",
       "summary": "Labour says every New Zealander would receive three free doctor's visits each year through a new Medicard, funded by targeted property tax changes.",
@@ -282,11 +297,12 @@
     },
     {
       "id": "labour-capital-gains-tax",
+      "electionYear": 2026,
       "partyId": "labour",
       "topic": "Tax & Economy",
       "subtopic": "Capital gains tax",
       "title": "Targeted capital gains tax",
-      "status": "Announcement",
+      "status": "Confirmed 2026 policy",
       "sourceType": "Official party policy page",
       "lastChecked": "2026-05-05",
       "summary": "Labour proposes a 28% tax on profit made after 1 July 2027 when commercial or residential investment property is sold, excluding the family home, farms, KiwiSaver, shares, businesses, inheritances and personal items.",
@@ -303,11 +319,12 @@
     },
     {
       "id": "labour-future-fund",
+      "electionYear": 2026,
       "partyId": "labour",
       "topic": "Tax & Economy",
       "subtopic": "Investment",
       "title": "New Zealand Future Fund",
-      "status": "Announcement",
+      "status": "Confirmed 2026 policy",
       "sourceType": "Official party policy page",
       "lastChecked": "2026-05-05",
       "summary": "Labour says the New Zealand Future Fund would invest in infrastructure and innovative New Zealand businesses to support secure jobs and keep more ideas, wealth and people in New Zealand.",
@@ -324,11 +341,12 @@
     },
     {
       "id": "labour-cervical-screening",
+      "electionYear": 2026,
       "partyId": "labour",
       "topic": "Health",
       "subtopic": "Screening",
       "title": "Free cervical screening",
-      "status": "Announcement",
+      "status": "Confirmed 2026 policy",
       "sourceType": "Official party policy page",
       "lastChecked": "2026-05-05",
       "summary": "Labour says cervical screening would be free for people aged 25 to 69, loaded onto the Medicard, and funded from baseline health funding from the 2027/28 financial year.",
@@ -345,11 +363,12 @@
     },
     {
       "id": "labour-family-doctor-loan",
+      "electionYear": 2026,
       "partyId": "labour",
       "topic": "Health",
       "subtopic": "Primary care workforce",
       "title": "Family Doctor Loan Scheme",
-      "status": "Announcement",
+      "status": "Confirmed 2026 policy",
       "sourceType": "Official party policy page",
       "lastChecked": "2026-05-05",
       "summary": "Labour proposes up to 50 loans each year to help doctors buy into or establish owner-operated general practices, prioritising areas with no GPs or closed books, with 10-year repayment and interest-free first two years.",
@@ -366,11 +385,12 @@
     },
     {
       "id": "act-economy-tax",
+      "electionYear": 2026,
       "partyId": "act",
       "topic": "Tax & Economy",
       "subtopic": "Tax and regulation",
       "title": "Flatter tax and less regulation",
-      "status": "Published policy",
+      "status": "Confirmed 2026 policy",
       "sourceType": "Official party policy page",
       "lastChecked": "2026-05-05",
       "summary": "ACT says it wants careful government spending, lower taxes, less red tape, a two-rate income tax system with a 28% top rate, and fewer barriers to investment, jobs and wage growth.",
@@ -387,11 +407,12 @@
     },
     {
       "id": "act-health",
+      "electionYear": 2026,
       "partyId": "act",
       "topic": "Health",
       "subtopic": "Health system",
       "title": "Health accountability and public-private delivery",
-      "status": "Published policy",
+      "status": "Confirmed 2026 policy",
       "sourceType": "Official party policy page",
       "lastChecked": "2026-05-05",
       "summary": "ACT says health services should be timely and based on individual need, with public-private partnerships, measurable Health NZ targets, transparency, and less bureaucracy.",
@@ -408,17 +429,18 @@
     },
     {
       "id": "act-law-order",
+      "electionYear": 2026,
       "partyId": "act",
       "topic": "Law & Justice",
       "subtopic": "Sentencing and policing",
       "title": "Restoring law and order",
-      "status": "Published policy",
+      "status": "Confirmed 2026 policy",
       "sourceType": "Official party policy page",
       "lastChecked": "2026-05-05",
       "summary": "ACT says government should protect safety and property, restore consequences for offenders, focus police on frontline crime-fighting, and use rehabilitation incentives for prisoners who gain skills.",
       "officialSource": {
         "label": "ACT law and order policy",
-        "url": "https://www.act.org.nz/law-order"
+        "url": "https://www.act.org.nz/policies/law-and-order"
       },
       "tags": [
         "crime",
@@ -429,11 +451,12 @@
     },
     {
       "id": "act-education",
+      "electionYear": 2026,
       "partyId": "act",
       "topic": "Education",
       "subtopic": "School choice",
       "title": "Education choice and accountability",
-      "status": "Published policy",
+      "status": "Confirmed 2026 policy",
       "sourceType": "Official party policy page",
       "lastChecked": "2026-05-05",
       "summary": "ACT supports parent choice across public, private and partnership schools, core knowledge in reading, writing, maths, science and history, stronger NCEA accountability, and a Student Education Account system.",
@@ -450,11 +473,12 @@
     },
     {
       "id": "act-infrastructure",
+      "electionYear": 2026,
       "partyId": "act",
       "topic": "Infrastructure",
       "subtopic": "Infrastructure delivery",
       "title": "Infrastructure planning and delivery",
-      "status": "Published policy",
+      "status": "Confirmed 2026 policy",
       "sourceType": "Official party policy page",
       "lastChecked": "2026-05-05",
       "summary": "ACT says infrastructure should be delivered efficiently with long-term planning, lower red tape, private investment where appropriate, user-pays approaches, property-rights protections, and decentralised decision-making.",
@@ -847,6 +871,675 @@
         "rangatiratanga",
         "2026"
       ]
+    },
+    {
+      "id": "top-tax-reset",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Tax & Economy",
+      "subtopic": "Tax, income and retirement",
+      "title": "Tax Reset",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Opportunity proposes a Citizen's Income of up to $370 a week for most adults, funded through a 1.75% annual land value tax, alongside compulsory KiwiSaver contributions that would rise over time to 6% for employees and employers.",
+      "officialSource": {
+        "label": "Opportunity Tax Reset policy",
+        "url": "https://www.opportunity.org.nz/tax-reset"
+      },
+      "tags": [
+        "tax",
+        "Citizen's Income",
+        "land value tax",
+        "KiwiSaver"
+      ]
+    },
+    {
+      "id": "top-healthy-people",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Health",
+      "subtopic": "Prevention and workforce",
+      "title": "Healthy People",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Opportunity proposes ten-year cross-party health planning, more primary and preventive care, proper funding for core services and infrastructure, improved workforce pay and training, and reinstatement of smokefree legislation.",
+      "officialSource": {
+        "label": "Opportunity Healthy People policy",
+        "url": "https://www.opportunity.org.nz/healthy_people"
+      },
+      "tags": [
+        "health",
+        "primary care",
+        "prevention",
+        "workforce"
+      ]
+    },
+    {
+      "id": "top-future-fit-education",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Education",
+      "subtopic": "Early learning and teaching",
+      "title": "Future-fit Education",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Opportunity proposes stronger community and parent-led early childhood education, smaller centres and improved ratios, ECE teacher pay parity, civics from Year 6, wider learning support, teacher development and more flexible lifelong learning.",
+      "officialSource": {
+        "label": "Opportunity Future-fit Education policy",
+        "url": "https://www.opportunity.org.nz/future_fit_education"
+      },
+      "tags": [
+        "education",
+        "ECE",
+        "teachers",
+        "civics"
+      ]
+    },
+    {
+      "id": "top-abundant-energy",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Climate & Environment",
+      "subtopic": "Energy",
+      "title": "Abundant Energy",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Opportunity proposes a cross-party target to add 30GW of renewable generation by 2050, a capacity investment scheme, consolidated energy regulation and distribution, and low-interest finance for household and community electrification.",
+      "officialSource": {
+        "label": "Opportunity Abundant Energy policy",
+        "url": "https://www.opportunity.org.nz/abundant-energy"
+      },
+      "tags": [
+        "energy",
+        "renewables",
+        "electricity",
+        "electrification"
+      ]
+    },
+    {
+      "id": "top-healthy-oceans",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Climate & Environment",
+      "subtopic": "Oceans and fisheries",
+      "title": "Healthy Oceans",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Opportunity proposes ecosystem-based fisheries management, a phase-out of bottom trawling, cameras on commercial fishing boats, protection of 30% of ocean territory by 2035, opposition to seabed mining and investment in a sustainable blue economy.",
+      "officialSource": {
+        "label": "Opportunity Healthy Oceans policy",
+        "url": "https://www.opportunity.org.nz/healthy-oceans"
+      },
+      "tags": [
+        "oceans",
+        "fisheries",
+        "marine protection",
+        "bottom trawling"
+      ]
+    },
+    {
+      "id": "top-smart-on-crime",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Law & Justice",
+      "subtopic": "Prevention and rehabilitation",
+      "title": "Smart on Crime",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Opportunity proposes more funding for courts and probation, decriminalising drug possession while retaining penalties for supply, expanding rehabilitation and specialist courts, and raising the youth court jurisdiction age.",
+      "officialSource": {
+        "label": "Opportunity Smart on Crime policy",
+        "url": "https://www.opportunity.org.nz/smart_on_crime"
+      },
+      "tags": [
+        "justice",
+        "courts",
+        "drug policy",
+        "rehabilitation"
+      ]
+    },
+    {
+      "id": "top-intergenerational-infrastructure",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Infrastructure",
+      "subtopic": "Long-term planning",
+      "title": "Intergenerational Infrastructure",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Opportunity proposes an expert-led 30-year infrastructure framework, higher public and local-government investment, free public transport, faster project approvals, appropriate user-pays and value-capture funding, and mandatory asset-management standards.",
+      "officialSource": {
+        "label": "Opportunity Intergenerational Infrastructure policy",
+        "url": "https://www.opportunity.org.nz/intergenerational_infrastructure"
+      },
+      "tags": [
+        "infrastructure",
+        "transport",
+        "planning",
+        "local government"
+      ]
+    },
+    {
+      "id": "top-honouring-te-tiriti",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Te Tiriti & Constitution",
+      "subtopic": "Crown obligations",
+      "title": "Honouring Te Tiriti",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Opportunity proposes repealing the Treaty Principles Bill and the Marine and Coastal Area amendment bill if passed, teaching Aotearoa history and Te Tiriti throughout education, supporting te reo teachers, devolving selected services with resources and autonomy, and equitable Treaty settlements.",
+      "officialSource": {
+        "label": "Opportunity Honouring Te Tiriti policy",
+        "url": "https://www.opportunity.org.nz/honouring_te_tiriti"
+      },
+      "tags": [
+        "Te Tiriti",
+        "Treaty settlements",
+        "te reo Māori",
+        "devolution"
+      ]
+    },
+    {
+      "id": "national-kiwisaver-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Tax & Economy",
+      "subtopic": "Retirement savings",
+      "title": "Lift KiwiSaver contributions to 12%",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-26",
+      "summary": "National says an elected National Government would raise default employee and employer KiwiSaver contributions by 0.5 percentage points a year from April 2029, reaching 6% each and 12% combined in 2032.",
+      "officialSource": {
+        "label": "National KiwiSaver election policy",
+        "url": "https://www.national.org.nz/news/20251123-hon-christopher-luxon-national-to-lift-kiwisaver-contributions"
+      },
+      "tags": ["KiwiSaver", "retirement", "savings", "2026 election"]
+    },
+    {
+      "id": "national-hauraki-gulf-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Climate & Environment",
+      "subtopic": "Marine protection",
+      "title": "Restrict commercial fishing in the Hauraki Gulf",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party campaign announcement",
+      "lastChecked": "2026-07-26",
+      "summary": "National says it will reinstate the ban on all fishing in the Hauraki Gulf's High Protection Areas and review the decision allowing bottom trawling in designated Gulf corridors if re-elected.",
+      "officialSource": {
+        "label": "National Hauraki Gulf campaign policy",
+        "url": "https://www.national.org.nz/news/2026021-hon-tama-potaka-hauraki-gulf-commercial-fishing-to-be-restricted"
+      },
+      "tags": ["Hauraki Gulf", "fishing", "marine protection", "bottom trawling"]
+    },
+    {
+      "id": "national-paid-parental-leave-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Tax & Economy",
+      "subtopic": "Family support",
+      "title": "Extend paid parental leave to 30 weeks",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-26",
+      "summary": "National says a re-elected government would gradually extend paid parental leave from 26 to 30 weeks by 2029, let parents overlap or divide the entitlement, and protect full holiday pay after returning to work.",
+      "officialSource": {
+        "label": "National paid parental leave policy",
+        "url": "https://www.national.org.nz/news/paid-parental-leave"
+      },
+      "tags": ["parental leave", "families", "employment", "2026 election"]
+    },
+    {
+      "id": "labour-fare-cap",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Infrastructure",
+      "subtopic": "Public transport",
+      "title": "Weekly public transport fare cap",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Labour proposes a weekly public transport fare cap from July 2027 of $20 in Auckland, Wellington and Christchurch and $10 elsewhere, covering buses, trains and selected ferries.",
+      "officialSource": {
+        "label": "Labour fare cap policy",
+        "url": "https://www.labour.org.nz/farecap"
+      },
+      "tags": ["public transport", "fare cap", "cost of living", "buses"]
+    },
+    {
+      "id": "labour-free-prescriptions",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Health",
+      "subtopic": "Medicines",
+      "title": "Free prescriptions",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Labour proposes removing the $5 prescription charge from July 2027 for everyone entitled to publicly funded healthcare, funded through its targeted capital gains tax.",
+      "officialSource": {
+        "label": "Labour free prescriptions policy",
+        "url": "https://www.labour.org.nz/prescriptions"
+      },
+      "tags": ["prescriptions", "Medicard", "health", "capital gains tax"]
+    },
+    {
+      "id": "labour-free-maternity-scans",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Health",
+      "subtopic": "Maternity care",
+      "title": "Free maternity scans",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Labour proposes making all referred maternity scans free nationwide from July 2028 and funding 24 paid trainee sonographer positions.",
+      "officialSource": {
+        "label": "Labour maternity scans policy",
+        "url": "https://www.labour.org.nz/maternityscans"
+      },
+      "tags": ["maternity", "scans", "Medicard", "health workforce"]
+    },
+    {
+      "id": "labour-apprenticeship-boost",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Education",
+      "subtopic": "Trades training",
+      "title": "Expand Apprenticeship Boost",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Labour proposes extending employer payments to two years, giving new apprentices a $1,000 toolbox grant, adding five trade areas and piloting structured mentoring.",
+      "officialSource": {
+        "label": "Labour Apprenticeship Boost policy",
+        "url": "https://www.labour.org.nz/apprenticeshipboost"
+      },
+      "tags": ["apprentices", "trades", "toolbox grant", "training"]
+    },
+    {
+      "id": "labour-solarsaver",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Climate & Environment",
+      "subtopic": "Household energy",
+      "title": "SolarSaver",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Labour proposes subsidies and low-cost finance to help homeowners, renters and communities install or access solar energy without the upfront cost.",
+      "officialSource": {
+        "label": "Labour SolarSaver policy",
+        "url": "https://www.labour.org.nz/solarsaver"
+      },
+      "tags": ["solar", "household energy", "renters", "renewable energy"]
+    },
+    {
+      "id": "green-tax-system-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Tax & Economy",
+      "subtopic": "Tax reform",
+      "title": "A tax system for all of us",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party current policy announcement",
+      "lastChecked": "2026-07-26",
+      "summary": "The Greens propose a 2.5% tax on net assets above $10 million excluding family homes, tax on gifts or inheritances above $1 million with exemptions, higher taxes on large corporations and a $10,000 income-tax-free threshold.",
+      "officialSource": {
+        "label": "Green tax policy",
+        "url": "https://www.greens.org.nz/tax_system_for_all"
+      },
+      "tags": ["wealth tax", "inheritance", "corporate tax", "tax-free threshold"]
+    },
+    {
+      "id": "green-drink-swim-fish-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Climate & Environment",
+      "subtopic": "Freshwater",
+      "title": "Drink, Swim, Fish",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party policy announcement",
+      "lastChecked": "2026-07-26",
+      "summary": "The Greens' current freshwater policy announcement proposes changing water rules to restore safe drinking water and clean waterways for swimming and fishing.",
+      "officialSource": {
+        "label": "Green Drink, Swim, Fish policy",
+        "url": "https://www.greens.org.nz/drink_swim_fish"
+      },
+      "tags": ["freshwater", "drinking water", "swimming", "water rules"]
+    },
+    {
+      "id": "green-power-for-all-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Climate & Environment",
+      "subtopic": "Energy",
+      "title": "Power for all of us",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party current policy announcement",
+      "lastChecked": "2026-07-26",
+      "summary": "The Greens' current energy policy focuses on lower power bills, cleaner renewable generation and greater public ownership of the electricity system.",
+      "officialSource": {
+        "label": "Green Power for all policy",
+        "url": "https://www.greens.org.nz/power_for_all_of_us"
+      },
+      "tags": ["electricity", "public ownership", "renewable energy", "power bills"]
+    },
+    {
+      "id": "tpm-tax-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Tax & Economy",
+      "subtopic": "Tax fairness",
+      "title": "Tax",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Te Pāti Māori proposes making the wealthiest pay more and using the revenue for housing, health, education and whānau support.",
+      "officialSource": {
+        "label": "Te Pāti Māori tax policy",
+        "url": "https://www.maoriparty.org.nz/tax"
+      },
+      "tags": ["tax", "wealth", "whānau support", "public services"]
+    },
+    {
+      "id": "tpm-economic-development-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Tax & Economy",
+      "subtopic": "Māori enterprise",
+      "title": "Economic development",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Te Pāti Māori proposes Māori-led institutions and funds for enterprise, trade and innovation, long-term Māori wealth building, and protection of Māori data and knowledge.",
+      "officialSource": {
+        "label": "Te Pāti Māori economic development policy",
+        "url": "https://www.maoriparty.org.nz/economic_development"
+      },
+      "tags": ["Māori enterprise", "trade", "innovation", "data sovereignty"]
+    },
+    {
+      "id": "tpm-health-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Health",
+      "subtopic": "Māori-led health",
+      "title": "Health",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Te Pāti Māori proposes rebuilding and strengthening Māori-led health authority and services, shifting toward prevention and whānau wellbeing, and making care accessible, culturally safe and accountable.",
+      "officialSource": {
+        "label": "Te Pāti Māori health policy",
+        "url": "https://www.maoriparty.org.nz/health"
+      },
+      "tags": ["health", "Māori health authority", "prevention", "whānau"]
+    },
+    {
+      "id": "tpm-education-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Education",
+      "subtopic": "Māori-led education",
+      "title": "Education and Training",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Te Pāti Māori proposes a Māori-led education authority, embedding mātauranga Māori across learning, removing barriers to training and strengthening Māori governance in education.",
+      "officialSource": {
+        "label": "Te Pāti Māori education policy",
+        "url": "https://www.maoriparty.org.nz/education_training"
+      },
+      "tags": ["education", "mātauranga Māori", "training", "governance"]
+    },
+    {
+      "id": "tpm-kai-sovereignty-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Climate & Environment",
+      "subtopic": "Food and land",
+      "title": "Kai Sovereignty",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Te Pāti Māori proposes protecting Māori food systems and seed sovereignty, investing in community food systems and regenerative Māori agriculture, supporting Māori-owned supermarkets and increasing access to land for food production.",
+      "officialSource": {
+        "label": "Te Pāti Māori Kai Sovereignty policy",
+        "url": "https://www.maoriparty.org.nz/kai_sovereignt"
+      },
+      "tags": ["kai", "food systems", "regenerative agriculture", "WAI262"]
+    },
+    {
+      "id": "tpm-justice-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Law & Justice",
+      "subtopic": "Māori-led justice",
+      "title": "Justice",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Te Pāti Māori proposes Māori-led justice authority and community solutions, reforming laws that criminalise poverty and moving away from mass imprisonment.",
+      "officialSource": {
+        "label": "Te Pāti Māori justice policy",
+        "url": "https://www.maoriparty.org.nz/justice"
+      },
+      "tags": ["justice", "Māori authority", "poverty", "imprisonment"]
+    },
+    {
+      "id": "tpm-mana-motuhake-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Te Tiriti & Constitution",
+      "subtopic": "Constitutional transformation",
+      "title": "Mana Motuhake",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-07-26",
+      "summary": "Te Pāti Māori proposes Te Tiriti-based constitutional change, stronger Māori political authority and governance, and progress on land return and rangatiratanga commitments.",
+      "officialSource": {
+        "label": "Te Pāti Māori Mana Motuhake policy",
+        "url": "https://www.maoriparty.org.nz/mana_motuhake"
+      },
+      "tags": ["Mana Motuhake", "Te Tiriti", "rangatiratanga", "land return"]
+    },
+    {
+      "id": "nzfirst-gentailers-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Climate & Environment",
+      "subtopic": "Electricity market",
+      "title": "Break up the gentailers",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party campaign policy",
+      "lastChecked": "2026-07-26",
+      "summary": "New Zealand First proposes separating major electricity generators and retailers, changing wholesale pricing, guaranteeing contracts for new generation and equal buy-back pricing for household-generated power.",
+      "officialSource": {
+        "label": "NZ First gentailers policy",
+        "url": "https://www.nzfirst.nz/breaking_up_the_gentailers"
+      },
+      "tags": ["electricity", "gentailers", "power prices", "generation"]
+    },
+    {
+      "id": "nzfirst-supermarkets-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Tax & Economy",
+      "subtopic": "Competition",
+      "title": "Break up the supermarket duopoly",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party campaign policy",
+      "lastChecked": "2026-07-26",
+      "summary": "New Zealand First proposes splitting Foodstuffs into two nationwide brand-based cooperatives, strengthening competition penalties and enforcement, and introducing faster Commerce Act interventions.",
+      "officialSource": {
+        "label": "NZ First supermarket policy",
+        "url": "https://www.nzfirst.nz/break_up_the_supermarket_duopoly"
+      },
+      "tags": ["supermarkets", "competition", "Commerce Commission", "groceries"]
+    },
+    {
+      "id": "nzfirst-mining-royalties-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Tax & Economy",
+      "subtopic": "Regional development",
+      "title": "Return half of mining royalties to regions",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party campaign policy",
+      "lastChecked": "2026-07-26",
+      "summary": "New Zealand First proposes returning 50% of mining royalties to the producing region for local infrastructure and services, alongside clearer mining rules, longer permits, geological surveying and workforce investment.",
+      "officialSource": {
+        "label": "NZ First mining policy",
+        "url": "https://www.nzfirst.nz/returning_50_of_mining_royalties_to_the_regions"
+      },
+      "tags": ["mining", "royalties", "regions", "infrastructure"]
+    },
+    {
+      "id": "nzfirst-kiwisaver-generation-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Tax & Economy",
+      "subtopic": "Retirement savings",
+      "title": "KiwiSaver enrolment from birth",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party campaign policy",
+      "lastChecked": "2026-07-26",
+      "summary": "New Zealand First proposes compulsory KiwiSaver enrolment at birth for New Zealand citizens with an immediate $1,000 Crown contribution.",
+      "officialSource": {
+        "label": "NZ First KiwiSaver Generation policy",
+        "url": "https://www.nzfirst.nz/establishing_a_kiwisaver_generation"
+      },
+      "tags": ["KiwiSaver", "children", "Crown contribution", "savings"]
+    },
+    {
+      "id": "nzfirst-nz-owned-bank-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Tax & Economy",
+      "subtopic": "Banking",
+      "title": "Buy back the Bank of New Zealand",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party campaign policy",
+      "lastChecked": "2026-07-26",
+      "summary": "New Zealand First proposes buying the Bank of New Zealand back from National Australia Bank to restore New Zealand ownership.",
+      "officialSource": {
+        "label": "NZ First New Zealand-owned bank policy",
+        "url": "https://www.nzfirst.nz/backing_a_new_zealand_owned_bank"
+      },
+      "tags": ["BNZ", "banking", "New Zealand ownership", "finance"]
+    },
+    {
+      "id": "nzfirst-auckland-maori-board-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Te Tiriti & Constitution",
+      "subtopic": "Local governance",
+      "title": "Disestablish Auckland's Māori Statutory Board",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party campaign policy",
+      "lastChecked": "2026-07-26",
+      "summary": "New Zealand First proposes disestablishing Auckland Council's Independent Māori Statutory Board.",
+      "officialSource": {
+        "label": "NZ First Auckland statutory board policy",
+        "url": "https://www.nzfirst.nz/disestablish_auckland_s_independent_maori_statutory_board"
+      },
+      "tags": ["Auckland Council", "Māori Statutory Board", "local government", "governance"]
+    },
+    {
+      "id": "nzfirst-maori-seats-referendum-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Te Tiriti & Constitution",
+      "subtopic": "Electoral system",
+      "title": "Referendum on Māori seats",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party campaign policy",
+      "lastChecked": "2026-07-26",
+      "summary": "New Zealand First proposes holding a referendum on the future of the Māori parliamentary seats.",
+      "officialSource": {
+        "label": "NZ First Māori seats referendum policy",
+        "url": "https://www.nzfirst.nz/referendum_on_maori_seats"
+      },
+      "tags": ["Māori seats", "referendum", "electoral system", "Parliament"]
+    },
+    {
+      "id": "nzfirst-marsden-point-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Infrastructure",
+      "subtopic": "Regional development",
+      "title": "Marsden Point Special Economic Zone",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party campaign policy",
+      "lastChecked": "2026-07-26",
+      "summary": "New Zealand First proposes establishing a Special Economic Zone at Marsden Point.",
+      "officialSource": {
+        "label": "NZ First Marsden Point policy",
+        "url": "https://www.nzfirst.nz/establishing_a_special_economic_zone_at_marsden_point"
+      },
+      "tags": ["Marsden Point", "special economic zone", "regions", "infrastructure"]
+    },
+    {
+      "id": "nzfirst-christchurch-cathedral-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Infrastructure",
+      "subtopic": "Regional investment",
+      "title": "Complete Christ Church Cathedral",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party campaign commitment",
+      "lastChecked": "2026-07-26",
+      "summary": "New Zealand First proposes an additional $15 million of government funding to progress completion of the Christ Church Cathedral rebuild.",
+      "officialSource": {
+        "label": "NZ First cathedral commitment",
+        "url": "https://www.nzfirst.nz/complete_the_christchurch_cathedral"
+      },
+      "tags": ["Christchurch", "cathedral", "rebuild", "regional investment"]
+    },
+    {
+      "id": "nzfirst-citizens-only-voting-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Te Tiriti & Constitution",
+      "subtopic": "Voting rights",
+      "title": "Citizens-only voting",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party campaign policy",
+      "lastChecked": "2026-07-26",
+      "summary": "New Zealand First proposes changing electoral law so only New Zealand citizens can vote.",
+      "officialSource": {
+        "label": "NZ First citizens-only voting policy",
+        "url": "https://www.nzfirst.nz/citizens_only_voting"
+      },
+      "tags": ["voting", "citizenship", "electoral law", "democracy"]
+    },
+    {
+      "id": "nzfirst-fuel-security-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Climate & Environment",
+      "subtopic": "Energy security",
+      "title": "National subsurface development survey",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party campaign policy",
+      "lastChecked": "2026-07-26",
+      "summary": "New Zealand First proposes investing an initial $1 billion over a government term in a national survey and dataset covering energy, geothermal resources and carbon-dioxide storage sites.",
+      "officialSource": {
+        "label": "NZ First fuel security policy",
+        "url": "https://www.nzfirst.nz/future_proofing_our_fuel_security"
+      },
+      "tags": ["fuel security", "geothermal", "energy", "geological survey"]
     }
   ]
 }

@@ -116,7 +116,9 @@ def collect_sources(policies: dict) -> list[Source]:
     policy_urls = [
         (policy["partyId"], policy["officialSource"]["url"])
         for policy in policies.get("policies", [])
-        if policy.get("partyId") and policy.get("officialSource", {}).get("url")
+        if policy.get("electionYear") == 2026
+        and policy.get("partyId")
+        and policy.get("officialSource", {}).get("url")
     ]
 
     for party_id, url in [*configured, *policy_urls]:

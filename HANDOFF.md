@@ -1,6 +1,6 @@
 # NZ 2026 Policy Tracker Handoff
 
-Last updated: 2026-06-20
+Last updated: 2026-07-26
 
 This document is the moving-to-a-new-machine guide for the NZ 2026 Election Policy Tracker.
 
@@ -15,10 +15,11 @@ This document is the moving-to-a-new-machine guide for the NZ 2026 Election Poli
 - Policy data file: `data/policies.json`
 - Source monitor output: `data/source-watch.json`
 - Daily source monitor: `.github/workflows/check-sources.yml`
-- Latest local source-watch timestamp at handoff: `2026-06-19T19:09:48Z`
-- Latest policy data timestamp at handoff: `2026-05-21`
+- Latest local source-watch timestamp: `2026-07-26T05:52:47Z`
+- Latest policy data timestamp: `2026-07-26`
+- TOP is tracked under its current 2026 name, The Opportunity Party, using official sources at `opportunity.org.nz`.
 
-The tracker is a neutral, official-source guide. It should not publish AI-written political policy summaries automatically. Source monitoring can flag official source changes, but a person should review and edit `data/policies.json`.
+The tracker is a neutral, official-source guide. A Codex scheduled task automatically adds or updates only explicit, decided 2026 election commitments. It omits achievements, government delivery records, old election policy, commentary, attacks, vague values, and anything uncertain.
 
 ## What To Copy Or Recreate
 
@@ -40,7 +41,7 @@ chmod 700 ~/.ssh
 chmod 600 ~/.ssh/nz_2026_policy_tracker_ed25519
 ```
 
-The push helper in this repo defaults to that key path, but you can override it with `NZ_POLICY_TRACKER_SSH_KEY`.
+The push helper uses that repo-specific key when present. Otherwise it uses the Mac's normal registered SSH key. You can override either choice with `NZ_POLICY_TRACKER_SSH_KEY`.
 
 ## New Machine Setup
 
@@ -126,13 +127,13 @@ GitHub Pages deploys from `main` at the repository root. There is no build comma
 - `styles.css` - full visual design and responsive layout
 - `app.js` - client-side data loading, party filters, topic buttons, panel rendering
 - `assets/hero-policy-tracker.png` - editorial hero composite
-- `data/policies.json` - human-maintained official-source policy entries
+- `data/policies.json` - current official-source policy entries, maintained automatically by Codex
 - `data/source-watch.json` - generated source-watch output, usually updated by GitHub Actions
 - `scripts/check_sources.py` - official source checker using Python standard library only
 - `scripts/verify_setup.sh` - local sanity checks for a clone or edit
 - `scripts/serve_local.sh` - local static server wrapper
 - `scripts/push_main.sh` - SSH-key-aware push helper
-- `.github/workflows/check-sources.yml` - scheduled source monitoring and issue creation
+- `.github/workflows/check-sources.yml` - scheduled source-health monitoring
 - `README.md` - public-facing project overview
 - `HANDOFF.md` - this migration and maintenance guide
 
@@ -143,6 +144,7 @@ Edit `data/policies.json` for policy content.
 Each policy entry should have:
 
 - `partyId`
+- `electionYear: 2026`
 - `topic`
 - `subtopic`
 - `title`
@@ -154,15 +156,11 @@ Each policy entry should have:
 - `officialSource.url`
 - `tags`
 
-Allowed statuses are:
+Every visible entry must use `status: "Confirmed 2026 policy"`.
 
-- `Published policy`
-- `Announcement`
-- `Government record`
-- `Historic/older policy`
-- `Needs review`
+Keep summaries neutral, short, and tied to a direct official party source. Publish only explicit, decided commitments for the 2026 election. Do not publish achievements, delivery records, older election policy, news reports, commentary, candidate announcements, general values, or uncertain proposals. If an item is ambiguous, omit it.
 
-Keep summaries neutral, short, and tied to the official source. Use only official party sources or official government record pages. Do not use news articles, commentary, social posts, or interpretation as source material for summaries.
+Legacy entries may remain archived in the JSON, but the app only renders entries with `electionYear: 2026`.
 
 When adding a new topic:
 
@@ -228,15 +226,13 @@ The workflow:
 1. Checks out the repo.
 2. Sets up Python.
 3. Runs `python scripts/check_sources.py`.
-4. Opens GitHub issues for changed official source pages.
-5. Commits `data/source-watch.json` if it changed.
+4. Commits `data/source-watch.json` if it changed.
 
 The workflow has:
 
 ```yaml
 permissions:
   contents: write
-  issues: write
 ```
 
 The source checker reads:
@@ -248,20 +244,9 @@ It only accepts domains listed in each party's `officialDomains`.
 
 Some official sites return HTTP 403 to GitHub Actions or local scripts. That is expected for a few source rows and is recorded in `data/source-watch.json`; it does not necessarily mean the site is broken.
 
-## Manual Source Review Workflow
+## Automatic Policy Workflow
 
-When a source changes:
-
-1. Open the GitHub issue labelled `source-review`.
-2. Open the official source URL.
-3. Decide whether the change is a real policy change, a layout/content maintenance edit, a typo, or old material.
-4. If the tracker should change, edit `data/policies.json` neutrally.
-5. Update `lastChecked`.
-6. Run `./scripts/verify_setup.sh`.
-7. Commit and push.
-8. Close the issue when reviewed.
-
-Do not let the source checker rewrite policy summaries automatically.
+The Codex scheduled task checks the official policy indexes for all seven parties. When it finds a clear 2026 election commitment, it updates `data/policies.json`, refreshes source-watch data, runs validation and browser checks, then commits and pushes the result. There is no review queue. Ambiguous items are omitted.
 
 ## Short URL
 
@@ -312,6 +297,14 @@ Then try:
 ```
 
 If the key has been rotated, set `NZ_POLICY_TRACKER_SSH_KEY=/path/to/new/key`.
+
+On a new Mac, the simplest repair is:
+
+```sh
+gh auth login -h github.com -p ssh -w
+```
+
+Sign in as `palexander-hub`, approve access in the browser, and allow GitHub CLI to upload the existing SSH public key.
 
 ### Push is rejected because remote moved
 

@@ -1,6 +1,6 @@
 # NZ 2026 Policy Tracker
 
-A free static tracker for comparing New Zealand 2026 election policy positions from official party sources only.
+A free, neutral tracker for comparing confirmed New Zealand 2026 election commitments from official party sources.
 
 Tracked parties:
 
@@ -10,86 +10,54 @@ Tracked parties:
 - New Zealand First
 - Green Party
 - Te Pāti Māori
+- The Opportunity Party (TOP)
 
-This is a neutral public tracker. It is not a political opinion site.
+## What appears on the site
+
+A visible entry must:
+
+- be a decided commitment for the 2026 general election
+- have `electionYear: 2026`
+- have `status: "Confirmed 2026 policy"`
+- use a direct official party source
+- describe the commitment neutrally and factually
+
+Do not publish government achievements, delivery records, 2023 policies, commentary, attacks on other parties, candidate announcements, general values, or uncertain proposals. If the official source is ambiguous, omit it.
+
+Older entries may remain in `data/policies.json` as an archive, but the app never renders entries without `electionYear: 2026`.
 
 ## Files
 
-- `index.html` - tracker markup
-- `styles.css` - responsive visual design
-- `app.js` - filtering, search, comparison, and rendering
-- `data/policies.json` - editable policy data
-- `data/source-watch.json` - generated source monitoring output
-- `scripts/check_sources.py` - daily official source checker
-- `scripts/verify_setup.sh` - local setup and edit sanity checks
-- `scripts/serve_local.sh` - local static server helper
-- `scripts/push_main.sh` - repo SSH-key-aware push helper
-- `.github/workflows/check-sources.yml` - GitHub Actions schedule
-- `HANDOFF.md` - migration, maintenance, and new-machine setup guide
+- `index.html` — tracker markup
+- `styles.css` — responsive visual design
+- `app.js` — filtering, search, comparison, and 2026-only rendering
+- `data/policies.json` — policy data
+- `data/source-watch.json` — generated source-health output
+- `scripts/check_sources.py` — official source checker
+- `scripts/verify_setup.sh` — setup and data checks
+- `scripts/serve_local.sh` — local preview helper
+- `.github/workflows/check-sources.yml` — daily source-health check
+- `HANDOFF.md` — migration and operating guide
 
-## Add Or Edit Policies
+## Run locally
 
-Edit `data/policies.json`.
+```sh
+./scripts/verify_setup.sh
+./scripts/serve_local.sh 8000
+```
 
-Each policy entry needs:
+Open `http://127.0.0.1:8000/`.
 
-- `partyId` matching one of the party IDs
-- `topic` matching one of the tracker topics
-- `subtopic`
-- `title`
-- `status`: `Published policy`, `Announcement`, `Government record`, `Historic/older policy`, or `Needs review`
-- `lastChecked` in `YYYY-MM-DD` format
-- `summary` written neutrally
-- `officialSource.label`
-- `officialSource.url`
-- `tags` for search
+## Automatic policy updates
 
-Keep summaries short, factual, and attributable to the official source. If a current 2026 policy is not available, mark the entry as `Needs review` or `Historic/older policy`.
+A Codex scheduled task checks the seven official party policy indexes. It adds and updates confirmed 2026 election commitments directly, refreshes source-watch data, validates the site, and publishes changes. It does not create a review queue or GitHub review issues.
 
-## Deploy With GitHub Pages
+The separate GitHub Action runs daily as a lightweight source-health check. It records reachability and content hashes in `data/source-watch.json`; it does not write policy summaries.
 
-1. Create a GitHub repository and add these files.
-2. Commit and push to `main`.
-3. In GitHub, go to `Settings` -> `Pages`.
-4. Set source to `Deploy from a branch`.
-5. Choose branch `main` and folder `/root`.
-6. Save. GitHub will publish the tracker at the Pages URL shown in settings.
+## Deployment
 
-No backend, database, paid API, secrets, or build step is needed.
+GitHub Pages publishes the repository root from `main`:
 
-## Daily Source Checker
+`https://palexander-hub.github.io/nz-2026-policy-tracker/`
 
-The workflow runs once per day and can also be started manually from the Actions tab.
-
-`scripts/check_sources.py`:
-
-- reads official source URLs from `data/policies.json`
-- checks only domains listed in each party's `officialDomains`
-- downloads pages using Python standard library tools
-- extracts the page title and visible text
-- stores a content hash in `data/source-watch.json`
-- marks `contentChanged` as `true` when the hash differs from the previous check
-
-The workflow commits changes to `data/source-watch.json` automatically. It does not scrape media sites and does not use paid services.
-
-## Review Queue
-
-The site has a **Review queue** section near the top.
-
-When the daily checker finds that an official source page changed:
-
-- the changed source appears in the Review queue on the website
-- GitHub Actions opens a GitHub Issue called `Review policy source change: Party Name`
-- the issue includes the source link, page title, last checked time, and a short review checklist
-
-This keeps monitoring automatic while keeping policy summaries human-reviewed. The checker should not automatically add political summaries to `data/policies.json`, because page changes can be layout edits, typos, partial announcements, old material, or context that needs a person to verify.
-
-## Keep The Data Accurate
-
-- Use official party websites, official party documents, or official government record pages only.
-- Keep summaries short and mark uncertain entries as `Needs review` until a person has checked the source.
-- Update `lastChecked` whenever a policy summary is manually reviewed.
-- Prefer exact source pages over broad homepage links.
-- Do not mix commentary, media reporting, or personal interpretation into summaries.
-- Mark old election material as `Historic/older policy`.
-- Mark uncertain or changing material as `Needs review`.
+There is no backend, database, paid API, secret, or build step.

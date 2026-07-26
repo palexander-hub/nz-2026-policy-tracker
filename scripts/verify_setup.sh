@@ -84,6 +84,9 @@ const topics = new Set(data.topics || []);
 const parties = new Set((data.parties || []).map((party) => party.id));
 const allowedStatuses = new Set(data.statuses || []);
 const errors = [];
+const currentPolicies = (data.policies || []).filter((policy) => policy.electionYear === 2026);
+const activeTopics = new Set(currentPolicies.map((policy) => policy.topic));
+const coveredParties = new Set(currentPolicies.map((policy) => policy.partyId));
 
 for (const policy of data.policies || []) {
   if (!parties.has(policy.partyId)) errors.push(`${policy.id}: unknown partyId ${policy.partyId}`);
@@ -92,12 +95,26 @@ for (const policy of data.policies || []) {
   if (!policy.officialSource || !policy.officialSource.url) errors.push(`${policy.id}: missing officialSource.url`);
 }
 
+if (!currentPolicies.length) errors.push("no confirmed 2026 election policies");
+
+for (const policy of currentPolicies) {
+  if (policy.status !== "Confirmed 2026 policy") {
+    errors.push(`${policy.id}: current policy must use status Confirmed 2026 policy`);
+  }
+  if (!policy.lastChecked) errors.push(`${policy.id}: current policy is missing lastChecked`);
+  if (!policy.summary) errors.push(`${policy.id}: current policy is missing summary`);
+}
+
+for (const party of parties) {
+  if (!coveredParties.has(party)) errors.push(`no confirmed 2026 policy for party ${party}`);
+}
+
 if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
 
-console.log(`${data.policies.length} policies across ${data.topics.length} topics look structurally valid.`);
+console.log(`${currentPolicies.length} confirmed 2026 policies across ${activeTopics.size} active topics look structurally valid.`);
 NODE
 then
   fail=1

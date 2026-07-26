@@ -5,7 +5,8 @@ const state = {
   activeTopic: ""
 };
 
-const PARTY_ORDER = ["all", "national", "labour", "act", "nz-first", "green", "te-pati-maori"];
+const ACTIVE_ELECTION_YEAR = 2026;
+const PARTY_ORDER = ["all", "national", "labour", "act", "nz-first", "green", "te-pati-maori", "top"];
 
 const TOPIC_COPY = {
   "Tax & Economy": {
@@ -105,7 +106,7 @@ async function loadData() {
 }
 
 function renderAll() {
-  els.policyTotal.textContent = state.data.policies.length;
+  els.policyTotal.textContent = currentPolicies().length;
   els.datasetDate.textContent = formatDate(state.data.metadata.lastUpdated);
   els.sourceTotal.textContent = (state.watch?.sources || []).length;
 
@@ -147,7 +148,9 @@ function renderPartyTabs() {
 }
 
 function renderTopicButtons() {
-  els.topicButtons.innerHTML = state.data.topics.map((topic) => {
+  const activeTopics = state.data.topics.filter((topic) => policiesForTopic(topic).length);
+
+  els.topicButtons.innerHTML = activeTopics.map((topic) => {
     const policies = policiesForTopic(topic);
     const filtered = filteredPoliciesForTopic(topic);
     const active = topic === state.activeTopic;
@@ -245,12 +248,12 @@ function policyListItem(policy) {
 
 function renderSourceLedger() {
   const rows = state.watch?.sources || [];
-  const reviewRows = rows.filter((row) => row.contentChanged === true || (row.status && row.status !== "ok"));
+  const errorRows = rows.filter((row) => row.status && row.status !== "ok");
 
-  els.reviewCount.textContent = `${reviewRows.length} to review`;
-  els.reviewList.innerHTML = reviewRows.length
-    ? reviewRows.slice(0, 10).map(reviewItem).join("")
-    : '<article class="empty">No changed official sources waiting for review.</article>';
+  els.reviewCount.textContent = errorRows.length ? `${errorRows.length} unavailable` : "Automatic";
+  els.reviewList.innerHTML = errorRows.length
+    ? errorRows.slice(0, 10).map(sourceErrorItem).join("")
+    : '<article class="empty">All official policy sources were reachable in the latest automatic check.</article>';
 
   els.sourceWatchList.innerHTML = rows.map((row) => `
     <article class="source-item">
@@ -268,19 +271,22 @@ function renderSourceLedger() {
   `).join("");
 }
 
-function reviewItem(row) {
-  const label = row.contentChanged === true ? "Changed source" : "Check error";
+function sourceErrorItem(row) {
   return `
     <article class="review-item">
-      <span>${escapeHtml(label)}</span>
+      <span>Source unavailable</span>
       <strong>${escapeHtml(row.party)}</strong>
       <a href="${escapeAttr(row.sourceUrl)}" target="_blank" rel="noopener">${escapeHtml(row.pageTitle || shortUrl(row.sourceUrl))}</a>
     </article>
   `;
 }
 
+function currentPolicies() {
+  return state.data.policies.filter((policy) => policy.electionYear === ACTIVE_ELECTION_YEAR);
+}
+
 function policiesForTopic(topic) {
-  return state.data.policies.filter((policy) => policy.topic === topic);
+  return currentPolicies().filter((policy) => policy.topic === topic);
 }
 
 function filteredPoliciesForTopic(topic) {
@@ -324,6 +330,7 @@ function shortPartyName(name) {
   if (name === "New Zealand First") return "NZ First";
   if (name === "Green Party") return "Greens";
   if (name === "Te Pāti Māori") return "Te Pāti Māori";
+  if (name === "The Opportunity Party (TOP)") return "TOP";
   return name;
 }
 
@@ -334,7 +341,7 @@ function statusPill(status) {
 function changePill(changed) {
   if (changed === true) return '<span class="change changed">Changed</span>';
   if (changed === false) return '<span class="change unchanged">No change</span>';
-  return '<span class="change review">Review</span>';
+  return '<span class="change review">Not checked</span>';
 }
 
 function topicIcon(name) {
