@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-07-27",
+    "lastUpdated": "2026-07-28",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -1863,6 +1863,210 @@
         "url": "https://www.nzfirst.nz/winston_peters_keep_hope_alive"
       },
       "tags": ["Paris Agreement", "climate", "international commitments", "withdrawal"]
+    },
+    {
+      "id": "act-immigration-plan-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Public Service",
+      "subtopic": "Immigration settings",
+      "title": "Six-point immigration plan",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-28",
+      "summary": "ACT proposes tougher deportation rules for serious offending, regular skill checks for work visas, a five-year welfare stand-down for new residents, a temporary-worker infrastructure levy, English requirements and stronger overstayer enforcement.",
+      "officialSource": {
+        "label": "ACT immigration policy",
+        "url": "https://www.act.org.nz/news/making-immigration-work-for-new-zealand"
+      },
+      "tags": ["immigration", "work visas", "deportation", "overstayers"]
+    },
+    {
+      "id": "act-council-voting-rights-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Te Tiriti & Constitution",
+      "subtopic": "Local democracy",
+      "title": "Voting rights for elected council members only",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-28",
+      "summary": "ACT proposes prohibiting unelected members of council committees from having voting or quorum rights.",
+      "officialSource": {
+        "label": "ACT local-government voting policy",
+        "url": "https://www.act.org.nz/news/act-to-campaign-on-reversing-democratic-backslide-in-local-government"
+      },
+      "tags": ["local government", "councils", "voting rights", "committees"]
+    },
+    {
+      "id": "act-professional-regulator-neutrality-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Public Service",
+      "subtopic": "Professional regulation",
+      "title": "Professional regulator neutrality",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-28",
+      "summary": "ACT proposes stopping professional regulators from disciplining lawful off-duty expression, requiring institutional neutrality, limiting mandatory training and strengthening judicial oversight.",
+      "officialSource": {
+        "label": "ACT professional-regulator policy",
+        "url": "https://www.act.org.nz/news/act-to-stop-professional-regulators-policing-private-beliefs"
+      },
+      "tags": ["professional regulators", "free expression", "neutrality", "judicial oversight"]
+    },
+    {
+      "id": "act-smaller-government-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Public Service",
+      "subtopic": "Government structure",
+      "title": "18 ministers and 19 departments",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-28",
+      "summary": "ACT proposes reducing government to 18 ministers and 19 departments, abolishing the Public Service Commission, assigning one minister to each department and allowing ministers to select chief executives.",
+      "officialSource": {
+        "label": "ACT smaller-government policy",
+        "url": "https://www.act.org.nz/news/act-unveils-plan-for-radically-simpler-smaller-government"
+      },
+      "tags": ["ministers", "departments", "Public Service Commission", "chief executives"]
+    },
+    {
+      "id": "act-welfare-reform-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Public Service",
+      "subtopic": "Income support",
+      "title": "Benefit reassessment and money management",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-28",
+      "summary": "ACT proposes independent medical assessments and reassessments for health and disability benefits, plus mandatory electronic money management for work-ready Jobseeker recipients who remain on the benefit after four months.",
+      "officialSource": {
+        "label": "ACT welfare policy",
+        "url": "https://www.act.org.nz/news/act-announces-policy-to-make-benefits-a-hand-up-not-a-way-of-life"
+      },
+      "tags": ["benefits", "medical assessment", "Jobseeker", "money management"]
+    },
+    {
+      "id": "act-rural-crime-unit-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Law & Justice",
+      "subtopic": "Rural policing",
+      "title": "Dedicated rural crime unit",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-28",
+      "summary": "ACT proposes a dedicated rural crime unit, a target of 100,000 additional rural patrol hours each year and extending the Text 111 service nationwide.",
+      "officialSource": {
+        "label": "ACT rural-crime policy",
+        "url": "https://www.act.org.nz/news/act-announces-major-crackdown-on-rural-crime"
+      },
+      "tags": ["rural crime", "police", "patrols", "Text 111"]
+    },
+    {
+      "id": "act-three-strikes-burglary-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Law & Justice",
+      "subtopic": "Burglary sentencing",
+      "title": "Three strikes for burglary",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-28",
+      "summary": "ACT proposes a minimum three-year prison sentence, without parole, home detention or early release, for a third burglary conviction or a conviction containing at least three burglary counts.",
+      "officialSource": {
+        "label": "ACT burglary sentencing policy",
+        "url": "https://www.act.org.nz/news/act%E2%80%99s-commitment-three-burglaries-three-years-in-prison-minimum"
+      },
+      "tags": ["burglary", "sentencing", "three strikes", "prison"]
+    },
+    {
+      "id": "act-security-professional-powers-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Law & Justice",
+      "subtopic": "Public safety",
+      "title": "Limited public-safety powers for licensed security staff",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-28",
+      "summary": "ACT proposes giving appropriately trained and licensed security professionals limited powers to intervene in public-safety incidents.",
+      "officialSource": {
+        "label": "ACT five crime policies",
+        "url": "https://www.act.org.nz/news/five-new-policies-for-a-tougher-smarter-response-to-crime"
+      },
+      "tags": ["security professionals", "public safety", "licensing", "crime"]
+    },
+    {
+      "id": "act-animal-abuse-coercion-offence-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Law & Justice",
+      "subtopic": "Family violence",
+      "title": "Animal-abuse coercion offence",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-28",
+      "summary": "ACT proposes a specific offence for using or threatening animal abuse to coerce or control another person.",
+      "officialSource": {
+        "label": "ACT five crime policies",
+        "url": "https://www.act.org.nz/news/five-new-policies-for-a-tougher-smarter-response-to-crime"
+      },
+      "tags": ["animal abuse", "coercion", "family violence", "criminal offence"]
+    },
+    {
+      "id": "act-medicines-funding-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Health",
+      "subtopic": "Medicines funding",
+      "title": "Lift medicines funding toward Australian parity",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-28",
+      "summary": "ACT proposes increasing medicines' share of the health budget by one percentage point each year, funded from future health-budget growth, until New Zealand reaches parity with Australia in 2033.",
+      "officialSource": {
+        "label": "ACT medicines-funding policy",
+        "url": "https://www.act.org.nz/news/act-sets-achievable-path-to-close-medicines-gap-with-australia"
+      },
+      "tags": ["medicines", "Pharmac", "health budget", "Australia"]
+    },
+    {
+      "id": "act-backing-hunters-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Climate & Environment",
+      "subtopic": "Game animals and public land",
+      "title": "Backing Hunters",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-28",
+      "summary": "ACT proposes transferring game-animal management from DOC to the Game Animal Council, recognising game species as valued resources, rewarding verified conservation work and expanding hunter and community roles in access and backcountry maintenance.",
+      "officialSource": {
+        "label": "ACT hunters policy",
+        "url": "https://www.act.org.nz/news/act-says-hunters-not-bureaucrats-should-lead-conservation"
+      },
+      "tags": ["hunting", "Game Animal Council", "DOC", "conservation"]
+    },
+    {
+      "id": "top-charitable-giving-tax-credit-2026",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Tax & Economy",
+      "subtopic": "Charitable giving",
+      "title": "Remove the charitable-giving tax-credit cap",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election commitment",
+      "lastChecked": "2026-07-28",
+      "summary": "Opportunity proposes repealing the $100,000 annual cap on donations eligible for the 33% donation tax credit and asking the Law Commission to review charitable regulation.",
+      "officialSource": {
+        "label": "Opportunity charitable-giving commitment",
+        "url": "https://www.opportunity.org.nz/charitable_giving_tax_credit_cap"
+      },
+      "tags": ["charities", "donations", "tax credit", "Law Commission"]
     }
   ]
 }
