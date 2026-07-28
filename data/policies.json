@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-07-28",
+    "lastUpdated": "2026-07-29",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -2067,6 +2067,210 @@
         "url": "https://www.opportunity.org.nz/charitable_giving_tax_credit_cap"
       },
       "tags": ["charities", "donations", "tax credit", "Law Commission"]
+    },
+    {
+      "id": "green-children-manifesto-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Public Service",
+      "subtopic": "Children and state care",
+      "title": "Children and whānau",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 manifesto",
+      "lastChecked": "2026-07-29",
+      "summary": "The Greens propose a universal Best Start payment for every child under three, stronger child-rights requirements, better disability and learning support, and whānau participation in Oranga Tamariki decisions affecting tamariki Māori.",
+      "officialSource": {
+        "label": "Green 2026 manifesto — Children",
+        "url": "https://www.greens.org.nz/manifesto_2026_childen"
+      },
+      "tags": ["children", "Best Start", "Oranga Tamariki", "whānau"]
+    },
+    {
+      "id": "green-climate-adaptation-manifesto-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Climate & Environment",
+      "subtopic": "Climate adaptation",
+      "title": "Climate resilience and adaptation",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 manifesto",
+      "lastChecked": "2026-07-29",
+      "summary": "The Greens propose Māori and community climate-resilience funds, Natural Hazards Commission cover for climate-related events, community-led adaptation and retreat, and more nature-based resilience measures.",
+      "officialSource": {
+        "label": "Green 2026 manifesto — Climate adaptation",
+        "url": "https://www.greens.org.nz/manifesto_2026_climate_action_resilience_adaptation"
+      },
+      "tags": ["climate adaptation", "Natural Hazards Commission", "managed retreat", "resilience"]
+    },
+    {
+      "id": "green-conservation-manifesto-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Climate & Environment",
+      "subtopic": "Conservation and biodiversity",
+      "title": "Conservation and biodiversity",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 manifesto",
+      "lastChecked": "2026-07-29",
+      "summary": "The Greens propose banning new mining on conservation land, restoring at least 30% of degraded wetlands, expanding Jobs for Nature and conservation funding, and reforming conservation law to halt and reverse nature loss.",
+      "officialSource": {
+        "label": "Green 2026 manifesto — Conservation",
+        "url": "https://www.greens.org.nz/manifesto_2026_conservation_and_biodiversity"
+      },
+      "tags": ["conservation", "mining", "wetlands", "biodiversity"]
+    },
+    {
+      "id": "green-democracy-manifesto-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Te Tiriti & Constitution",
+      "subtopic": "Electoral and constitutional reform",
+      "title": "Democracy and electoral reform",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 manifesto",
+      "lastChecked": "2026-07-29",
+      "summary": "The Greens propose lowering the voting age to 16, restoring voting rights for all people in custody, entrenching Māori seats, limiting political donations, increasing public campaign funding and regulating lobbying.",
+      "officialSource": {
+        "label": "Green 2026 manifesto — Democracy",
+        "url": "https://www.greens.org.nz/manifesto_2026_democracy"
+      },
+      "tags": ["voting age", "Māori seats", "political donations", "lobbying"]
+    },
+    {
+      "id": "green-digital-technology-manifesto-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Public Service",
+      "subtopic": "Digital regulation",
+      "title": "Digital technology regulation",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 manifesto",
+      "lastChecked": "2026-07-29",
+      "summary": "The Greens propose a digital duty of care for social platforms, regulation of artificial intelligence, stronger privacy enforcement, Māori data-governance standards and wider access to devices, internet and offline public services.",
+      "officialSource": {
+        "label": "Green 2026 manifesto — Digital technology",
+        "url": "https://www.greens.org.nz/manifesto_2026_digital_technology"
+      },
+      "tags": ["digital platforms", "artificial intelligence", "privacy", "Māori data"]
+    },
+    {
+      "id": "green-disability-manifesto-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Public Service",
+      "subtopic": "Disability rights and support",
+      "title": "Disability rights and accessibility",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 manifesto",
+      "lastChecked": "2026-07-29",
+      "summary": "The Greens propose disability-rights legislation with enforceable accessibility standards, income support covering disability costs, universal-design housing rules, continued Total Mobility subsidies and supported decision-making.",
+      "officialSource": {
+        "label": "Green 2026 manifesto — Disability",
+        "url": "https://www.greens.org.nz/manifesto_2026_disability"
+      },
+      "tags": ["disability rights", "accessibility", "income support", "Total Mobility"]
+    },
+    {
+      "id": "green-drug-law-manifesto-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Law & Justice",
+      "subtopic": "Drug harm reduction",
+      "title": "Drug law reform",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 manifesto",
+      "lastChecked": "2026-07-29",
+      "summary": "The Greens propose replacing the Misuse of Drugs Act with a health-based system including regulated personal cannabis access, psychedelic-treatment licensing, Good Samaritan protections, overdose services and stronger addiction support.",
+      "officialSource": {
+        "label": "Green 2026 manifesto — Drug law reform",
+        "url": "https://www.greens.org.nz/manifesto_2026_drug_law_reform"
+      },
+      "tags": ["drug law", "cannabis", "harm reduction", "addiction"]
+    },
+    {
+      "id": "green-education-manifesto-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Education",
+      "subtopic": "Early learning and schools",
+      "title": "Free early learning and wider school support",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 manifesto",
+      "lastChecked": "2026-07-29",
+      "summary": "The Greens propose free publicly provided early childhood education, wider learning-support eligibility through one coordinating agency, expanded Ka Ora, Ka Ako school lunches and a long-term education workforce plan.",
+      "officialSource": {
+        "label": "Green 2026 manifesto — Education",
+        "url": "https://www.greens.org.nz/manifesto_2026_education"
+      },
+      "tags": ["early childhood education", "learning support", "school lunches", "teachers"]
+    },
+    {
+      "id": "green-health-manifesto-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Health",
+      "subtopic": "Public health services",
+      "title": "Expanded public health care",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 manifesto",
+      "lastChecked": "2026-07-29",
+      "summary": "The Greens propose working toward free publicly delivered dental and primary care, funding mobile rural clinics, increasing sustained Pharmac funding, expanding pharmacy treatment services and funding primary-care nurse pay parity.",
+      "officialSource": {
+        "label": "Green 2026 manifesto — Health",
+        "url": "https://www.greens.org.nz/manifesto_2026_health"
+      },
+      "tags": ["primary care", "dental care", "Pharmac", "rural health"]
+    },
+    {
+      "id": "green-small-business-manifesto-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Tax & Economy",
+      "subtopic": "Small business and procurement",
+      "title": "Small business and Buy Kiwi Made",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 manifesto",
+      "lastChecked": "2026-07-29",
+      "summary": "The Greens propose reviving Buy Kiwi Made, expanding country-of-origin labelling, increasing government procurement from New Zealand businesses, supporting low-carbon small firms and strengthening competition enforcement.",
+      "officialSource": {
+        "label": "Green 2026 manifesto — Small business",
+        "url": "https://www.greens.org.nz/manifesto_2026_small_business"
+      },
+      "tags": ["small business", "Buy Kiwi Made", "procurement", "competition"]
+    },
+    {
+      "id": "green-transport-manifesto-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Infrastructure",
+      "subtopic": "Public and active transport",
+      "title": "Public transport, rail and active travel",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 manifesto",
+      "lastChecked": "2026-07-29",
+      "summary": "The Greens propose rapid transit in the three largest cities, nationwide passenger and freight rail, rural bus services, wider free-fare eligibility, safer walking and cycling networks and a phase-out date for fossil-fuel vehicle imports.",
+      "officialSource": {
+        "label": "Green 2026 manifesto — Transport",
+        "url": "https://www.greens.org.nz/manifesto_2026_transport"
+      },
+      "tags": ["public transport", "rail", "cycling", "electric vehicles"]
+    },
+    {
+      "id": "green-zero-waste-manifesto-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Climate & Environment",
+      "subtopic": "Waste and circular economy",
+      "title": "Zero waste and right to repair",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 manifesto",
+      "lastChecked": "2026-07-29",
+      "summary": "The Greens propose mandatory product stewardship, a beverage-container return scheme, comprehensive right-to-repair rules, stronger waste-reduction targets and a moratorium on waste-to-energy plants.",
+      "officialSource": {
+        "label": "Green 2026 manifesto — Zero waste",
+        "url": "https://www.greens.org.nz/manifesto_2026_zero_waste"
+      },
+      "tags": ["zero waste", "right to repair", "container return", "product stewardship"]
     }
   ]
 }
