@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-07-29",
+    "lastUpdated": "2026-07-30",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -2271,6 +2271,40 @@
         "url": "https://www.greens.org.nz/manifesto_2026_zero_waste"
       },
       "tags": ["zero waste", "right to repair", "container return", "product stewardship"]
+    },
+    {
+      "id": "act-rural-workforce-visa-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Public Service",
+      "subtopic": "Rural immigration",
+      "title": "Rural Workforce Visa",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-30",
+      "summary": "ACT proposes a three-year Rural Workforce Visa tied to accredited rural employers rather than regions, renewable after labour-market testing, with eligibility for an agricultural work-to-residence pathway after six years.",
+      "officialSource": {
+        "label": "ACT Rural Workforce Visa policy",
+        "url": "https://www.act.org.nz/news/act-unveils-rural-workforce-visa-to-solve-farm-worker-shortage"
+      },
+      "tags": ["immigration", "rural workforce", "agriculture", "work to residence"]
+    },
+    {
+      "id": "act-climate-ndc-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Climate & Environment",
+      "subtopic": "Emissions targets",
+      "title": "Split-gas climate target",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-30",
+      "summary": "ACT proposes a new Paris Agreement target using separate treatment for long-lived and short-lived gases, resetting emissions-reduction plans around that approach and keeping agriculture outside the Emissions Trading Scheme; it says New Zealand should leave the agreement if such a target is not accommodated.",
+      "officialSource": {
+        "label": "ACT climate target policy",
+        "url": "https://www.act.org.nz/news/act-won-t-sacrifice-farmers-for-paris-targets"
+      },
+      "tags": ["Paris Agreement", "methane", "agriculture", "Emissions Trading Scheme"]
     }
   ]
 }
