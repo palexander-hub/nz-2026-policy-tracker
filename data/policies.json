@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-07-30",
+    "lastUpdated": "2026-07-31",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -1057,11 +1057,11 @@
       "title": "Lift KiwiSaver contributions to 12%",
       "status": "Confirmed 2026 policy",
       "sourceType": "Official party election policy announcement",
-      "lastChecked": "2026-07-26",
-      "summary": "National says an elected National Government would raise default employee and employer KiwiSaver contributions by 0.5 percentage points a year from April 2029, reaching 6% each and 12% combined in 2032.",
+      "lastChecked": "2026-07-31",
+      "summary": "National proposes raising default employee and employer KiwiSaver contributions to 6% each by 2032, with the next 0.5 percentage-point increase in 2028 and annual increases after that.",
       "officialSource": {
         "label": "National KiwiSaver election policy",
-        "url": "https://www.national.org.nz/news/20251123-hon-christopher-luxon-national-to-lift-kiwisaver-contributions"
+        "url": "https://www.national.org.nz/kiwisaver"
       },
       "tags": ["KiwiSaver", "retirement", "savings", "2026 election"]
     },
@@ -1091,11 +1091,11 @@
       "title": "Extend paid parental leave to 30 weeks",
       "status": "Confirmed 2026 policy",
       "sourceType": "Official party election policy announcement",
-      "lastChecked": "2026-07-26",
+      "lastChecked": "2026-07-31",
       "summary": "National says a re-elected government would gradually extend paid parental leave from 26 to 30 weeks by 2029, let parents overlap or divide the entitlement, and protect full holiday pay after returning to work.",
       "officialSource": {
         "label": "National paid parental leave policy",
-        "url": "https://www.national.org.nz/news/paid-parental-leave"
+        "url": "https://www.national.org.nz/paid-parental-leave"
       },
       "tags": ["parental leave", "families", "employment", "2026 election"]
     },
@@ -2305,6 +2305,176 @@
         "url": "https://www.act.org.nz/news/act-won-t-sacrifice-farmers-for-paris-targets"
       },
       "tags": ["Paris Agreement", "methane", "agriculture", "Emissions Trading Scheme"]
+    },
+    {
+      "id": "national-compulsory-kiwisaver-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Tax & Economy",
+      "subtopic": "Retirement savings",
+      "title": "Make KiwiSaver compulsory for workers",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-31",
+      "summary": "National proposes making KiwiSaver or an equivalent scheme compulsory for all workers from 1 July 2028, with contributions set at the prevailing default rate.",
+      "officialSource": {
+        "label": "National KiwiSaver election policy",
+        "url": "https://www.national.org.nz/kiwisaver"
+      },
+      "tags": ["KiwiSaver", "compulsory savings", "workers", "retirement"]
+    },
+    {
+      "id": "national-baby-boost-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Tax & Economy",
+      "subtopic": "Family savings",
+      "title": "$1,500 Baby Boost",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-31",
+      "summary": "National proposes automatically enrolling every baby born in New Zealand in KiwiSaver and making a $1,500 government contribution from 1 July 2027.",
+      "officialSource": {
+        "label": "National KiwiSaver election policy",
+        "url": "https://www.national.org.nz/kiwisaver"
+      },
+      "tags": ["KiwiSaver", "babies", "automatic enrolment", "family support"]
+    },
+    {
+      "id": "national-parental-leave-kiwisaver-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Tax & Economy",
+      "subtopic": "Family savings",
+      "title": "KiwiSaver contribution during paid parental leave",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-31",
+      "summary": "National proposes a government KiwiSaver contribution at the default rate for people receiving paid parental leave from 1 July 2027, whether or not they contribute themselves.",
+      "officialSource": {
+        "label": "National KiwiSaver election policy",
+        "url": "https://www.national.org.nz/kiwisaver"
+      },
+      "tags": ["KiwiSaver", "paid parental leave", "government contribution", "families"]
+    },
+    {
+      "id": "national-over-65-kiwisaver-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Tax & Economy",
+      "subtopic": "Retirement savings",
+      "title": "Employer KiwiSaver contributions for workers over 65",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-31",
+      "summary": "National proposes requiring employers to make compulsory contributions for contributing KiwiSaver members aged 65 and over from 1 July 2027.",
+      "officialSource": {
+        "label": "National KiwiSaver election policy",
+        "url": "https://www.national.org.nz/kiwisaver"
+      },
+      "tags": ["KiwiSaver", "employer contributions", "older workers", "retirement"]
+    },
+    {
+      "id": "national-sexual-offending-sentencing-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Law & Justice",
+      "subtopic": "Sexual offending",
+      "title": "Remove good-character discounts for sexual offending",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-31",
+      "summary": "National proposes prohibiting judges from treating an offender's good character as a mitigating factor when sentencing any sexual offence.",
+      "officialSource": {
+        "label": "National sexual-offending sentencing policy",
+        "url": "https://www.national.org.nz/news/20260517-honpaulgoldsmith"
+      },
+      "tags": ["sexual offending", "sentencing", "mitigating factors", "victims"]
+    },
+    {
+      "id": "national-home-energy-fund-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Climate & Environment",
+      "subtopic": "Household electrification",
+      "title": "Home Energy Fund and simpler small-renewables rules",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-31",
+      "summary": "National proposes low-interest, rates-linked loans for home energy upgrades and national permitted-activity rules for small rooftop and ground solar, batteries and micro-hydro.",
+      "officialSource": {
+        "label": "National Home Energy Fund policy",
+        "url": "https://www.national.org.nz/solar"
+      },
+      "tags": ["solar", "home energy", "electrification", "consenting"]
+    },
+    {
+      "id": "national-next-billion-customers-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Tax & Economy",
+      "subtopic": "Trade",
+      "title": "Next Billion Customers trade strategy",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-31",
+      "summary": "National proposes pursuing new trade agreements, reducing trade barriers, strengthening essential supply chains and expanding digital export tools to reach markets in Europe, South America, Asia and Africa.",
+      "officialSource": {
+        "label": "National trade election policy",
+        "url": "https://www.national.org.nz/new-trade"
+      },
+      "tags": ["trade agreements", "exports", "supply chains", "digital trade"]
+    },
+    {
+      "id": "national-commercial-building-consents-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Infrastructure",
+      "subtopic": "Building consents",
+      "title": "Streamline commercial building consents",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-31",
+      "summary": "National proposes letting qualified engineers sign off certain building work without a council inspection and designating a specialist national consent authority for large commercial buildings.",
+      "officialSource": {
+        "label": "National commercial-building consent policy",
+        "url": "https://www.national.org.nz/build-the-future"
+      },
+      "tags": ["building consents", "commercial buildings", "engineers", "consent authority"]
+    },
+    {
+      "id": "national-affirmative-consent-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Law & Justice",
+      "subtopic": "Sexual consent",
+      "title": "Define sexual consent as actively given",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-31",
+      "summary": "National proposes changing the Crimes Act so sexual consent must be actively communicated through words or actions, without changing the prosecution's burden of proof.",
+      "officialSource": {
+        "label": "National sexual-consent policy",
+        "url": "https://www.national.org.nz/news/20260719-honpaulgoldsmith"
+      },
+      "tags": ["sexual consent", "Crimes Act", "affirmative consent", "justice"]
+    },
+    {
+      "id": "national-hunting-fishing-plan-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Climate & Environment",
+      "subtopic": "Hunting and fishing",
+      "title": "Hunting and fishing plan",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party election policy announcement",
+      "lastChecked": "2026-07-31",
+      "summary": "National proposes recognising valued introduced species in law, strengthening game and fish management, expanding hunter-led conservation and public access, and reducing barriers to hunting-related exports.",
+      "officialSource": {
+        "label": "National hunting and fishing election policy",
+        "url": "https://www.national.org.nz/hunters-and-anglers"
+      },
+      "tags": ["hunting", "fishing", "Game Animal Council", "public access"]
     }
   ]
 }
