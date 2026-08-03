@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-08-03",
+    "lastUpdated": "2026-08-04",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -381,28 +381,6 @@
         "GP",
         "family doctor",
         "loans"
-      ]
-    },
-    {
-      "id": "act-economy-tax",
-      "electionYear": 2026,
-      "partyId": "act",
-      "topic": "Tax & Economy",
-      "subtopic": "Tax and regulation",
-      "title": "Flatter tax and less regulation",
-      "status": "Confirmed 2026 policy",
-      "sourceType": "Official party policy page",
-      "lastChecked": "2026-05-05",
-      "summary": "ACT says it wants careful government spending, lower taxes, less red tape, a two-rate income tax system with a 28% top rate, and fewer barriers to investment, jobs and wage growth.",
-      "officialSource": {
-        "label": "ACT economy policy",
-        "url": "https://www.act.org.nz/economy"
-      },
-      "tags": [
-        "tax",
-        "economy",
-        "red tape",
-        "spending"
       ]
     },
     {
