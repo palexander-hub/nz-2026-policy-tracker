@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-08-23",
+    "lastUpdated": "2026-08-24",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -2523,6 +2523,142 @@
         "url": "https://www.nzfirst.nz/the_kiwi_kids_grant"
       },
       "tags": ["families", "children", "parenting costs", "tax-free grant"]
+    },
+    {
+      "id": "act-classroom-authority-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Education",
+      "subtopic": "Student behaviour",
+      "title": "Strengthen teacher authority",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy announcement",
+      "lastChecked": "2026-08-24",
+      "summary": "ACT proposes giving teachers a clear legal power to move seriously or persistently disruptive students to a supervised space, protecting reasonable staff intervention, requiring consequences for assaults and involving parents in serious or repeated behaviour cases.",
+      "officialSource": {
+        "label": "ACT classroom-disruption policy",
+        "url": "https://www.act.org.nz/news/disrupt-the-class-leave-the-class"
+      },
+      "tags": ["teachers", "classroom behaviour", "student discipline", "school safety"]
+    },
+    {
+      "id": "act-advance-directives-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Health",
+      "subtopic": "Patient rights",
+      "title": "Advance Directives Bill",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy announcement",
+      "lastChecked": "2026-08-24",
+      "summary": "ACT proposes introducing an Advance Directives Bill to clarify how a person's healthcare instructions must be followed if they become unable to communicate.",
+      "officialSource": {
+        "label": "ACT advance-directives announcement",
+        "url": "https://www.act.org.nz/news/act-commits-to-strengthening"
+      },
+      "tags": ["advance directives", "patient rights", "healthcare decisions", "legislation"]
+    },
+    {
+      "id": "act-voluntary-student-services-fees-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Education",
+      "subtopic": "Tertiary costs",
+      "title": "Make student services fees voluntary",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy page",
+      "lastChecked": "2026-08-24",
+      "summary": "ACT proposes requiring universities to offer student services as a menu, with students paying only for the services they select and other services remaining available on a transparent user-pays basis.",
+      "officialSource": {
+        "label": "ACT Real Choice for Students policy",
+        "url": "https://www.act.org.nz/student_services_fee"
+      },
+      "tags": ["tertiary education", "student services", "university fees", "student loans"]
+    },
+    {
+      "id": "act-local-tourism-dividend-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Infrastructure",
+      "subtopic": "Local tourism infrastructure",
+      "title": "Local Tourism Dividend",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy announcement",
+      "lastChecked": "2026-08-24",
+      "summary": "ACT proposes paying councils $1 for every guest night in their area from existing GST and visitor-levy revenue to help fund tourism-related local infrastructure and services.",
+      "officialSource": {
+        "label": "ACT Local Tourism Dividend announcement",
+        "url": "https://www.act.org.nz/news/act-supporting-local-tourism-not-new-taxes"
+      },
+      "tags": ["tourism", "local government", "guest nights", "infrastructure funding"]
+    },
+    {
+      "id": "act-public-service-neutrality-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Public Service",
+      "subtopic": "Public-service employment and delivery",
+      "title": "Reset public-service employment and delivery rules",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy announcement",
+      "lastChecked": "2026-08-24",
+      "summary": "ACT proposes repealing specified race-based employment provisions, putting needs-based service delivery into law, prohibiting employer-initiated or funded spiritual practices, and removing cultural job requirements that are not relevant to a role.",
+      "officialSource": {
+        "label": "ACT public-service policy announcement",
+        "url": "https://www.act.org.nz/news/act-will-restore-one-public-service-for-all-new-zealanders"
+      },
+      "tags": ["public service", "employment", "service delivery", "workplace practices"]
+    },
+    {
+      "id": "nzfirst-use-it-or-lose-it-dairy-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Tax & Economy",
+      "subtopic": "Dairy manufacturing",
+      "title": "Use It or Lose It dairy policy",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy announcement",
+      "lastChecked": "2026-08-24",
+      "summary": "New Zealand First proposes allowing qualifying manufacturers investing in New Zealand value-added dairy production to buy up to 500 million litres of Fonterra milk annually for six years, followed by a four-year taper, at the farm-gate price plus collection and delivery costs.",
+      "officialSource": {
+        "label": "NZ First Use It or Lose It dairy policy",
+        "url": "https://www.nzfirst.nz/nz_first_launches_use_it_or_lose_it_dairy_policy"
+      },
+      "tags": ["dairy", "manufacturing", "Fonterra", "value-added exports"]
+    },
+    {
+      "id": "nzfirst-future-fund-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Infrastructure",
+      "subtopic": "Long-term investment",
+      "title": "$100 billion Future Fund",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 campaign announcement",
+      "lastChecked": "2026-08-24",
+      "summary": "New Zealand First proposes establishing a $100 billion Future Fund, operated separately from day-to-day political control and modelled on Singapore's Temasek, to invest in a 30-year infrastructure plan.",
+      "officialSource": {
+        "label": "NZ First Future Fund campaign announcement",
+        "url": "https://www.nzfirst.nz/winston_peters_hope_and_a_better_tomorrow"
+      },
+      "tags": ["Future Fund", "infrastructure", "long-term investment", "sovereign fund"]
+    },
+    {
+      "id": "nzfirst-vaccine-injury-inquiry-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Health",
+      "subtopic": "COVID-19 inquiry",
+      "title": "Select committee inquiry into vaccine injuries",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 policy announcement",
+      "lastChecked": "2026-08-24",
+      "summary": "New Zealand First proposes a select committee inquiry into injuries potentially associated with mandated double doses of COVID-19 vaccines, including public evidence from affected people and examination of decisions affecting 12-to-17-year-olds.",
+      "officialSource": {
+        "label": "NZ First vaccine-injury inquiry announcement",
+        "url": "https://www.nzfirst.nz/nz_first_calls_for_inquiry_into_vaccine_injuries"
+      },
+      "tags": ["COVID-19", "vaccine injuries", "select committee", "public inquiry"]
     }
   ]
 }
