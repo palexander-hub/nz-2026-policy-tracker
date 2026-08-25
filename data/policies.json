@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-08-24",
+    "lastUpdated": "2026-08-25",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -2659,6 +2659,40 @@
         "url": "https://www.nzfirst.nz/nz_first_calls_for_inquiry_into_vaccine_injuries"
       },
       "tags": ["COVID-19", "vaccine injuries", "select committee", "public inquiry"]
+    },
+    {
+      "id": "act-working-with-children-card-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Public Service",
+      "subtopic": "Child safety screening",
+      "title": "Working with Children Card",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-08-25",
+      "summary": "ACT proposes a portable Working with Children Card for employees and volunteers, with continuous police and regulatory screening, automatic suspension or revocation when disqualifying information emerges, and employer verification across eligible organisations.",
+      "officialSource": {
+        "label": "ACT Working with Children Card announcement",
+        "url": "https://www.act.org.nz/news/act-will-introduce-smarter-screening-to-improve-child-safety"
+      },
+      "tags": ["child safety", "worker screening", "volunteers", "police vetting"]
+    },
+    {
+      "id": "green-ai-data-centre-moratorium-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Infrastructure",
+      "subtopic": "Data-centre regulation",
+      "title": "One-year pause on new AI data centres",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-08-25",
+      "summary": "The Green Party proposes a one-year pause on consenting new AI data centres while rules are developed for electricity demand, water use, environmental effects, infrastructure costs and community input.",
+      "officialSource": {
+        "label": "Green Party AI data-centre moratorium announcement",
+        "url": "https://www.greens.org.nz/call_for_one_year_pause_on_consenting_new_ai_data_centres"
+      },
+      "tags": ["AI data centres", "consenting", "electricity", "water use", "community input"]
     }
   ]
 }
