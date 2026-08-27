@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-08-25",
+    "lastUpdated": "2026-08-27",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -2693,6 +2693,40 @@
         "url": "https://www.greens.org.nz/call_for_one_year_pause_on_consenting_new_ai_data_centres"
       },
       "tags": ["AI data centres", "consenting", "electricity", "water use", "community input"]
+    },
+    {
+      "id": "act-digital-finance-reform-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Tax & Economy",
+      "subtopic": "Digital finance",
+      "title": "Modernise digital-finance rules",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-08-27",
+      "summary": "ACT proposes legal and tax rules for tokenised assets and qualifying payment stablecoins, a supervised financial-innovation sandbox, a 12-month bright-line tax rule for qualifying personal digital-asset investments, an exemption for low-value digital-asset purchases, and a review of barriers to banking and payment infrastructure.",
+      "officialSource": {
+        "label": "ACT digital-economy policy announcement",
+        "url": "https://www.act.org.nz/news/unlocking-new-zealand-s-digital-economy"
+      },
+      "tags": ["digital finance", "tokenised assets", "stablecoins", "financial innovation", "tax"]
+    },
+    {
+      "id": "labour-no-fuel-tax-increase-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Tax & Economy",
+      "subtopic": "Fuel tax",
+      "title": "No fuel excise tax increase for three years",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-08-27",
+      "summary": "Labour proposes not increasing fuel excise tax during the next three years if elected in 2026.",
+      "officialSource": {
+        "label": "Labour fuel-tax policy announcement",
+        "url": "https://www.labour.org.nz/news/release-no-increase-in-fuel-taxes-under-labour/"
+      },
+      "tags": ["fuel excise", "fuel tax", "transport costs", "cost of living"]
     }
   ]
 }
