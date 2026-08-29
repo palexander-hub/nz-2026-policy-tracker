@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-08-28",
+    "lastUpdated": "2026-08-29",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -2744,6 +2744,23 @@
         "url": "https://www.nzfirst.nz/winston_peters_seniors_sole_defender"
       },
       "tags": ["New Zealand Superannuation", "retirement", "eligibility age", "means testing"]
+    },
+    {
+      "id": "labour-maori-trades-training-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Education",
+      "subtopic": "Trades training",
+      "title": "Māori-led skills and trades training fund",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-08-29",
+      "summary": "Labour proposes a contestable grant fund for marae, iwi trusts and Māori providers to design and deliver practical training linked to local employers, with mentoring and support, aiming to benefit up to 3,000 Māori.",
+      "officialSource": {
+        "label": "Labour Māori skills and trades training announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-is-backing-maori-into-skilled-work/"
+      },
+      "tags": ["Māori trades training", "skills", "Māori providers", "employment"]
     }
   ]
 }
