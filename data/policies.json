@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-08-30",
+    "lastUpdated": "2026-09-01",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -2778,6 +2778,74 @@
         "url": "https://www.act.org.nz/news/plenty-is-possible-act-to-bring-abundance-to-our-fisheries"
       },
       "tags": ["fisheries", "Hauraki Gulf", "shellfish", "scallop dredging", "fish stocks"]
+    },
+    {
+      "id": "national-student-loan-back-pocket-boost-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Tax & Economy",
+      "subtopic": "Student loans",
+      "title": "Back Pocket Boost for Graduates",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-01",
+      "summary": "National proposes reducing the compulsory student-loan repayment rate for New Zealand-based borrowers from 12% to 10% from 1 April 2027, while adding interest and tiered penalties for overseas defaults, restricting permanent emigrants' KiwiSaver withdrawals until their loans are cleared, and tightening arrest settings for serious sustained default.",
+      "officialSource": {
+        "label": "National student-loan policy announcement",
+        "url": "https://www.national.org.nz/news/260831-nicolawillis"
+      },
+      "tags": ["student loans", "repayment rate", "overseas borrowers", "KiwiSaver", "graduates"]
+    },
+    {
+      "id": "labour-retirement-village-repayments-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Tax & Economy",
+      "subtopic": "Retirement villages",
+      "title": "Three-month retirement-village repayment deadline",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-01",
+      "summary": "Labour proposes introducing a Bill within its first 100 days requiring retirement villages to repay departing residents within three months, establishing an independent dispute-resolution service, and allowing targeted hardship relief for small, rural and charitable operators.",
+      "officialSource": {
+        "label": "Labour retirement-village repayments announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-to-reform-retirement-village-repayments/"
+      },
+      "tags": ["retirement villages", "repayments", "seniors", "dispute resolution", "first 100 days"]
+    },
+    {
+      "id": "labour-graduate-nurse-job-guarantee-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Health",
+      "subtopic": "Nursing workforce",
+      "title": "Job guarantee for New Zealand-trained graduate nurses",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-01",
+      "summary": "Labour proposes offering every New Zealand-trained nurse a public-health-system job on graduation and doubling primary-care recruitment subsidies to $40,000 for rural nurses and $30,000 for urban nurses.",
+      "officialSource": {
+        "label": "Labour graduate-nurse job guarantee announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-will-guarantee-a-job-for-graduate-nurses/"
+      },
+      "tags": ["graduate nurses", "job guarantee", "public health", "primary care", "recruitment subsidies"]
+    },
+    {
+      "id": "act-resident-visa-presence-requirement-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Public Service",
+      "subtopic": "Immigration settings",
+      "title": "Physical-presence requirement for resident visas",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-01",
+      "summary": "ACT proposes replacing permanent resident visas with resident visas carrying five-year travel facilities that require at least 730 days' physical presence in New Zealand during any rolling five-year period, with specified employment, family, military and humanitarian exemptions.",
+      "officialSource": {
+        "label": "ACT resident-visa policy announcement",
+        "url": "https://www.act.org.nz/news/act%E2%80%99s-new-immigration-policy-to-put-%E2%80%98reside%E2%80%99-back-in-%E2%80%98resident%E2%80%99"
+      },
+      "tags": ["immigration", "resident visas", "physical presence", "travel facility", "permanent residence"]
     }
   ]
 }
