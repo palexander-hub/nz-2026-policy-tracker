@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-09-01",
+    "lastUpdated": "2026-09-03",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -2787,12 +2787,12 @@
       "subtopic": "Student loans",
       "title": "Back Pocket Boost for Graduates",
       "status": "Confirmed 2026 policy",
-      "sourceType": "Official party 2026 election policy announcement",
-      "lastChecked": "2026-09-01",
+      "sourceType": "Official party 2026 election policy document",
+      "lastChecked": "2026-09-03",
       "summary": "National proposes reducing the compulsory student-loan repayment rate for New Zealand-based borrowers from 12% to 10% from 1 April 2027, while adding interest and tiered penalties for overseas defaults, restricting permanent emigrants' KiwiSaver withdrawals until their loans are cleared, and tightening arrest settings for serious sustained default.",
       "officialSource": {
-        "label": "National student-loan policy announcement",
-        "url": "https://www.national.org.nz/news/260831-nicolawillis"
+        "label": "National Back Pocket Boost policy document",
+        "url": "https://assets.national.org.nz/web/prod/Back%20Pocket%20Boost%20for%20Graduates.pdf"
       },
       "tags": ["student loans", "repayment rate", "overseas borrowers", "KiwiSaver", "graduates"]
     },
