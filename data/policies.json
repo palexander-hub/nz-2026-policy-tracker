@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-09-03",
+    "lastUpdated": "2026-09-04",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -2846,6 +2846,40 @@
         "url": "https://www.act.org.nz/news/act%E2%80%99s-new-immigration-policy-to-put-%E2%80%98reside%E2%80%99-back-in-%E2%80%98resident%E2%80%99"
       },
       "tags": ["immigration", "resident visas", "physical presence", "travel facility", "permanent residence"]
+    },
+    {
+      "id": "top-ten-year-health-plan-2026",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Health",
+      "subtopic": "Long-term planning",
+      "title": "Ten-year cross-party health plan",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-04",
+      "summary": "Opportunity proposes using its parliamentary leverage to develop a ten-year cross-party health plan with health professionals, communities and service users, setting clear goals, assigning delivery responsibility and measuring progress.",
+      "officialSource": {
+        "label": "Opportunity ten-year health and education plans announcement",
+        "url": "https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education"
+      },
+      "tags": ["health", "cross-party plan", "long-term planning", "workforce", "infrastructure"]
+    },
+    {
+      "id": "top-ten-year-education-plan-2026",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Education",
+      "subtopic": "Long-term planning",
+      "title": "Ten-year cross-party education plan",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-04",
+      "summary": "Opportunity proposes using its parliamentary leverage to develop a ten-year cross-party education plan with education professionals, communities and service users, setting clear goals, assigning delivery responsibility and measuring progress.",
+      "officialSource": {
+        "label": "Opportunity ten-year health and education plans announcement",
+        "url": "https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education"
+      },
+      "tags": ["education", "cross-party plan", "long-term planning", "teachers", "infrastructure"]
     }
   ]
 }
