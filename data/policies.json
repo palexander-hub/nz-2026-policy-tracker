@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-09-04",
+    "lastUpdated": "2026-09-05",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -2880,6 +2880,40 @@
         "url": "https://www.opportunity.org.nz/10_year_plans_to_strengthen_health_and_education"
       },
       "tags": ["education", "cross-party plan", "long-term planning", "teachers", "infrastructure"]
+    },
+    {
+      "id": "act-keep-new-zealand-moving-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Infrastructure",
+      "subtopic": "Transport investment",
+      "title": "Keep New Zealand Moving transport plan",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-05",
+      "summary": "ACT proposes requiring major transport projects to publish the lowest-cost safe option, funding capacity plans for growth areas, protecting road-maintenance funding, removing ethnicity-based procurement preferences and non-functional amenity spending from Crown transport funding, and scrapping vehicle rules it says restrict affordable used imports.",
+      "officialSource": {
+        "label": "ACT Keep New Zealand Moving policy announcement",
+        "url": "https://www.act.org.nz/news/keep-new-zealand-moving"
+      },
+      "tags": ["transport", "roads", "maintenance", "procurement", "vehicle imports", "infrastructure"]
+    },
+    {
+      "id": "green-te-waonui-a-tane-marae-funding-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Te Tiriti & Constitution",
+      "subtopic": "Marae and community funding",
+      "title": "Te Waonui a Tāne marae funding plan",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-09-05",
+      "summary": "The Greens propose establishing Te Rangatiratanga Trust, owned and governed by hapū and iwi, with a $400 million four-year restoration fund for urgent marae and community projects and a $2 billion intergenerational investment fund for ongoing distributions.",
+      "officialSource": {
+        "label": "Green Te Waonui a Tāne policy",
+        "url": "https://www.greens.org.nz/te_waonui_a_taane"
+      },
+      "tags": ["marae", "hapū", "iwi", "Te Rangatiratanga Trust", "community funding", "Te Tiriti"]
     }
   ]
 }
