@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-09-06",
+    "lastUpdated": "2026-09-07",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -2931,6 +2931,57 @@
         "url": "https://www.maoriparty.org.nz/te_p_ti_m_ori_launches_te_tiriti_entrenchment_policy"
       },
       "tags": ["Te Tiriti", "Mātike Mai", "constitutional reform", "Waitangi Tribunal", "UNDRIP", "Te Tiriti Commission"]
+    },
+    {
+      "id": "national-first-home-loan-income-cap-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Infrastructure",
+      "subtopic": "First-home ownership",
+      "title": "Widen access to 5% First Home Loan deposits",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-07",
+      "summary": "National proposes raising the First Home Loan scheme's income cap to $300,000, widening access to participating lenders' government-backed home loans requiring a 5% deposit.",
+      "officialSource": {
+        "label": "National Backing First Home Buyers policy announcement",
+        "url": "https://www.national.org.nz/news/260906-backs-first-home-buyers"
+      },
+      "tags": ["first home buyers", "First Home Loan", "deposit", "income cap", "home ownership"]
+    },
+    {
+      "id": "act-scrap-net-zero-carbon-tax-refund-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Climate & Environment",
+      "subtopic": "Emissions targets and pricing",
+      "title": "Scrap Net Zero and refund carbon revenue",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-07",
+      "summary": "ACT proposes repealing the Zero Carbon Act and benchmarking New Zealand's emissions cap against major trading partners, refunding all net carbon-auction revenue, removing the ETS auction price floor, changing forestry incentives and liabilities, restoring assistance for emissions-intensive trade-exposed firms, and opposing new climate taxes including agricultural emissions pricing.",
+      "officialSource": {
+        "label": "ACT Scrap Net Zero, cut the carbon tax policy announcement",
+        "url": "https://www.act.org.nz/news/scrap-net-zero-cut-the-carbon-tax"
+      },
+      "tags": ["Net Zero", "Zero Carbon Act", "ETS", "carbon revenue", "forestry", "agricultural emissions"]
+    },
+    {
+      "id": "green-affordable-kai-kiwimart-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Tax & Economy",
+      "subtopic": "Food affordability and competition",
+      "title": "Affordable Kai and publicly owned KiwiMart",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-09-07",
+      "summary": "The Greens propose requiring at least 120 supermarket stores and distribution capacity to be sold into public ownership to create KiwiMart, banning excessive pricing and strengthening Commerce Commission powers, creating a National Food Strategy and right to nutritious food, funding community food security, doubling the food-grant cap, and expanding locally provided school lunches to 150,000 more children.",
+      "officialSource": {
+        "label": "Green Affordable food for all of us policy",
+        "url": "https://www.greens.org.nz/affordable_food_for_all_of_us"
+      },
+      "tags": ["KiwiMart", "supermarkets", "food prices", "Commerce Commission", "food security", "school lunches"]
     }
   ]
 }
