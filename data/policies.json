@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-09-07",
+    "lastUpdated": "2026-09-09",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -2982,6 +2982,40 @@
         "url": "https://www.greens.org.nz/affordable_food_for_all_of_us"
       },
       "tags": ["KiwiMart", "supermarkets", "food prices", "Commerce Commission", "food security", "school lunches"]
+    },
+    {
+      "id": "national-international-visitor-levy-reset-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Tax & Economy",
+      "subtopic": "Tourism funding",
+      "title": "Reset International Visitor Levy funding",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-09",
+      "summary": "National proposes redirecting International Visitor Levy revenue from 1 July 2027, with $100 million a year for the conservation estate, $50 million a year for a Tourism Priorities Fund, and the remainder distributed to councils according to international guest nights; it also proposes no levy increase for at least three years.",
+      "officialSource": {
+        "label": "National International Visitor Levy reset policy announcement",
+        "url": "https://www.national.org.nz/news/260908-nicolawillis"
+      },
+      "tags": ["International Visitor Levy", "tourism", "councils", "conservation", "regional funding"]
+    },
+    {
+      "id": "labour-ets-climate-action-review-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Climate & Environment",
+      "subtopic": "Emissions trading",
+      "title": "Urgent Emissions Trading Scheme reform",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-09",
+      "summary": "Labour proposes urgently reviewing and reforming the Emissions Trading Scheme to favour direct emissions reductions over offsets, reconsider forestry's role, support New Zealand's Paris targets and prevent whole-farm conversions, while pausing new forestry registrations during the review.",
+      "officialSource": {
+        "label": "Labour climate action policy announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-to-accelerate-climate-action/"
+      },
+      "tags": ["Emissions Trading Scheme", "forestry", "offsets", "Paris Agreement", "whole-farm conversion"]
     }
   ]
 }
