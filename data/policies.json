@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-09-11",
+    "lastUpdated": "2026-09-12",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -3067,6 +3067,40 @@
         "url": "https://www.opportunity.org.nz/industry_energy_resilience_fund"
       },
       "tags": ["industrial electrification", "green bond", "ETS revenue", "energy resilience", "concessional loans"]
+    },
+    {
+      "id": "green-no-ai-welfare-payment-decisions-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Public Service",
+      "subtopic": "Welfare administration",
+      "title": "No AI welfare payment decisions",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-12",
+      "summary": "The Greens propose ending the use of artificial intelligence and automated decision-making for welfare payment decisions, including cancelling, suspending or reducing payments and imposing benefit sanctions, while ensuring people can speak directly with a human.",
+      "officialSource": {
+        "label": "Green welfare payment decision policy announcement",
+        "url": "https://www.greens.org.nz/green_party_pledge_to_remove_ai_from_welfare_payment_decisions"
+      },
+      "tags": ["artificial intelligence", "automated decisions", "welfare", "benefit sanctions", "human oversight"]
+    },
+    {
+      "id": "nzfirst-immigration-reform-package-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Public Service",
+      "subtopic": "Immigration and citizenship",
+      "title": "Immigration reform package",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-12",
+      "summary": "New Zealand First proposes reducing non-essential immigration, limiting automatic birthright citizenship to children of citizens, extending citizenship and permanent-residence qualifying periods, a 10-year welfare stand-down for visa holders, broader deportation rules, a referendum on a 20,000 annual resident-visa cap, citizens-first social housing, new overstayer rules and tighter work and transition rules for international students.",
+      "officialSource": {
+        "label": "New Zealand First immigration reform policy announcement",
+        "url": "https://www.nzfirst.nz/nz_first_announces_immigration_reform_policies"
+      },
+      "tags": ["immigration", "citizenship", "permanent residence", "welfare stand-down", "deportation", "resident visa cap", "student visas"]
     }
   ]
 }
