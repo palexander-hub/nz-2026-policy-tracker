@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-09-17",
+    "lastUpdated": "2026-09-18",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -3237,6 +3237,40 @@
         "url": "https://www.labour.org.nz/news/release-labour-will-make-price-gouging-illegal/"
       },
       "tags": ["price gouging", "essential goods", "consumer protection", "competition", "Commerce Commission", "suppliers"]
+    },
+    {
+      "id": "labour-pacific-visa-waiver-expansion-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Public Service",
+      "subtopic": "Immigration settings",
+      "title": "Expand visa-waiver travel for Pacific citizens",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-18",
+      "summary": "Labour proposes expanding visa-waiver access to citizens of Pacific Islands Forum countries to make family visits to New Zealand easier and less expensive.",
+      "officialSource": {
+        "label": "Labour Pacific visa-waiver policy announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-will-expand-visa-waiver-travel-to-pacific-citizens/"
+      },
+      "tags": ["immigration", "visa waiver", "Pacific Islands Forum", "Pacific families", "family visits"]
+    },
+    {
+      "id": "labour-scrap-youth-boot-camps-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Law & Justice",
+      "subtopic": "Youth justice",
+      "title": "Scrap youth boot camps",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-18",
+      "summary": "Labour proposes scrapping the current youth-justice boot-camp programme and replacing that approach with evidence-based rehabilitation, therapeutic support and services for young people.",
+      "officialSource": {
+        "label": "Labour youth boot-camp policy announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-will-scrap-national-s-boot-camps/"
+      },
+      "tags": ["youth justice", "boot camps", "rehabilitation", "therapeutic support"]
     }
   ]
 }
