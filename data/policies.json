@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-09-21",
+    "lastUpdated": "2026-09-22",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -3322,6 +3322,74 @@
         "url": "https://www.nzfirst.nz/nzfirst_campaign_announcement_the_plan_to_make_nz_healthy"
       },
       "tags": ["preventative health", "metabolic health", "nutrition", "primary care", "dietary guidelines", "health research", "organic production"]
+    },
+    {
+      "id": "labour-fairer-grocery-prices-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Tax & Economy",
+      "subtopic": "Grocery competition",
+      "title": "Fairer grocery prices",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-09-22",
+      "summary": "Labour proposes ending supermarket contracts that restrict store pricing or independence, banning supplier junk fees, guaranteeing smaller grocers wholesale access, simplifying supplier charges, and separating Woolworths and Foodstuffs wholesale operations into two independently run wholesalers.",
+      "officialSource": {
+        "label": "Labour Fairer Grocery Prices policy",
+        "url": "https://www.labour.org.nz/fairer-grocery-prices"
+      },
+      "tags": ["groceries", "supermarkets", "wholesale supply", "competition", "Foodstuffs", "Woolworths", "supplier fees"]
+    },
+    {
+      "id": "national-set-up-for-success-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Education",
+      "subtopic": "Early childhood and primary education",
+      "title": "Set Up for Success",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-22",
+      "summary": "National proposes ending screen and individual-device use in early childhood education, tightly limiting it in Years 1–3 and setting age-appropriate limits for older primary pupils, introducing a School Start Check and clearer ECE developmental milestones reported to parents, providing early-intervention support where needed, and requiring primary-school writing assessments on paper.",
+      "officialSource": {
+        "label": "National Set Up for Success announcement",
+        "url": "https://www.national.org.nz/news/260920-screen-use-to-end-in-ece-and-limits-set"
+      },
+      "tags": ["early childhood education", "screen time", "school readiness", "School Start Check", "early intervention", "writing assessments"]
+    },
+    {
+      "id": "maori-energy-sovereignty-2026",
+      "electionYear": 2026,
+      "partyId": "te-pati-maori",
+      "topic": "Climate & Environment",
+      "subtopic": "Energy sovereignty",
+      "title": "Energy Sovereignty",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-09-22",
+      "summary": "Te Pāti Māori proposes a $1 billion Energy Sovereignty Fund, a national energy independence plan, investment in a Māori energy workforce and rural energy capability, and regulation of the energy system in the public interest.",
+      "officialSource": {
+        "label": "Te Pāti Māori Energy Sovereignty policy",
+        "url": "https://www.maoriparty.org.nz/energy_sovereignty"
+      },
+      "tags": ["energy", "energy sovereignty", "Māori energy workforce", "rural energy", "energy regulation"]
+    },
+    {
+      "id": "greens-city-centre-vibrancy-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Tax & Economy",
+      "subtopic": "Commercial leasing",
+      "title": "City centre vibrancy and commercial leases",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-22",
+      "summary": "The Greens propose allowing market rent reviews to lower as well as raise rent for businesses with turnover under $30 million, letting councils auction leases for shops left empty for over a year after giving landlords eight weeks to find a tenant, and creating a low-cost tribunal for commercial lease disputes.",
+      "officialSource": {
+        "label": "Green Party city centre vibrancy announcement",
+        "url": "https://www.greens.org.nz/green_party_announce_plan_for_city_centre_vibrancy"
+      },
+      "tags": ["commercial leases", "market rent reviews", "vacant shops", "small business", "lease disputes"]
     }
   ]
 }
