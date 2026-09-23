@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-09-22",
+    "lastUpdated": "2026-09-24",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -2090,14 +2090,14 @@
       "subtopic": "Electoral and constitutional reform",
       "title": "Democracy and electoral reform",
       "status": "Confirmed 2026 policy",
-      "sourceType": "Official party 2026 manifesto",
-      "lastChecked": "2026-07-29",
-      "summary": "The Greens propose lowering the voting age to 16, restoring voting rights for all people in custody, entrenching Māori seats, limiting political donations, increasing public campaign funding and regulating lobbying.",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-24",
+      "summary": "The Greens propose lowering the voting age to 16, restoring voting rights for all people in custody, entrenching Māori seats, capping donations from any person to parties and candidates at $30,000 per election cycle, banning company donations, disclosing donors giving over $1,000 a year, registering professional lobbyists with four-monthly reporting, and imposing a two-year lobbying stand-down for former ministers.",
       "officialSource": {
-        "label": "Green 2026 manifesto — Democracy",
-        "url": "https://www.greens.org.nz/manifesto_2026_democracy"
+        "label": "Green Party political donations and lobbying announcement",
+        "url": "https://www.greens.org.nz/greens_announce_plan_to_get_big_money_and_influence_out_of_politics"
       },
-      "tags": ["voting age", "Māori seats", "political donations", "lobbying"]
+      "tags": ["voting age", "Māori seats", "political donations", "company donations", "donor disclosure", "lobbying", "ministerial stand-down"]
     },
     {
       "id": "green-digital-technology-manifesto-2026",
@@ -3390,6 +3390,57 @@
         "url": "https://www.greens.org.nz/green_party_announce_plan_for_city_centre_vibrancy"
       },
       "tags": ["commercial leases", "market rent reviews", "vacant shops", "small business", "lease disputes"]
+    },
+    {
+      "id": "national-fenz-reset-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Public Service",
+      "subtopic": "Fire and emergency services",
+      "title": "Reset Fire and Emergency New Zealand",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-24",
+      "summary": "National proposes making Fire and Emergency New Zealand a departmental agency directly accountable to the Emergency Management Minister, removing its board and implementing a turnaround plan, expanding mental and physical health support for volunteer firefighters, bringing ordered appliances into service, and funding fleet replacement and training programmes.",
+      "officialSource": {
+        "label": "National plan to back firefighters",
+        "url": "https://www.national.org.nz/news/260923-markmitchell"
+      },
+      "tags": ["Fire and Emergency New Zealand", "firefighters", "volunteers", "fleet replacement", "training", "departmental agency"]
+    },
+    {
+      "id": "labour-fenz-review-and-firefighter-cover-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Public Service",
+      "subtopic": "Fire and emergency services",
+      "title": "Review FENZ and extend firefighter cover",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-24",
+      "summary": "Labour proposes an independent review of Fire and Emergency New Zealand's funding and operations, extending presumptive occupational-cancer cover for firefighters, and extending ACC cover to volunteer firefighters for work-related illness and injury.",
+      "officialSource": {
+        "label": "Labour FENZ review announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-will-launch-independent-review-into-fenz/"
+      },
+      "tags": ["Fire and Emergency New Zealand", "firefighters", "occupational cancer", "ACC", "volunteers", "independent review"]
+    },
+    {
+      "id": "labour-independent-foreign-policy-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Public Service",
+      "subtopic": "Foreign affairs",
+      "title": "Independent foreign policy",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy speech",
+      "lastChecked": "2026-09-24",
+      "summary": "Labour proposes recognising Palestine, imposing economic sanctions on Israel, divesting NZ Super Fund and ACC holdings in UN-listed companies operating in occupied territories, supporting South Africa's ICJ case, adding parliamentary scrutiny before New Zealand joins armed conflicts, supporting a ban on lethal autonomous weapons, creating a safe-haven programme for human-rights defenders, pursuing a Pacific climate and displacement agreement, and progressively increasing overseas development assistance toward 0.7% of GDP as fiscal conditions allow.",
+      "officialSource": {
+        "label": "Labour foreign policy speech",
+        "url": "https://www.labour.org.nz/news/speech-labours-foreign-policy/"
+      },
+      "tags": ["foreign policy", "Palestine", "Israel sanctions", "International Court of Justice", "armed conflict", "autonomous weapons", "human rights", "Pacific", "development assistance"]
     }
   ]
 }
