@@ -21,6 +21,12 @@ const TOPIC_COPY = {
     note: "Income, company, capital, consumption and other tax settings.",
     question: "What taxes would each party introduce, remove or change?"
   },
+  "Work & Business": {
+    label: "Work & business",
+    icon: "briefcase",
+    note: "Jobs, employment rules, small business, trade, enterprise, innovation and commercial settings.",
+    question: "What would each party change for workers, employers, small businesses, trade and innovation?"
+  },
   "Health": {
     label: "Health",
     icon: "heart",
@@ -379,6 +385,7 @@ function topicIcon(name) {
     heart: '<path d="M20.8 5.8a5.4 5.4 0 0 0-7.6 0L12 7 10.8 5.8a5.4 5.4 0 0 0-7.6 7.6L12 22l8.8-8.6a5.4 5.4 0 0 0 0-7.6Z"/><path d="M3 12h4l2-4 4 8 2-4h6"/>',
     piggy: '<path d="M19 7h1a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-1"/><path d="M6 10h.01"/><path d="M10 17v3h3v-3"/><path d="M16 17v3h3v-4"/><path d="M18 8a7 7 0 0 0-13.8 2H2v5h3.3A7 7 0 0 0 12 19h4a5 5 0 0 0 5-5v-1a5 5 0 0 0-3-5Z"/>',
     receipt: '<path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3Z"/><path d="M9 8h6"/><path d="M9 12h6"/><path d="M9 16h3"/>',
+    briefcase: '<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/><path d="M10 12v2h4v-2"/>',
     cap: '<path d="m22 10-10-5-10 5 10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/><path d="M22 10v6"/>',
     leaf: '<path d="M11 20A7 7 0 0 1 4 13C4 6 12 4 21 4c0 9-2 17-9 17Z"/><path d="M4 20c5-5 9-7 16-8"/>',
     shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="M9 12h6"/>',

@@ -175,6 +175,7 @@ Housing is intentionally not shown as its own button until there are housing-spe
 
 - Economy & cost of living (`Tax & Economy`)
 - Tax
+- Work & business
 - Health & disability (`Health`)
 - Housing
 - Education & skills (`Education`)
@@ -186,6 +187,8 @@ Housing is intentionally not shown as its own button until there are housing-spe
 - Government & democracy (`Public Service`)
 - Te Tiriti & Māori (`Te Tiriti & Constitution`)
 - Foreign affairs & defence
+
+The topic list must always contain an even number of active topics so the two-column mobile grid remains balanced. `scripts/verify_setup.sh` enforces this.
 
 ## Visual Design Notes
 

@@ -88,6 +88,9 @@ const currentPolicies = (data.policies || []).filter((policy) => policy.election
 const activeTopics = new Set(currentPolicies.map((policy) => policy.topic));
 const coveredParties = new Set(currentPolicies.map((policy) => policy.partyId));
 
+if ((data.topics || []).length % 2 !== 0) errors.push("topic list must contain an even number of topics");
+if (activeTopics.size % 2 !== 0) errors.push("displayed topic count must be even");
+
 for (const policy of data.policies || []) {
   if (!parties.has(policy.partyId)) errors.push(`${policy.id}: unknown partyId ${policy.partyId}`);
   if (!topics.has(policy.topic)) errors.push(`${policy.id}: unknown topic ${policy.topic}`);
