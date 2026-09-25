@@ -10,10 +10,10 @@ const PARTY_ORDER = ["all", "national", "labour", "act", "nz-first", "green", "t
 
 const TOPIC_COPY = {
   "Tax & Economy": {
-    label: "Cost of living",
+    label: "Economy & cost of living",
     icon: "piggy",
-    note: "Household costs, incomes, public spending, investment, productivity and economic management.",
-    question: "What would each party change about household costs, incomes, spending or economic management?"
+    note: "Household costs, jobs, incomes, business, savings, trade, public spending and economic management.",
+    question: "What would each party change about living costs, jobs, incomes, business or the wider economy?"
   },
   "Tax": {
     label: "Tax",
@@ -22,46 +22,70 @@ const TOPIC_COPY = {
     question: "What taxes would each party introduce, remove or change?"
   },
   "Health": {
-    label: "Health",
+    label: "Health & disability",
     icon: "heart",
-    note: "Primary care, screening, medicines, workforce, hospitals and public health delivery.",
-    question: "What would change for doctor access, screening, medicines and frontline services?"
+    note: "Primary care, screening, medicines, workforce, hospitals, disability support and public health.",
+    question: "What would change for health care, medicines, disability support and frontline services?"
+  },
+  "Housing": {
+    label: "Housing",
+    icon: "home",
+    note: "Home ownership, renting, social housing, housing supply and retirement villages.",
+    question: "What would each party change about housing supply, affordability, ownership, renting or social housing?"
   },
   "Education": {
-    label: "Education",
+    label: "Education & skills",
     icon: "cap",
     note: "Schools, curriculum, tertiary study, apprenticeships, learning support and skills.",
     question: "What would change in classrooms, curriculum, tertiary study or skills training?"
   },
   "Climate & Environment": {
-    label: "Environment and Energy",
+    label: "Environment & energy",
     icon: "leaf",
     note: "Emissions, farming, freshwater, biodiversity, adaptation and energy transition.",
     question: "How would parties handle emissions, farming, freshwater, conservation and adaptation?"
   },
   "Law & Justice": {
-    label: "Public safety",
+    label: "Law, justice & safety",
     icon: "shield",
     note: "Crime, policing, sentencing, courts, prisons, rehabilitation and public safety.",
     question: "What would change for policing, courts, sentencing, prisons and rehabilitation?"
   },
   "Infrastructure": {
-    label: "Infrastructure",
+    label: "Transport & infrastructure",
     icon: "road",
-    note: "Roads, transport, planning, infrastructure delivery and investment.",
-    question: "What would change in roads, transport, planning, infrastructure delivery and investment?"
+    note: "Roads, public transport, planning, regional projects and long-term infrastructure investment.",
+    question: "What would change in transport, planning, regional projects and infrastructure delivery?"
+  },
+  "Families & Social Support": {
+    label: "Families & social support",
+    icon: "users",
+    note: "Children, parents, income support, welfare, inclusion, community wellbeing and safeguarding.",
+    question: "What support would change for children, parents, whānau and people who need assistance?"
+  },
+  "Immigration": {
+    label: "Immigration",
+    icon: "globe",
+    note: "Visa rules, residency, citizenship pathways, workforce migration and migrant protections.",
+    question: "What would each party change about visas, residency, migration and citizenship?"
   },
   "Public Service": {
-    label: "Public service",
+    label: "Government & democracy",
     icon: "building",
-    note: "Public-sector workforce, department structure, state-sector savings, digital government and bureaucracy.",
-    question: "What would change in public-sector staffing, state-sector structure, back-office spending and digital government?"
+    note: "Democratic rules, political integrity, government structure, public-sector delivery and digital regulation.",
+    question: "What would change in elections, political influence, government structure and public-service delivery?"
   },
   "Te Tiriti & Constitution": {
-    label: "Te Tiriti",
+    label: "Te Tiriti & Māori",
     icon: "forum",
-    note: "Te Tiriti, constitutional settings, rangatiratanga and governance.",
-    question: "What would change in Te Tiriti, governance, rangatiratanga and constitutional settings?"
+    note: "Te Tiriti, rangatiratanga, Māori governance, language, culture and community development.",
+    question: "What would change for Te Tiriti, rangatiratanga, Māori governance, language and culture?"
+  },
+  "Foreign Affairs & Defence": {
+    label: "Foreign affairs & defence",
+    icon: "plane",
+    note: "International relations, defence, military alignment, aid and New Zealand's place in the Pacific and world.",
+    question: "What would each party change about foreign policy, defence, international law and overseas aid?"
   }
 };
 
@@ -359,6 +383,9 @@ function topicIcon(name) {
     leaf: '<path d="M11 20A7 7 0 0 1 4 13C4 6 12 4 21 4c0 9-2 17-9 17Z"/><path d="M4 20c5-5 9-7 16-8"/>',
     shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="M9 12h6"/>',
     home: '<path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/>',
+    users: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/>',
+    globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/>',
+    plane: '<path d="M22 2 9 15"/><path d="m22 2-7 20-4-9-9-4 20-7Z"/>',
     road: '<path d="M6 21 9 3"/><path d="m18 21-3-18"/><path d="M12 8v2"/><path d="M12 14v2"/><path d="M12 20v1"/>',
     building: '<path d="M4 21V7l8-4 8 4v14"/><path d="M9 21v-8h6v8"/><path d="M8 9h.01"/><path d="M12 9h.01"/><path d="M16 9h.01"/>',
     forum: '<path d="M4 6h16v10H7l-3 3V6Z"/><path d="M8 10h8"/><path d="M8 13h5"/>'

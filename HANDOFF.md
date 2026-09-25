@@ -173,15 +173,19 @@ Housing is intentionally not shown as its own button until there are housing-spe
 
 ## Current Topic Set
 
-- Cost of living (`Tax & Economy`)
+- Economy & cost of living (`Tax & Economy`)
 - Tax
-- Health
-- Education
-- Environment and Energy (`Climate & Environment`)
-- Public safety (`Law & Justice`)
-- Infrastructure
-- Public service (`Public Service`)
-- Te Tiriti (`Te Tiriti & Constitution`)
+- Health & disability (`Health`)
+- Housing
+- Education & skills (`Education`)
+- Law, justice & safety (`Law & Justice`)
+- Environment & energy (`Climate & Environment`)
+- Transport & infrastructure (`Infrastructure`)
+- Families & social support
+- Immigration
+- Government & democracy (`Public Service`)
+- Te Tiriti & Māori (`Te Tiriti & Constitution`)
+- Foreign affairs & defence
 
 ## Visual Design Notes
 
