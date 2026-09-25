@@ -10,7 +10,7 @@ const PARTY_ORDER = ["all", "national", "labour", "act", "nz-first", "green", "t
 
 const TOPIC_COPY = {
   "Tax & Economy": {
-    label: "Economy & cost of living",
+    label: "Economy & costs",
     icon: "piggy",
     note: "Household costs, jobs, incomes, business, savings, trade, public spending and economic management.",
     question: "What would each party change about living costs, jobs, incomes, business or the wider economy?"
@@ -22,7 +22,7 @@ const TOPIC_COPY = {
     question: "What taxes would each party introduce, remove or change?"
   },
   "Health": {
-    label: "Health & disability",
+    label: "Health",
     icon: "heart",
     note: "Primary care, screening, medicines, workforce, hospitals, disability support and public health.",
     question: "What would change for health care, medicines, disability support and frontline services?"
@@ -34,31 +34,31 @@ const TOPIC_COPY = {
     question: "What would each party change about housing supply, affordability, ownership, renting or social housing?"
   },
   "Education": {
-    label: "Education & skills",
+    label: "Education",
     icon: "cap",
     note: "Schools, curriculum, tertiary study, apprenticeships, learning support and skills.",
     question: "What would change in classrooms, curriculum, tertiary study or skills training?"
   },
   "Climate & Environment": {
-    label: "Environment & energy",
+    label: "Environment",
     icon: "leaf",
     note: "Emissions, farming, freshwater, biodiversity, adaptation and energy transition.",
     question: "How would parties handle emissions, farming, freshwater, conservation and adaptation?"
   },
   "Law & Justice": {
-    label: "Law, justice & safety",
+    label: "Law & safety",
     icon: "shield",
     note: "Crime, policing, sentencing, courts, prisons, rehabilitation and public safety.",
     question: "What would change for policing, courts, sentencing, prisons and rehabilitation?"
   },
   "Infrastructure": {
-    label: "Transport & infrastructure",
+    label: "Infrastructure",
     icon: "road",
     note: "Roads, public transport, planning, regional projects and long-term infrastructure investment.",
     question: "What would change in transport, planning, regional projects and infrastructure delivery?"
   },
   "Families & Social Support": {
-    label: "Families & social support",
+    label: "Families",
     icon: "users",
     note: "Children, parents, income support, welfare, inclusion, community wellbeing and safeguarding.",
     question: "What support would change for children, parents, whānau and people who need assistance?"
@@ -70,7 +70,7 @@ const TOPIC_COPY = {
     question: "What would each party change about visas, residency, migration and citizenship?"
   },
   "Public Service": {
-    label: "Government & democracy",
+    label: "Government",
     icon: "building",
     note: "Democratic rules, political integrity, government structure, public-sector delivery and digital regulation.",
     question: "What would change in elections, political influence, government structure and public-service delivery?"
@@ -82,7 +82,7 @@ const TOPIC_COPY = {
     question: "What would change for Te Tiriti, rangatiratanga, Māori governance, language and culture?"
   },
   "Foreign Affairs & Defence": {
-    label: "Foreign affairs & defence",
+    label: "Foreign affairs",
     icon: "plane",
     note: "International relations, defence, military alignment, aid and New Zealand's place in the Pacific and world.",
     question: "What would each party change about foreign policy, defence, international law and overseas aid?"
