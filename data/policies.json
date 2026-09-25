@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -16,6 +16,7 @@
   ],
   "topics": [
     "Tax & Economy",
+    "Tax",
     "Health",
     "Education",
     "Climate & Environment",
@@ -299,7 +300,7 @@
       "id": "labour-capital-gains-tax",
       "electionYear": 2026,
       "partyId": "labour",
-      "topic": "Tax & Economy",
+      "topic": "Tax",
       "subtopic": "Capital gains tax",
       "title": "Targeted capital gains tax",
       "status": "Confirmed 2026 policy",
@@ -788,7 +789,7 @@
       "id": "top-tax-reset",
       "electionYear": 2026,
       "partyId": "top",
-      "topic": "Tax & Economy",
+      "topic": "Tax",
       "subtopic": "Tax, income and retirement",
       "title": "Tax Reset",
       "status": "Confirmed 2026 policy",
@@ -1151,7 +1152,7 @@
       "id": "green-tax-system-2026",
       "electionYear": 2026,
       "partyId": "green",
-      "topic": "Tax & Economy",
+      "topic": "Tax",
       "subtopic": "Tax reform",
       "title": "A tax system for all of us",
       "status": "Confirmed 2026 policy",
@@ -1202,7 +1203,7 @@
       "id": "tpm-tax-2026",
       "electionYear": 2026,
       "partyId": "te-pati-maori",
-      "topic": "Tax & Economy",
+      "topic": "Tax",
       "subtopic": "Tax fairness",
       "title": "Tax",
       "status": "Confirmed 2026 policy",
@@ -2018,7 +2019,7 @@
       "id": "top-charitable-giving-tax-credit-2026",
       "electionYear": 2026,
       "partyId": "top",
-      "topic": "Tax & Economy",
+      "topic": "Tax",
       "subtopic": "Charitable giving",
       "title": "Remove the charitable-giving tax-credit cap",
       "status": "Confirmed 2026 policy",
@@ -2715,7 +2716,7 @@
       "id": "labour-no-fuel-tax-increase-2026",
       "electionYear": 2026,
       "partyId": "labour",
-      "topic": "Tax & Economy",
+      "topic": "Tax",
       "subtopic": "Fuel tax",
       "title": "No fuel excise tax increase for three years",
       "status": "Confirmed 2026 policy",
@@ -3106,7 +3107,7 @@
       "id": "national-no-new-taxes-2026",
       "electionYear": 2026,
       "partyId": "national",
-      "topic": "Tax & Economy",
+      "topic": "Tax",
       "subtopic": "Tax policy",
       "title": "No new taxes",
       "status": "Confirmed 2026 policy",
@@ -3441,6 +3442,40 @@
         "url": "https://www.labour.org.nz/news/speech-labours-foreign-policy/"
       },
       "tags": ["foreign policy", "Palestine", "Israel sanctions", "International Court of Justice", "armed conflict", "autonomous weapons", "human rights", "Pacific", "development assistance"]
+    },
+    {
+      "id": "labour-start-work-now-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Infrastructure",
+      "subtopic": "Social infrastructure and construction",
+      "title": "Start Work Now",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-09-25",
+      "summary": "Labour proposes $2.9 billion in capital for Kāinga Ora to build more state houses, $745 million in operating funding for housing subsidies and providers, about $450 million for improvements at more than 2,000 schools, and $200 million to clear Health New Zealand's hospital repair backlog. The package would also provide reliable funding and a government guarantee for community housing providers.",
+      "officialSource": {
+        "label": "Labour Start Work Now policy",
+        "url": "https://www.labour.org.nz/start-work-now"
+      },
+      "tags": ["social housing", "Kāinga Ora", "school buildings", "hospital repairs", "community housing", "construction"]
+    },
+    {
+      "id": "nzfirst-sme-company-tax-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Tax",
+      "subtopic": "Business tax",
+      "title": "20% company tax rate for SMEs",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-09-25",
+      "summary": "New Zealand First proposes reducing the company tax rate from 28% to 20% for businesses with annual turnover below $30 million, at an estimated initial fiscal cost of about $1 billion a year.",
+      "officialSource": {
+        "label": "New Zealand First SME tax policy announcement",
+        "url": "https://www.nzfirst.nz/nzfirst_to_campaign_on_20_tax_rate_for_smes"
+      },
+      "tags": ["company tax", "SMEs", "small business", "business investment"]
     }
   ]
 }

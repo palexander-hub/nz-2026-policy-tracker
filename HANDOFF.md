@@ -174,6 +174,7 @@ Housing is intentionally not shown as its own button until there are housing-spe
 ## Current Topic Set
 
 - Cost of living (`Tax & Economy`)
+- Tax
 - Health
 - Education
 - Environment and Energy (`Climate & Environment`)
