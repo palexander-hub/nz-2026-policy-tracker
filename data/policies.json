@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-09-27",
+    "lastUpdated": "2026-09-28",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -3498,6 +3498,23 @@
         "url": "https://www.labour.org.nz/news/release-labour-to-cut-student-debt/"
       },
       "tags": ["student loans", "student debt", "graduates", "Fees Free", "debt write-off"]
+    },
+    {
+      "id": "act-supermarket-entry-approvals-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Tax & Economy",
+      "subtopic": "Grocery competition",
+      "title": "One-stop approvals for new supermarkets",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy speech",
+      "lastChecked": "2026-09-28",
+      "summary": "ACT proposes a one-stop approval process for new supermarket entrants, combining consents, liquor licences and other approvals across councils, and accepting food labels from trusted regulatory systems such as the United Kingdom, European Union and United States by default.",
+      "officialSource": {
+        "label": "ACT supermarkets and regulation policy speech",
+        "url": "https://www.act.org.nz/news/supermarkets-and-regulation"
+      },
+      "tags": ["supermarkets", "grocery competition", "consenting", "liquor licensing", "food labelling", "market entry"]
     }
   ]
 }
