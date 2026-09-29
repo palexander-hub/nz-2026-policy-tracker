@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-09-28",
+    "lastUpdated": "2026-09-29",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -3515,6 +3515,57 @@
         "url": "https://www.act.org.nz/news/supermarkets-and-regulation"
       },
       "tags": ["supermarkets", "grocery competition", "consenting", "liquor licensing", "food labelling", "market entry"]
+    },
+    {
+      "id": "national-foodstuffs-separation-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Tax & Economy",
+      "subtopic": "Grocery competition",
+      "title": "Pursue separation of New World and PAK'nSAVE",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-09-29",
+      "summary": "National proposes pursuing separation of the New World/Four Square and PAK'nSAVE businesses into independent competing groups if the Commerce Commission concludes that a practical restructure would improve competition and leave shoppers better off.",
+      "officialSource": {
+        "label": "National grocery competition policy",
+        "url": "https://www.national.org.nz/policies/grocery-competition"
+      },
+      "tags": ["supermarkets", "grocery competition", "Foodstuffs", "New World", "PAK'nSAVE", "Commerce Commission"]
+    },
+    {
+      "id": "national-rates-capping-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Tax",
+      "subtopic": "Local government rates",
+      "title": "Cap annual council rates increases",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-09-29",
+      "summary": "National proposes implementing a council rates-capping system in 2029 with a target range of 2–4% for annual increases, exemptions in exceptional circumstances, and an independent regulator to monitor compliance and assess exemption applications.",
+      "officialSource": {
+        "label": "National rates-capping policy",
+        "url": "https://www.national.org.nz/policies/rates-capping"
+      },
+      "tags": ["council rates", "rates cap", "local government", "independent regulator", "ratepayers"]
+    },
+    {
+      "id": "top-commerce-commission-structural-separation-2026",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Tax & Economy",
+      "subtopic": "Market competition",
+      "title": "Structural separation power for the Commerce Commission",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-09-29",
+      "summary": "Opportunity proposes empowering the Commerce Commission to investigate anti-competitive businesses, intervene and require structural separation, making this one of its five non-negotiable conditions for supporting a government after the 2026 election.",
+      "officialSource": {
+        "label": "Opportunity 2026 bottom lines",
+        "url": "https://www.opportunity.org.nz/bottom_lines"
+      },
+      "tags": ["Commerce Commission", "competition", "structural separation", "supermarkets", "bottom line"]
     }
   ]
 }
