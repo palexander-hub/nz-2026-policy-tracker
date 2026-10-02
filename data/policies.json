@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-01",
+    "lastUpdated": "2026-10-02",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -3583,6 +3583,23 @@
         "url": "https://www.national.org.nz/policies/trans-tasman-travel"
       },
       "tags": ["Trans-Tasman travel", "tourism", "airports", "digital processing", "Australia", "biosecurity"]
+    },
+    {
+      "id": "greens-care-worker-pay-equity-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Work & Business",
+      "subtopic": "Pay equity",
+      "title": "Restore care-worker pay equity claim",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-02",
+      "summary": "The Greens propose restoring pay-equity law to its pre-2025 position and funding a negotiated settlement for roughly 65,000 care and support workers whose claim was stopped, setting aside about $1.1 billion a year and legislating a settlement if needed.",
+      "officialSource": {
+        "label": "Green Party care-worker pay-equity announcement",
+        "url": "https://www.greens.org.nz/greens_commit_to_pay_equity_for_care_workers"
+      },
+      "tags": ["pay equity", "care workers", "support workers", "employment law", "care sector", "collective bargaining"]
     }
   ]
 }
