@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-03",
+    "lastUpdated": "2026-10-04",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -1142,16 +1142,16 @@
       "partyId": "labour",
       "topic": "Tax & Economy",
       "subtopic": "Fiscal strategy",
-      "title": "Fiscal Strategy",
+      "title": "Fiscal Plan",
       "status": "Confirmed 2026 policy",
-      "sourceType": "Official party 2026 election policy page",
-      "lastChecked": "2026-08-23",
-      "summary": "Labour proposes returning OBEGAL to surplus by 2029/30, reducing net debt toward 20% of GDP, keeping core Crown spending and revenue near 33% of GDP once its capital gains tax is fully implemented, establishing a Parliamentary Budget Office, and restoring the Reserve Bank's dual mandate.",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-04",
+      "summary": "Labour proposes returning the operating balance to surplus in 2028/29, reducing net debt below 20% of GDP over time, retaining $2.4 billion operating allowances, fitting announced capital commitments within $12 billion of future capital allowances, and leaving about $10.5 billion of operating allowances unallocated.",
       "officialSource": {
-        "label": "Labour Fiscal Strategy",
-        "url": "https://www.labour.org.nz/election-policy-pages/fiscal-strategy/"
+        "label": "Labour Fiscal Plan announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-will-back-kiwis-with-a-responsible-fiscal-plan/"
       },
-      "tags": ["fiscal strategy", "surplus", "debt", "Parliamentary Budget Office"]
+      "tags": ["fiscal plan", "surplus", "debt", "operating allowance", "capital allowance"]
     },
     {
       "id": "green-tax-system-2026",
@@ -3600,6 +3600,40 @@
         "url": "https://www.greens.org.nz/greens_commit_to_pay_equity_for_care_workers"
       },
       "tags": ["pay equity", "care workers", "support workers", "employment law", "care sector", "collective bargaining"]
+    },
+    {
+      "id": "national-mill-road-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Infrastructure",
+      "subtopic": "Roads",
+      "title": "Start Mill Road Stage One",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-04",
+      "summary": "National proposes allocating $1.75 billion in Budget 2028 to begin construction of Mill Road Stage One between Manukau and Alfriston in late 2028, plus $100 million to protect the routes for Stages Two and Three toward Drury.",
+      "officialSource": {
+        "label": "National Mill Road policy announcement",
+        "url": "https://www.national.org.nz/news/261004-chrisbishop"
+      },
+      "tags": ["Mill Road", "Auckland", "South Auckland", "roads", "route protection", "transport infrastructure"]
+    },
+    {
+      "id": "labour-care-worker-pay-equity-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Work & Business",
+      "subtopic": "Pay equity",
+      "title": "Restore pay equity and raise care-worker pay",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-04",
+      "summary": "Labour proposes restoring pay-equity legislation within its first 100 days and increasing pay by $4 an hour from 1 January 2027 for about 65,000 care and support workers, while allowing previous claim work to carry into the restored process.",
+      "officialSource": {
+        "label": "Labour care-worker pay-equity announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-to-restore-pay-equity-immediate-pay-rise-for-care-and-support-workers/"
+      },
+      "tags": ["pay equity", "care workers", "support workers", "employment law", "wages"]
     }
   ]
 }
