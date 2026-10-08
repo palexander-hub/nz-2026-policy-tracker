@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-07",
+    "lastUpdated": "2026-10-08",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -3753,6 +3753,40 @@
         "url": "https://www.act.org.nz/news/act-will-remove-the-cap-on-generosity"
       },
       "tags": ["charities", "donations", "tax benefit", "philanthropy"]
+    },
+    {
+      "id": "national-firm-fair-affordable-welfare-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Families & Social Support",
+      "subtopic": "Welfare and employment",
+      "title": "Five-point Jobseeker welfare plan",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-10-08",
+      "summary": "National proposes intensive employment support for 30,000 work-ready Jobseekers on a benefit for more than a year, lower payments after two years, random drug testing starting with 10,000 tests, a 26-week stand-down for repeatedly leaving work without good reason, and a five-year benefit-residency requirement from April 2028.",
+      "officialSource": {
+        "label": "National firm, fair and affordable welfare policy",
+        "url": "https://www.national.org.nz/policies/walfare"
+      },
+      "tags": ["Jobseeker", "employment support", "drug testing", "benefit rates", "stand-down", "residency requirement"]
+    },
+    {
+      "id": "act-mining-and-resources-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Climate & Environment",
+      "subtopic": "Mining and resources",
+      "title": "Streamline mining and energy development",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-08",
+      "summary": "ACT proposes keeping New Zealand open for mineral and energy exploration, removing duplicated approval processes, protecting committed investment and property rights, and allowing projects that meet enforceable environmental standards while requiring operators to pay their environmental and remediation costs.",
+      "officialSource": {
+        "label": "ACT mining and resources policy announcement",
+        "url": "https://www.act.org.nz/news/unlocking-the-potential-of-new-zealand%E2%80%99s-resources"
+      },
+      "tags": ["mining", "minerals", "energy security", "exploration", "approvals", "property rights", "environmental standards"]
     }
   ]
 }
