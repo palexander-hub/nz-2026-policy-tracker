@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-10",
+    "lastUpdated": "2026-10-11",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -3838,6 +3838,74 @@
         "url": "https://www.nzfirst.nz/nzfirst_to_ban_public_sales_of_fireworks"
       },
       "tags": ["fireworks", "public safety", "retail sales", "imports", "public displays", "animal welfare"]
+    },
+    {
+      "id": "national-complete-year-11-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Education",
+      "subtopic": "School-leaving requirements",
+      "title": "Require students to complete Year 11",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-11",
+      "summary": "National proposes requiring students to remain at school until they complete Year 11 or turn 16, whichever is later, while retaining exemptions for employment or further training. It also proposes nationally consistent school start and finish dates.",
+      "officialSource": {
+        "label": "National school-leaving requirements announcement",
+        "url": "https://www.national.org.nz/news/261011-ericastanford"
+      },
+      "tags": ["Year 11", "school leaving", "compulsory education", "leaving exemptions", "school calendar"]
+    },
+    {
+      "id": "act-fiscal-plan-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Tax & Economy",
+      "subtopic": "Fiscal strategy",
+      "title": "Cut the Waste, Grow the Country fiscal plan",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-11",
+      "summary": "ACT proposes reducing projected debt by $12.4 billion over four years, bringing the operating surplus forward without new taxes, and returning per-person spending outside Health, Education, Police, Defence and the Ministry for Children to its inflation-adjusted 2017 level.",
+      "officialSource": {
+        "label": "ACT 2026 fiscal plan announcement",
+        "url": "https://www.act.org.nz/news/acts-fiscal-plan-cuts-the-waste-to-grow-the-country"
+      },
+      "tags": ["fiscal plan", "government debt", "operating surplus", "public spending", "no new taxes"]
+    },
+    {
+      "id": "labour-school-lunches-rural-buses-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Education",
+      "subtopic": "School meals and transport",
+      "title": "Restore local school lunches and rural buses",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-11",
+      "summary": "Labour proposes bringing back fresh, locally made school lunches and working to restore rural school-bus routes that were removed.",
+      "officialSource": {
+        "label": "Labour cost-of-living action plan announcement",
+        "url": "https://www.labour.org.nz/news/release-labours-plan-to-bring-down-costs-for-kiwis/"
+      },
+      "tags": ["school lunches", "local food", "rural school buses", "school transport", "household costs"]
+    },
+    {
+      "id": "top-disability-support-rights-2026",
+      "electionYear": 2026,
+      "partyId": "top",
+      "topic": "Health",
+      "subtopic": "Disability support and rights",
+      "title": "Disability support and rights framework",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election position statement",
+      "lastChecked": "2026-10-11",
+      "summary": "Opportunity proposes reinstating the 2020 pay-equity rules for care and support workers, ending minimum-wage exemptions for disabled workers, designing changes with Deaf and disabled people, strengthening accessible complaints and appeals, supporting independent oversight, and reporting publicly on progress.",
+      "officialSource": {
+        "label": "Opportunity disability position statement",
+        "url": "https://www.opportunity.org.nz/disability_statement"
+      },
+      "tags": ["disability support", "pay equity", "minimum wage", "accessibility", "complaints", "independent oversight", "co-design"]
     }
   ]
 }
