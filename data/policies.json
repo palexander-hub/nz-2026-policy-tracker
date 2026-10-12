@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-11",
+    "lastUpdated": "2026-10-12",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -3131,16 +3131,16 @@
       "partyId": "national",
       "topic": "Tax & Economy",
       "subtopic": "Fiscal policy",
-      "title": "Budget Responsibility Rules",
+      "title": "Fiscal Plan",
       "status": "Confirmed 2026 policy",
-      "sourceType": "Official party 2026 election policy page",
-      "lastChecked": "2026-09-13",
-      "summary": "National proposes returning the operating balance to surplus in 2028/29 and maintaining surpluses, reducing net core Crown debt below 40% of GDP over time, and lowering core Crown spending towards 30% of GDP while keeping taxes low.",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-12",
+      "summary": "National proposes returning the operating balance to surplus in 2028/29, reducing net core Crown debt to 39.5% of GDP by 2030/31, setting aside $15.4 billion for additional health investment and $7.5 billion for other pressures and initiatives, with its election commitments averaging a net $470 million a year outside health cost pressures.",
       "officialSource": {
-        "label": "National Budget Responsibility Rules policy",
-        "url": "https://www.national.org.nz/responsibility-rules"
+        "label": "National 2026 fiscal plan announcement",
+        "url": "https://www.national.org.nz/news/261012-nicolawillis"
       },
-      "tags": ["fiscal policy", "surplus", "government debt", "government spending", "tax"]
+      "tags": ["fiscal plan", "surplus", "government debt", "health funding", "government spending", "election costings"]
     },
     {
       "id": "national-south-island-growth-plan-2026",
@@ -3882,11 +3882,11 @@
       "title": "Restore local school lunches and rural buses",
       "status": "Confirmed 2026 policy",
       "sourceType": "Official party 2026 election policy announcement",
-      "lastChecked": "2026-10-11",
-      "summary": "Labour proposes bringing back fresh, locally made school lunches and working to restore rural school-bus routes that were removed.",
+      "lastChecked": "2026-10-12",
+      "summary": "Labour proposes bringing back fresh, locally made school lunches from Term 1 of 2028 and restoring 43 cancelled rural school-bus routes where possible, working with communities where a route cannot be reinstated.",
       "officialSource": {
-        "label": "Labour cost-of-living action plan announcement",
-        "url": "https://www.labour.org.nz/news/release-labours-plan-to-bring-down-costs-for-kiwis/"
+        "label": "Labour back-to-school costs announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-will-cut-the-cost-of-getting-kids-back-to-school/"
       },
       "tags": ["school lunches", "local food", "rural school buses", "school transport", "household costs"]
     },
@@ -3906,6 +3906,23 @@
         "url": "https://www.opportunity.org.nz/disability_statement"
       },
       "tags": ["disability support", "pay equity", "minimum wage", "accessibility", "complaints", "independent oversight", "co-design"]
+    },
+    {
+      "id": "labour-affordable-school-uniforms-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Education",
+      "subtopic": "School costs",
+      "title": "Make school uniforms more affordable",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-12",
+      "summary": "Labour proposes requiring schools to limit compulsory branded uniform items, allow affordable non-branded alternatives that meet uniform requirements, consider affordability when setting uniform policies, and track and publish uniform costs.",
+      "officialSource": {
+        "label": "Labour affordable school-uniform announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-will-cut-the-cost-of-getting-kids-back-to-school/"
+      },
+      "tags": ["school uniforms", "school costs", "branded items", "generic clothing", "cost transparency"]
     }
   ]
 }
