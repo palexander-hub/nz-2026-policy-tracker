@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-12",
+    "lastUpdated": "2026-10-13",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -3923,6 +3923,74 @@
         "url": "https://www.labour.org.nz/news/release-labour-will-cut-the-cost-of-getting-kids-back-to-school/"
       },
       "tags": ["school uniforms", "school costs", "branded items", "generic clothing", "cost transparency"]
+    },
+    {
+      "id": "nzfirst-skilled-work-visa-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Immigration",
+      "subtopic": "Work visas",
+      "title": "Replace the Accredited Employer Work Visa",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-13",
+      "summary": "New Zealand First proposes replacing the Accredited Employer Work Visa with a shortage-led Skilled Work Visa tied to a named occupation, region and demonstrated need, with stronger domestic-recruitment, wage-floor, accreditation, enforcement and transparency requirements.",
+      "officialSource": {
+        "label": "New Zealand First skilled-work-visa announcement",
+        "url": "https://www.nzfirst.nz/nzfirst_to_scrap_accredited_working_visa_model"
+      },
+      "tags": ["Accredited Employer Work Visa", "Skilled Work Visa", "skills shortages", "domestic recruitment", "employer accreditation"]
+    },
+    {
+      "id": "nzfirst-working-for-families-in-work-tax-credit-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Families & Social Support",
+      "subtopic": "Working for Families",
+      "title": "Raise the in-work tax credit to $120 a week",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-13",
+      "summary": "New Zealand First proposes making the temporary $50-a-week increase to the Working for Families in-work tax credit permanent and adding another $70 a week, taking the total increase to $120 a week at an estimated annual cost of $500 million to $600 million.",
+      "officialSource": {
+        "label": "New Zealand First Working for Families and minimum-wage announcement",
+        "url": "https://www.nzfirst.nz/nz_first_to_increase_working_for_families_minimum_wage"
+      },
+      "tags": ["Working for Families", "in-work tax credit", "families", "household income"]
+    },
+    {
+      "id": "nzfirst-minimum-wage-inflation-increases-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Work & Business",
+      "subtopic": "Minimum wage",
+      "title": "Increase the minimum wage at least with inflation",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-13",
+      "summary": "New Zealand First proposes increasing the minimum wage by at least the rate of inflation in each year of the next term of government.",
+      "officialSource": {
+        "label": "New Zealand First Working for Families and minimum-wage announcement",
+        "url": "https://www.nzfirst.nz/nz_first_to_increase_working_for_families_minimum_wage"
+      },
+      "tags": ["minimum wage", "inflation", "workers", "wages"]
+    },
+    {
+      "id": "national-priority-partner-visas-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Immigration",
+      "subtopic": "Partner visas",
+      "title": "Prioritise partner visas for returning New Zealanders",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-13",
+      "summary": "National proposes prioritising and expediting work and visitor visas for partners of New Zealand citizens. It says the commitment is funded to commence by 1 July 2027 and any required legislation would pass within its first 100 days.",
+      "officialSource": {
+        "label": "National plan to welcome more New Zealanders home",
+        "url": "https://www.national.org.nz/news/261013-nicolawillis"
+      },
+      "tags": ["partner visas", "work visas", "visitor visas", "returning New Zealanders", "visa processing"]
     }
   ]
 }
