@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-13",
+    "lastUpdated": "2026-10-14",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -3991,6 +3991,108 @@
         "url": "https://www.national.org.nz/news/261013-nicolawillis"
       },
       "tags": ["partner visas", "work visas", "visitor visas", "returning New Zealanders", "visa processing"]
+    },
+    {
+      "id": "act-abolish-rental-loss-ring-fencing-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Tax",
+      "subtopic": "Rental property tax",
+      "title": "Abolish rental-loss ring-fencing",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-14",
+      "summary": "ACT proposes allowing residential rental losses incurred after the policy takes effect to be offset against other taxable income for existing homes and new builds. Previously ring-fenced losses would remain under the current rules.",
+      "officialSource": {
+        "label": "ACT rental-loss ring-fencing announcement",
+        "url": "https://www.act.org.nz/news/act-to-abolish-another-of-labour-s-renters-taxes"
+      },
+      "tags": ["rental property", "loss ring-fencing", "tax deductions", "landlords", "new builds"]
+    },
+    {
+      "id": "national-local-parking-requirements-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Housing",
+      "subtopic": "Planning rules",
+      "title": "Let councils require parking outside intensification areas",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-14",
+      "summary": "National proposes ending the blanket prohibition on minimum parking requirements and allowing councils to require parking in suburban and other areas outside locations identified for intensification under the new planning system.",
+      "officialSource": {
+        "label": "National Auckland plan announcement",
+        "url": "https://www.national.org.nz/news/261014-simonwatts"
+      },
+      "tags": ["parking requirements", "councils", "planning rules", "intensification", "suburbs"]
+    },
+    {
+      "id": "nzfirst-fast-track-housing-infrastructure-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Infrastructure",
+      "subtopic": "Housing infrastructure",
+      "title": "Require infrastructure before fast-track housing approval",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-14",
+      "summary": "New Zealand First proposes requiring fast-tracked housing developments to have the necessary roads, pipes, water, wastewater and other essential-service approvals in place before the housing project is approved.",
+      "officialSource": {
+        "label": "New Zealand First fast-track residential approvals announcement",
+        "url": "https://www.nzfirst.nz/nzfirst_policy_announcement_changes_to_fast_track_residential_approvals"
+      },
+      "tags": ["fast-track", "housing development", "roads", "water", "wastewater", "infrastructure approvals"]
+    },
+    {
+      "id": "labour-elevate-investment-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Tax & Economy",
+      "subtopic": "Business investment",
+      "title": "Redirect up to $50 million a year into Elevate",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-14",
+      "summary": "Labour proposes redirecting up to $50 million a year of the Government's contribution to the New Zealand Super Fund into Elevate to invest in innovative New Zealand businesses.",
+      "officialSource": {
+        "label": "Labour grassroots economic plan announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-s-plan-to-grow-the-economy-from-the-grassroots-up/"
+      },
+      "tags": ["Elevate", "venture investment", "New Zealand Super Fund", "innovation", "business growth"]
+    },
+    {
+      "id": "labour-reserve-bank-dual-mandate-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Tax & Economy",
+      "subtopic": "Monetary policy",
+      "title": "Restore the Reserve Bank's dual mandate",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-14",
+      "summary": "Labour proposes restoring the Reserve Bank's dual monetary-policy mandate.",
+      "officialSource": {
+        "label": "Labour grassroots economic plan announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-s-plan-to-grow-the-economy-from-the-grassroots-up/"
+      },
+      "tags": ["Reserve Bank", "dual mandate", "employment", "price stability", "monetary policy"]
+    },
+    {
+      "id": "labour-independent-parliamentary-budget-office-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Public Service",
+      "subtopic": "Fiscal institutions",
+      "title": "Establish an independent Parliamentary Budget Office",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-14",
+      "summary": "Labour proposes establishing an independent Parliamentary Budget Office.",
+      "officialSource": {
+        "label": "Labour grassroots economic plan announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-s-plan-to-grow-the-economy-from-the-grassroots-up/"
+      },
+      "tags": ["Parliamentary Budget Office", "fiscal analysis", "independence", "public finance", "Parliament"]
     }
   ]
 }
