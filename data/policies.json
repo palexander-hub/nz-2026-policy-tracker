@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-14",
+    "lastUpdated": "2026-10-15",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -4093,6 +4093,159 @@
         "url": "https://www.labour.org.nz/news/release-labour-s-plan-to-grow-the-economy-from-the-grassroots-up/"
       },
       "tags": ["Parliamentary Budget Office", "fiscal analysis", "independence", "public finance", "Parliament"]
+    },
+    {
+      "id": "green-youth-jobs-guarantee-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Work & Business",
+      "subtopic": "Youth employment",
+      "title": "Jobs guarantee for young people",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-15",
+      "summary": "The Greens propose a Jobs for Young People programme guaranteeing a pathway into local work for every 16- to 24-year-old who has been unemployed for six months, including work maintaining infrastructure and nature and supporting community services.",
+      "officialSource": {
+        "label": "Green youth jobs guarantee announcement",
+        "url": "https://www.greens.org.nz/greens_announce_jobs_guarantee_for_young_people"
+      },
+      "tags": ["youth employment", "jobs guarantee", "community work", "infrastructure", "nature"]
+    },
+    {
+      "id": "green-auckland-level-crossing-removals-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Infrastructure",
+      "subtopic": "Rail infrastructure",
+      "title": "Fund Auckland level-crossing removals",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-15",
+      "summary": "The Greens propose working with Auckland Council to fund and deliver level-crossing removals, improving safety and enabling more frequent Western Line and City Rail Link services.",
+      "officialSource": {
+        "label": "Green Auckland level-crossing announcement",
+        "url": "https://www.greens.org.nz/greens_commit_to_funding_and_delivering_level_crossing_removals"
+      },
+      "tags": ["level crossings", "Auckland", "rail", "City Rail Link", "Western Line", "transport safety"]
+    },
+    {
+      "id": "green-economic-development-plan-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Work & Business",
+      "subtopic": "Innovation and research",
+      "title": "Innovation and economic development plan",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-15",
+      "summary": "The Greens propose reshaping Investment Boost around productive, low-carbon and decent-work objectives; creating researcher fellowships and an idea-to-export pathway; restoring core public-science funding toward 3% of GDP research and development spending; using procurement to support New Zealand solutions; and increasing tertiary research and vocational-excellence funding.",
+      "officialSource": {
+        "label": "Green economic development plan announcement",
+        "url": "https://www.greens.org.nz/greens_economic_development_plan_will_create_284_000_jobs"
+      },
+      "tags": ["research and development", "Investment Boost", "public science", "research fellowships", "commercialisation", "procurement"]
+    },
+    {
+      "id": "green-local-bed-levy-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Tax",
+      "subtopic": "Local tourism levies",
+      "title": "Enable locally designed visitor bed levies",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-15",
+      "summary": "The Greens propose legislation allowing councils to design and set bed levies on visitor accommodation, including higher rates for short-term rentals, supported by a national register of Airbnb and other short-term accommodation.",
+      "officialSource": {
+        "label": "Green visitor bed-levy announcement",
+        "url": "https://www.greens.org.nz/greens_give_councils_tools_to_fund_tourist_infrastructure"
+      },
+      "tags": ["bed levy", "visitor accommodation", "local government", "Airbnb", "short-term rentals", "tourism infrastructure"]
+    },
+    {
+      "id": "green-cancel-public-service-cuts-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Public Service",
+      "subtopic": "Public-service funding",
+      "title": "Cancel planned public-service cuts",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-15",
+      "summary": "The Greens propose cancelling National's planned $2.4 billion in public-service savings and instead maintaining and investing in public-service capability.",
+      "officialSource": {
+        "label": "Green public-service funding announcement",
+        "url": "https://www.greens.org.nz/greens_promise_to_reverse_national_s_public_service_cuts"
+      },
+      "tags": ["public service", "government spending", "public-sector jobs", "service capability"]
+    },
+    {
+      "id": "national-plug-in-solar-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Climate & Environment",
+      "subtopic": "Household energy",
+      "title": "Allow off-the-shelf plug-in solar panels",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-15",
+      "summary": "National proposes completing electrical-safety rules within the first six months of a re-elected government so retailers can sell plug-in household solar panels off the shelf in 2027.",
+      "officialSource": {
+        "label": "National plug-in solar announcement",
+        "url": "https://www.national.org.nz/news/261015-simeonbrown-1"
+      },
+      "tags": ["plug-in solar", "household energy", "electrical safety", "renters", "apartments"]
+    },
+    {
+      "id": "labour-maori-progressive-procurement-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Work & Business",
+      "subtopic": "Government procurement",
+      "title": "Target 5% of government contracts to Māori businesses",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-15",
+      "summary": "Labour proposes reinstating Progressive Procurement with an initial target of awarding 5% of government procurement contracts to Māori businesses.",
+      "officialSource": {
+        "label": "Labour Māori business procurement announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-will-back-maori-businesses-and-grow-the-maori-economy/"
+      },
+      "tags": ["Māori businesses", "government procurement", "Progressive Procurement", "contracts", "Māori economy"]
+    },
+    {
+      "id": "nzfirst-combat-sports-commission-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Law & Justice",
+      "subtopic": "Combat-sports regulation",
+      "title": "Establish a Combat Sports Commission",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-15",
+      "summary": "New Zealand First proposes a statutory Combat Sports Commission to license events and register contestants, set medical and safety standards, penalise illegal or unsanctioned events, and work formally with Sport New Zealand.",
+      "officialSource": {
+        "label": "New Zealand First combat-sports regulation announcement",
+        "url": "https://www.nzfirst.nz/nz_first_announces_overhaul_to_regulate_combat_sports"
+      },
+      "tags": ["combat sports", "licensing", "participant safety", "medical standards", "unsanctioned events", "Sport New Zealand"]
+    },
+    {
+      "id": "nzfirst-coastguard-funding-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Law & Justice",
+      "subtopic": "Maritime safety",
+      "title": "Fund 70% of Coastguard operating costs",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-15",
+      "summary": "New Zealand First proposes increasing Crown funding to 70% of Coastguard New Zealand's operating costs, which it estimates would add $12 million a year.",
+      "officialSource": {
+        "label": "New Zealand First Coastguard funding announcement",
+        "url": "https://www.nzfirst.nz/increase_funding_and_support_to_nz_coastguard"
+      },
+      "tags": ["Coastguard", "maritime safety", "search and rescue", "Crown funding", "volunteers"]
     }
   ]
 }
