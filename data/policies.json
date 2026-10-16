@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-15",
+    "lastUpdated": "2026-10-16",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -4246,6 +4246,210 @@
         "url": "https://www.nzfirst.nz/increase_funding_and_support_to_nz_coastguard"
       },
       "tags": ["Coastguard", "maritime safety", "search and rescue", "Crown funding", "volunteers"]
+    },
+    {
+      "id": "green-paid-student-placements-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Education",
+      "subtopic": "Workforce training",
+      "title": "Pay students during compulsory placements",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-16",
+      "summary": "The Greens propose a universal $380 weekly payment, on top of existing student support, for compulsory placements in nursing, teaching, social work and other priority health and social-support training, plus a $1,500 relocation payment where needed.",
+      "officialSource": {
+        "label": "Green paid student placements announcement",
+        "url": "https://www.greens.org.nz/greens_announce_paid_placements_for_nurses_teachers_and_social_workers"
+      },
+      "tags": ["student placements", "nursing", "teaching", "social work", "weekly payment", "relocation support"]
+    },
+    {
+      "id": "act-illegal-dumping-penalties-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Law & Justice",
+      "subtopic": "Illegal dumping",
+      "title": "Increase penalties for illegal dumping",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-16",
+      "summary": "ACT proposes raising the infringement fee for illegal rubbish dumping from $400 to $1,000, setting a $2,000 fine for repeat offenders, and allowing courts to impose higher penalties for serious offences.",
+      "officialSource": {
+        "label": "ACT illegal-dumping penalties announcement",
+        "url": "https://www.act.org.nz/news/harsher-penalties-for-trashing-communities"
+      },
+      "tags": ["illegal dumping", "infringement fees", "repeat offenders", "court penalties", "waste"]
+    },
+    {
+      "id": "nzfirst-aluminium-import-safeguards-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Work & Business",
+      "subtopic": "Trade safeguards",
+      "title": "Impose safeguards on aluminium extrusion imports",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-16",
+      "summary": "New Zealand First proposes reversing the decision not to impose a safeguard measure on imported aluminium extrusions and putting the measure in place before the end of 2026.",
+      "officialSource": {
+        "label": "New Zealand First aluminium safeguards announcement",
+        "url": "https://www.nzfirst.nz/nz_first_will_immediately_reverse_this_week_s_decision_by_the_minister_of_consumer_affairs"
+      },
+      "tags": ["aluminium", "imports", "trade safeguards", "manufacturing", "industry"]
+    },
+    {
+      "id": "national-farm-national-standards-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Work & Business",
+      "subtopic": "Farm regulation",
+      "title": "Set 19 national standards for routine farm work",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election manifesto",
+      "lastChecked": "2026-10-16",
+      "summary": "National proposes 19 nationwide standards to remove or simplify consents for farm plans, vegetable growing, water storage, gravel extraction, drains, effluent, fertiliser, farm quarries, wetlands, solar, micro-hydro, batteries, irrigation, seasonal-worker housing, tracks, agricultural aviation, culverts, offal holes and contaminated soil.",
+      "officialSource": {
+        "label": "National agriculture manifesto",
+        "url": "https://assets.national.org.nz/web/prod/Growing%20More%20to%20Feed%20the%20World.pdf"
+      },
+      "tags": ["farming", "national standards", "resource consents", "horticulture", "irrigation", "farm infrastructure"]
+    },
+    {
+      "id": "national-on-farm-energy-independence-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Climate & Environment",
+      "subtopic": "On-farm energy",
+      "title": "Enable on-farm energy generation and sales",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election manifesto",
+      "lastChecked": "2026-10-16",
+      "summary": "National proposes permitting standard small-scale farm solar, micro-hydro, batteries and rooftop solar; letting farmers sell exported power to any retailer; requiring evidence for network export limits; allowing accredited connection contractors; and opening new rural transmission investment.",
+      "officialSource": {
+        "label": "National agriculture manifesto",
+        "url": "https://assets.national.org.nz/web/prod/Growing%20More%20to%20Feed%20the%20World.pdf"
+      },
+      "tags": ["farm solar", "micro-hydro", "batteries", "electricity exports", "grid connections", "rural transmission"]
+    },
+    {
+      "id": "national-rural-conservation-pest-control-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Climate & Environment",
+      "subtopic": "Rural conservation",
+      "title": "Expand rural conservation and pest control funding",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election manifesto",
+      "lastChecked": "2026-10-16",
+      "summary": "National proposes permanently doubling QEII National Trust baseline funding to about $8.5 million a year and investing a further $16 million over four years in coordinated control of wild deer, feral goats and other priority pests across public, Māori and private land.",
+      "officialSource": {
+        "label": "National agriculture manifesto",
+        "url": "https://assets.national.org.nz/web/prod/Growing%20More%20to%20Feed%20the%20World.pdf"
+      },
+      "tags": ["QEII National Trust", "conservation covenants", "wild deer", "feral goats", "pest control", "rural land"]
+    },
+    {
+      "id": "national-rural-veterinary-workforce-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Work & Business",
+      "subtopic": "Rural workforce",
+      "title": "Double rural veterinary bonding places",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election manifesto",
+      "lastChecked": "2026-10-16",
+      "summary": "National proposes doubling the Voluntary Bonding Scheme to up to 70 new-graduate veterinary places a year from 2027, opening it to eligible New Zealand graduates of accredited Australian vet schools, publishing annual results and reviewing the scheme after three years.",
+      "officialSource": {
+        "label": "National agriculture manifesto",
+        "url": "https://assets.national.org.nz/web/prod/Growing%20More%20to%20Feed%20the%20World.pdf"
+      },
+      "tags": ["veterinarians", "rural workforce", "bonding scheme", "graduates", "production animals"]
+    },
+    {
+      "id": "national-primary-sector-biosecurity-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Work & Business",
+      "subtopic": "Biosecurity",
+      "title": "Strengthen primary-sector biosecurity rules",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election manifesto",
+      "lastChecked": "2026-10-16",
+      "summary": "National proposes passing Biosecurity Act and hazardous-substances amendments, accelerating access to agricultural, horticultural and veterinary products, doubling conviction fines for serious border biosecurity breaches to $2,000, and allowing some temporary visa holders to be refused entry or deported.",
+      "officialSource": {
+        "label": "National agriculture manifesto",
+        "url": "https://assets.national.org.nz/web/prod/Growing%20More%20to%20Feed%20the%20World.pdf"
+      },
+      "tags": ["biosecurity", "border", "agricultural products", "veterinary medicines", "penalties", "deportation"]
+    },
+    {
+      "id": "national-rural-diagnostic-access-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Health",
+      "subtopic": "Rural diagnostics",
+      "title": "Expand rural diagnostic access",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election manifesto",
+      "lastChecked": "2026-10-16",
+      "summary": "National proposes using more diagnostic capacity across public and private hospitals, rolling out mobile diagnostic scanners first to rural communities with the greatest access barriers, and publicly reporting wait times, travel avoided, service volumes and access outcomes.",
+      "officialSource": {
+        "label": "National agriculture manifesto",
+        "url": "https://assets.national.org.nz/web/prod/Growing%20More%20to%20Feed%20the%20World.pdf"
+      },
+      "tags": ["rural health", "diagnostics", "mobile scanners", "wait times", "public hospitals", "private hospitals"]
+    },
+    {
+      "id": "national-food-fibre-workforce-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Education",
+      "subtopic": "Food and fibre training",
+      "title": "Expand food and fibre education pathways",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election manifesto",
+      "lastChecked": "2026-10-16",
+      "summary": "National proposes an industry-led Food and Fibre Systems subject for Years 12 and 13 from 2029, doubling Trades Academy places to 20,000 by 2030, adding 1,000 Youth Guarantee places a year, expanding Landcorp apprenticeships and equity partnerships, and continuing Future Leaders Scholarships.",
+      "officialSource": {
+        "label": "National agriculture manifesto",
+        "url": "https://assets.national.org.nz/web/prod/Growing%20More%20to%20Feed%20the%20World.pdf"
+      },
+      "tags": ["food and fibre", "secondary school", "Trades Academy", "Youth Guarantee", "apprenticeships", "young farmers"]
+    },
+    {
+      "id": "national-agricultural-emissions-policy-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Climate & Environment",
+      "subtopic": "Agricultural emissions",
+      "title": "Keep agriculture out of emissions pricing",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election manifesto",
+      "lastChecked": "2026-10-16",
+      "summary": "National proposes keeping agriculture outside the Emissions Trading Scheme, imposing no tax on agricultural emissions, remaining in the Paris Agreement and prioritising emissions-reduction technology over production cuts.",
+      "officialSource": {
+        "label": "National agriculture manifesto",
+        "url": "https://assets.national.org.nz/web/prod/Growing%20More%20to%20Feed%20the%20World.pdf"
+      },
+      "tags": ["agricultural emissions", "ETS", "emissions pricing", "Paris Agreement", "farming technology"]
+    },
+    {
+      "id": "national-farming-regulatory-package-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Work & Business",
+      "subtopic": "Farming regulation",
+      "title": "Update farming ownership and operating rules",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election manifesto",
+      "lastChecked": "2026-10-16",
+      "summary": "National proposes letting eligible farm workers use KiwiSaver for a first home or farm, reviewing sharemilking law, updating agricultural-vehicle weight rules, simplifying certified wild-game processing, creating regional wildfire-readiness plans and extending plant-variety rights for high-value crops.",
+      "officialSource": {
+        "label": "National agriculture manifesto",
+        "url": "https://assets.national.org.nz/web/prod/Growing%20More%20to%20Feed%20the%20World.pdf"
+      },
+      "tags": ["KiwiSaver", "farm ownership", "sharemilking", "agricultural vehicles", "wild game", "wildfire", "plant varieties"]
     }
   ]
 }
