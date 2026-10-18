@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-17",
+    "lastUpdated": "2026-10-18",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -4467,6 +4467,57 @@
         "url": "https://www.greens.org.nz/green_party_to_abolish_training_wage_and_provide_more_support_for_apprentices"
       },
       "tags": ["apprentices", "training wage", "equipment grant", "Māori training", "Pasifika training", "completion bonus"]
+    },
+    {
+      "id": "national-child-homicide-disclosure-offence-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Law & Justice",
+      "subtopic": "Child homicide investigations",
+      "title": "Create an offence for withholding child-homicide information",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-18",
+      "summary": "National proposes a Crimes Act offence, carrying up to 10 years in prison, for failing to disclose information to police when an adult was present at or leading up to the unequivocal killing of a child aged 12 or younger.",
+      "officialSource": {
+        "label": "National child-homicide disclosure announcement",
+        "url": "https://www.national.org.nz/news/20261018-paulgoldsmith"
+      },
+      "tags": ["child homicide", "police investigations", "right to silence", "Crimes Act", "disclosure", "sentencing"]
+    },
+    {
+      "id": "act-general-practice-funding-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Health",
+      "subtopic": "General practice",
+      "title": "Add $400 million for general practice",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-18",
+      "summary": "ACT proposes an ongoing $100 million annual increase for general practice, totalling $400 million over four years, to improve GP retention and remuneration, support more appointments and working hours, and streamline medical regulation for qualified overseas-trained doctors.",
+      "officialSource": {
+        "label": "ACT general-practice funding announcement",
+        "url": "https://www.act.org.nz/news/act-will-invest-400-million-to-get-kiwis-more-gp-appointments"
+      },
+      "tags": ["general practice", "GPs", "primary care", "doctor retention", "appointments", "overseas-trained doctors"]
+    },
+    {
+      "id": "labour-keeping-kids-off-screens-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Education",
+      "subtopic": "Screen use and recreation",
+      "title": "Keeping Kids off Screens plan",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-10-18",
+      "summary": "Labour proposes $3 million a year for four years to continue Active Me grants of up to $300 a year for two years, an extra $4 million a year for after-school activities, required school screen-use policies, age-specific national guidance, retention of the school phone ban, and easier access to online-safety tools.",
+      "officialSource": {
+        "label": "Labour Keeping Kids off Screens policy",
+        "url": "https://www.labour.org.nz/election-policy-pages/keeping-kids-off-screens/"
+      },
+      "tags": ["screen use", "school sport", "Active Me", "after-school activities", "mobile phones", "online safety"]
     }
   ]
 }
