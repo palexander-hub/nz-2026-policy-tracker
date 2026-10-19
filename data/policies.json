@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-18",
+    "lastUpdated": "2026-10-19",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -4518,6 +4518,57 @@
         "url": "https://www.labour.org.nz/election-policy-pages/keeping-kids-off-screens/"
       },
       "tags": ["screen use", "school sport", "Active Me", "after-school activities", "mobile phones", "online safety"]
+    },
+    {
+      "id": "nzfirst-canterbury-south-island-passenger-rail-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Infrastructure",
+      "subtopic": "Passenger rail",
+      "title": "Trial Canterbury commuter rail and restore the Southerner",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-19",
+      "summary": "New Zealand First proposes a 12-month commuter-rail trial from Rolleston and Rangiora to Christchurch, restoring the Southerner passenger train between Christchurch, Dunedin and Invercargill, and working with the Mainlander operator on a commercially viable, more frequent service.",
+      "officialSource": {
+        "label": "New Zealand First Canterbury and South Island rail announcement",
+        "url": "https://www.nzfirst.nz/nzfirst_campaign_announcement_commuter_rail_for_christchurch"
+      },
+      "tags": ["commuter rail", "Canterbury", "Christchurch", "Rolleston", "Rangiora", "Southerner", "Mainlander", "passenger rail"]
+    },
+    {
+      "id": "labour-online-platform-safety-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Law & Justice",
+      "subtopic": "Online safety",
+      "title": "Regulate social-media feeds and online safety",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-19",
+      "summary": "Labour proposes advancing an under-16 social-media ban to select committee within its first 100 days with privacy safeguards for age checks, requiring platforms to offer a non-algorithmic feed, creating a Digital Duty of Care, and empowering an independent regulator to fine platforms that breach the rules.",
+      "officialSource": {
+        "label": "Labour online-safety policy announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-to-make-it-safer-for-kiwis-online/"
+      },
+      "tags": ["social media", "under-16s", "online safety", "algorithms", "Digital Duty of Care", "online regulator", "privacy"]
+    },
+    {
+      "id": "national-cambridge-piarere-expressway-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Infrastructure",
+      "subtopic": "Roads",
+      "title": "Complete the Cambridge-to-Piarere expressway",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy document",
+      "lastChecked": "2026-10-19",
+      "summary": "National proposes completing the 16-kilometre, four-lane Cambridge-to-Piarere extension of the Waikato Expressway, with the first major construction phase expected to begin in early 2027.",
+      "officialSource": {
+        "label": "National Waikato election policy",
+        "url": "https://assets.national.org.nz/web/prod/National%20backs%20the%20Waikato.pdf?v=1792365832"
+      },
+      "tags": ["Waikato Expressway", "Cambridge", "Piarere", "State Highway 1", "roads", "Waikato"]
     }
   ]
 }
