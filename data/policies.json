@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-19",
+    "lastUpdated": "2026-10-20",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -4569,6 +4569,57 @@
         "url": "https://assets.national.org.nz/web/prod/National%20backs%20the%20Waikato.pdf?v=1792365832"
       },
       "tags": ["Waikato Expressway", "Cambridge", "Piarere", "State Highway 1", "roads", "Waikato"]
+    },
+    {
+      "id": "act-school-vocational-pathways-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Education",
+      "subtopic": "Vocational education",
+      "title": "Create a national school-to-trades pathway",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-20",
+      "summary": "ACT proposes combining STAR, Gateway, Trades Academies and Vocational Pathways into one uncapped system, funding schools for approved industry-led subjects at about $2,000 per subject for up to two subjects per student each year, creating Industry Awards, and recognising relevant school credits toward later vocational qualifications.",
+      "officialSource": {
+        "label": "ACT school vocational-pathways announcement",
+        "url": "https://www.act.org.nz/news/act-will-put-trades-on-an-equal-footing-with-university"
+      },
+      "tags": ["vocational education", "trades", "secondary schools", "Industry Awards", "STAR", "Gateway", "Trades Academies", "apprenticeships"]
+    },
+    {
+      "id": "nzfirst-game-development-support-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Work & Business",
+      "subtopic": "Game development",
+      "title": "Expand support for New Zealand game development",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-20",
+      "summary": "New Zealand First proposes increasing the Game Development Sector Rebate from 20% to 40%, lifting the per-studio claim cap from $3 million to $10 million, lowering the qualifying-spend threshold from $250,000 to $150,000, raising the annual appropriation to $45 million by 2028, and increasing annual Centre of Digital Excellence funding from $5 million to $7 million by 2028.",
+      "officialSource": {
+        "label": "New Zealand First game-development funding announcement",
+        "url": "https://www.nzfirst.nz/nzfirst_to_fund_nzs_gaming_industry_sector_keeping_talent_and_companies_in_nz"
+      },
+      "tags": ["video games", "game development", "Gaming Development Sector Rebate", "Centre of Digital Excellence", "creative industries", "exports"]
+    },
+    {
+      "id": "labour-emergency-department-flow-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Health",
+      "subtopic": "Emergency care",
+      "title": "Reduce emergency-department overcrowding",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-20",
+      "summary": "Labour proposes an immediate report identifying hospital beds that could open with adequate staffing and examining safety and deaths linked to long waits, funding teams to help older people recover at home, training more extended-care paramedics, linking frontline clinicians with urgent-care and emergency specialists, and preparing hospitals for winter demand.",
+      "officialSource": {
+        "label": "Labour emergency-department plan announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-will-get-emergency-departments-moving/"
+      },
+      "tags": ["emergency departments", "hospital beds", "extended-care paramedics", "urgent care", "winter demand", "home recovery"]
     }
   ]
 }
