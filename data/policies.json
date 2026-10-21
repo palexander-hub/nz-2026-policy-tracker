@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-20",
+    "lastUpdated": "2026-10-21",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -4620,6 +4620,23 @@
         "url": "https://www.labour.org.nz/news/release-labour-will-get-emergency-departments-moving/"
       },
       "tags": ["emergency departments", "hospital beds", "extended-care paramedics", "urgent care", "winter demand", "home recovery"]
+    },
+    {
+      "id": "national-maths-acceleration-expansion-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Education",
+      "subtopic": "Mathematics support",
+      "title": "Expand the Maths Acceleration Programme",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-21",
+      "summary": "National proposes expanding the Year 7–10 Maths Acceleration Programme by a further 40,000 students over three years, taking total access to about 128,000 students.",
+      "officialSource": {
+        "label": "National Plan for Kiwi Kids announcement",
+        "url": "https://www.national.org.nz/news/20261021-christopherluxon"
+      },
+      "tags": ["mathematics", "Maths Acceleration Programme", "Years 7–10", "student achievement"]
     }
   ]
 }
