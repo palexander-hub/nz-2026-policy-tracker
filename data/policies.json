@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-21",
+    "lastUpdated": "2026-10-22",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -4637,6 +4637,142 @@
         "url": "https://www.national.org.nz/news/20261021-christopherluxon"
       },
       "tags": ["mathematics", "Maths Acceleration Programme", "Years 7–10", "student achievement"]
+    },
+    {
+      "id": "national-seniors-housing-pipeline-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Housing",
+      "subtopic": "Seniors housing",
+      "title": "Ringfence affordable housing places for seniors",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-22",
+      "summary": "National proposes creating a dedicated affordable-housing pipeline for seniors by ringfencing at least 20% of places funded through the Housing Flexible Fund for seniors housing.",
+      "officialSource": {
+        "label": "National retirement plan announcement",
+        "url": "https://www.national.org.nz/news/20261022-retirement"
+      },
+      "tags": ["seniors", "affordable housing", "Housing Flexible Fund", "pensioner housing"]
+    },
+    {
+      "id": "national-tiny-homes-granny-flat-rules-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Housing",
+      "subtopic": "Small dwellings",
+      "title": "Extend granny-flat rules to tiny homes",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-22",
+      "summary": "National proposes expanding its granny-flat settings so more secondary dwellings can be built faster and at lower cost, including extending the rules to tiny homes.",
+      "officialSource": {
+        "label": "National retirement plan announcement",
+        "url": "https://www.national.org.nz/news/20261022-retirement"
+      },
+      "tags": ["granny flats", "tiny homes", "secondary dwellings", "housing choice"]
+    },
+    {
+      "id": "national-0800-seniors-helpline-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Families & Social Support",
+      "subtopic": "Seniors services",
+      "title": "Establish an 0800 Seniors helpline",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-22",
+      "summary": "National proposes establishing a single free 0800 Seniors helpline to help older people navigate government services and access support they are entitled to receive.",
+      "officialSource": {
+        "label": "National retirement plan announcement",
+        "url": "https://www.national.org.nz/news/20261022-retirement"
+      },
+      "tags": ["seniors", "helpline", "government services", "entitlements"]
+    },
+    {
+      "id": "act-charter-school-expansion-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Education",
+      "subtopic": "Charter schools",
+      "title": "Expand charter schools to 10,000 students",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-22",
+      "summary": "ACT proposes targeting 10,000 charter-school enrolments by the end of 2029, increasing suitable state and state-integrated school conversions, removing employment, property and funding barriers, and encouraging a charter-school option in every major town where demand and a sponsor exist.",
+      "officialSource": {
+        "label": "ACT charter-school expansion announcement",
+        "url": "https://www.act.org.nz/news/act-campaigning-to-transform-10-000-lives"
+      },
+      "tags": ["charter schools", "school choice", "state-school conversion", "education funding"]
+    },
+    {
+      "id": "act-rural-consenting-costs-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Climate & Environment",
+      "subtopic": "Rural regulation",
+      "title": "Reduce rural consenting and land-use costs",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-22",
+      "summary": "ACT proposes at least ten permitted-activity standards for routine farm work, consent-free land-use changes that comply with national standards, science-based local water limits, fair compensation for council overlays on private land, and long-term coordinated funding to eradicate wilding pines.",
+      "officialSource": {
+        "label": "ACT rural-cost policy announcement",
+        "url": "https://www.act.org.nz/news/act-will-drive-down-costs-for-farmers"
+      },
+      "tags": ["farming", "permitted activities", "resource consents", "water limits", "property rights", "wilding pines"]
+    },
+    {
+      "id": "nzfirst-serious-crime-sentencing-package-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Law & Justice",
+      "subtopic": "Sentencing and parole",
+      "title": "Toughen sentencing for serious offending",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-22",
+      "summary": "New Zealand First proposes formal degrees of murder with specified minimum non-parole periods, wider mandatory minimum sentences for serious violent and sexual offending, standard parole eligibility at 75% of a long sentence, tighter sentence discounts, an eight-year minimum non-parole period for a fatal coward punch, and treating home burglary as aggravated burglary or home invasion.",
+      "officialSource": {
+        "label": "New Zealand First law-and-order policy announcement",
+        "url": "https://www.nzfirst.nz/nzfirst_law_and_order_policy_announcement_tougher_sentences_degrees_of_murder_smashing_organised_crime_life_means_life"
+      },
+      "tags": ["sentencing", "parole", "murder", "violent offending", "sexual offending", "home burglary"]
+    },
+    {
+      "id": "nzfirst-organised-crime-agency-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Law & Justice",
+      "subtopic": "Organised crime",
+      "title": "Create a dedicated organised-crime agency",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-22",
+      "summary": "New Zealand First proposes establishing a dedicated agency and responsible minister to dismantle transnational criminal networks, while abolishing the Serious Fraud Office and replacing it with a specialised New Zealand Police division.",
+      "officialSource": {
+        "label": "New Zealand First law-and-order policy announcement",
+        "url": "https://www.nzfirst.nz/nzfirst_law_and_order_policy_announcement_tougher_sentences_degrees_of_murder_smashing_organised_crime_life_means_life"
+      },
+      "tags": ["organised crime", "transnational crime", "Serious Fraud Office", "Police"]
+    },
+    {
+      "id": "nzfirst-victim-reparation-system-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Law & Justice",
+      "subtopic": "Victim support",
+      "title": "Pay victims immediate reparation through the state",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-22",
+      "summary": "New Zealand First proposes a reparation system under which the state would pay victims immediately and then take responsibility for recovering the money from offenders.",
+      "officialSource": {
+        "label": "New Zealand First law-and-order policy announcement",
+        "url": "https://www.nzfirst.nz/nzfirst_law_and_order_policy_announcement_tougher_sentences_degrees_of_murder_smashing_organised_crime_life_means_life"
+      },
+      "tags": ["victims", "reparation", "offender recovery", "justice"]
     }
   ]
 }
