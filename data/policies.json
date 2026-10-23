@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-22",
+    "lastUpdated": "2026-10-23",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -4773,6 +4773,57 @@
         "url": "https://www.nzfirst.nz/nzfirst_law_and_order_policy_announcement_tougher_sentences_degrees_of_murder_smashing_organised_crime_life_means_life"
       },
       "tags": ["victims", "reparation", "offender recovery", "justice"]
+    },
+    {
+      "id": "nzfirst-targeted-accelerated-depreciation-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Tax",
+      "subtopic": "Business investment",
+      "title": "Provide 50% first-year depreciation for productive assets",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-23",
+      "summary": "New Zealand First proposes a 50% first-year depreciation rate for new plant, machinery and equipment bought by manufacturers and targeted export sectors, including farming, fishing, aquaculture, horticulture, forestry and mining.",
+      "officialSource": {
+        "label": "New Zealand First accelerated-depreciation announcement",
+        "url": "https://www.nzfirst.nz/nzfirst_policy_announcement_50_targeted_accelerated_depreciation_for_manufacturing_and_export_sector"
+      },
+      "tags": ["accelerated depreciation", "manufacturing", "exports", "plant and machinery", "primary production"]
+    },
+    {
+      "id": "green-2026-fiscal-plan-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Tax & Economy",
+      "subtopic": "Fiscal plan",
+      "title": "Run larger operating allowances and return to surplus in 2029/30",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-23",
+      "summary": "The Greens propose annual operating allowances of $4.5–$4.7 billion during the forecast period, returning the operating balance to a $0.4 billion surplus in 2029/30, and reaching net core Crown debt of 44% of GDP by 2030/31, funded in part by about $8 billion a year of new revenue from wealthy individuals and large corporations.",
+      "officialSource": {
+        "label": "Green Party 2026 fiscal-plan announcement",
+        "url": "https://www.greens.org.nz/greens_fiscal_plan_builds_real_economic_resilience_to_lower_cost_of_living_and_stimulate_64_000_new_jobs"
+      },
+      "tags": ["fiscal plan", "operating allowances", "surplus", "Crown debt", "tax revenue"]
+    },
+    {
+      "id": "green-health-funding-increase-2026",
+      "electionYear": 2026,
+      "partyId": "green",
+      "topic": "Health",
+      "subtopic": "Health-system funding",
+      "title": "Increase public health funding by $32 billion over four years",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-23",
+      "summary": "The Greens propose increasing public health funding by $3 billion each year, totalling $32 billion over four years, to strengthen hospital, emergency, primary, preventive and community care and fund a long-term health-workforce plan.",
+      "officialSource": {
+        "label": "Green Party health-investment announcement",
+        "url": "https://www.greens.org.nz/greens_to_deliver_more_staff_shorter_wait_times_and_a_healthier_country_with_significant_health_investment"
+      },
+      "tags": ["health funding", "hospitals", "emergency care", "primary care", "health workforce"]
     }
   ]
 }
