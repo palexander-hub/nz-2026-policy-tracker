@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-23",
+    "lastUpdated": "2026-10-24",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -4824,6 +4824,74 @@
         "url": "https://www.greens.org.nz/greens_to_deliver_more_staff_shorter_wait_times_and_a_healthier_country_with_significant_health_investment"
       },
       "tags": ["health funding", "hospitals", "emergency care", "primary care", "health workforce"]
+    },
+    {
+      "id": "labour-extra-teacher-aides-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Education",
+      "subtopic": "Learning support",
+      "title": "Fund 1,000 extra teacher aides",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-24",
+      "summary": "Labour proposes investing $80 million over four years to fund 1,000 additional teacher aides, simplify learning-support funding and give schools and teacher aides greater employment certainty.",
+      "officialSource": {
+        "label": "Labour teacher-aide policy announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-to-provide-more-help-in-the-classroom/"
+      },
+      "tags": ["teacher aides", "learning support", "schools", "education funding"]
+    },
+    {
+      "id": "act-year-11-investment-account-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Education",
+      "subtopic": "Financial literacy",
+      "title": "Give Year 11 students $500 to invest",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-24",
+      "summary": "ACT proposes giving every Year 11 student $500 in an investment account, starting with a term deposit and allowing managed funds, New Zealand shares and international investments as students demonstrate financial knowledge.",
+      "officialSource": {
+        "label": "ACT financial-literacy policy announcement",
+        "url": "https://www.act.org.nz/news/act-will-give-students-a-stake-in-their-financial-education"
+      },
+      "tags": ["financial literacy", "Year 11", "investing", "student savings"]
+    },
+    {
+      "id": "act-digital-economy-coordination-2026",
+      "electionYear": 2026,
+      "partyId": "act",
+      "topic": "Public Service",
+      "subtopic": "Digital economy",
+      "title": "Coordinate government digital-economy work",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-24",
+      "summary": "ACT proposes stronger ministerial coordination and prioritisation of digital-economy work across MBIE, the Reserve Bank, the Financial Markets Authority, the Department of Internal Affairs and Treasury.",
+      "officialSource": {
+        "label": "ACT digital-economy coordination announcement",
+        "url": "https://www.act.org.nz/news/how-act-will-unlock-the-digital-economy"
+      },
+      "tags": ["digital economy", "government coordination", "fintech", "ministerial responsibility"]
+    },
+    {
+      "id": "nzfirst-remove-ets-charge-from-fuel-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Tax",
+      "subtopic": "Fuel taxes",
+      "title": "Remove the ETS charge from fuel",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-24",
+      "summary": "New Zealand First proposes removing the Emissions Trading Scheme charge from petrol and diesel, which it says would reduce petrol prices by 12 cents a litre and diesel prices by 14 cents a litre.",
+      "officialSource": {
+        "label": "New Zealand First fuel ETS policy announcement",
+        "url": "https://www.nzfirst.nz/nzfirst_to_remove_climate_tax_from_fuel"
+      },
+      "tags": ["Emissions Trading Scheme", "fuel", "petrol", "diesel", "tax"]
     }
   ]
 }
