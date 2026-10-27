@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-26",
+    "lastUpdated": "2026-10-27",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -5046,6 +5046,23 @@
         "url": "https://www.act.org.nz/manifesto"
       },
       "tags": ["hospitality", "alcohol regulation", "licensing", "Hospitality Review"]
+    },
+    {
+      "id": "labour-fairer-workplaces-package-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Work & Business",
+      "subtopic": "Employment rights",
+      "title": "Strengthen pay, leave and workplace protections",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-10-27",
+      "summary": "Labour proposes increasing the minimum wage in line with inflation; working toward a Living Wage across the public service, starting with the core public service; restoring Fair Pay Agreements; reversing National's annual-leave reductions; strengthening health and safety law and creating a corporate-homicide offence; and protecting collective bargaining.",
+      "officialSource": {
+        "label": "Labour fairer-workplaces policy announcement",
+        "url": "https://www.labour.org.nz/news/release-labour-s-plan-to-deliver-a-fairer-deal-for-workers/"
+      },
+      "tags": ["minimum wage", "Living Wage", "Fair Pay Agreements", "annual leave", "health and safety", "corporate homicide", "collective bargaining"]
     }
   ]
 }
