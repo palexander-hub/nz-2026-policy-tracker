@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-27",
+    "lastUpdated": "2026-10-28",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -4529,8 +4529,8 @@
       "title": "Trial Canterbury commuter rail and restore the Southerner",
       "status": "Confirmed 2026 policy",
       "sourceType": "Official party 2026 election policy announcement",
-      "lastChecked": "2026-10-19",
-      "summary": "New Zealand First proposes a 12-month commuter-rail trial from Rolleston and Rangiora to Christchurch, restoring the Southerner passenger train between Christchurch, Dunedin and Invercargill, and working with the Mainlander operator on a commercially viable, more frequent service.",
+      "lastChecked": "2026-10-28",
+      "summary": "New Zealand First proposes a 12-month commuter-rail trial from Rolleston and Rangiora to Christchurch, restoring the Southerner passenger train between Christchurch, Dunedin and Invercargill, and making Canterbury passenger rail permanent with government operating co-funding if the trial demonstrates sufficient patronage and value.",
       "officialSource": {
         "label": "New Zealand First Canterbury and South Island rail announcement",
         "url": "https://www.nzfirst.nz/nzfirst_campaign_announcement_commuter_rail_for_christchurch"
@@ -5063,6 +5063,23 @@
         "url": "https://www.labour.org.nz/news/release-labour-s-plan-to-deliver-a-fairer-deal-for-workers/"
       },
       "tags": ["minimum wage", "Living Wage", "Fair Pay Agreements", "annual leave", "health and safety", "corporate homicide", "collective bargaining"]
+    },
+    {
+      "id": "nzfirst-ten-point-rail-plan-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Infrastructure",
+      "subtopic": "Rail infrastructure",
+      "title": "Deliver a ten-point national rail plan",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-10-28",
+      "summary": "New Zealand First proposes delivering the 2027–2030 Rail Network Investment Programme and Marsden Point rail link; increasing Kaimai Tunnel capacity; establishing co-owned Auckland Rail and Wellington Rail companies; making Te Huia permanent; continuing level-crossing upgrades; delivering two new Cook Strait rail ferries; planning Auckland's third and fourth main lines; protecting the Avondale–Southdown corridor; and funding heritage rail.",
+      "officialSource": {
+        "label": "New Zealand First ten-point rail policy",
+        "url": "https://www.nzfirst.nz/ten_point_rail_policy"
+      },
+      "tags": ["rail", "Rail Network Investment Programme", "Marsden Point", "Kaimai Tunnel", "Te Huia", "Cook Strait ferries", "Auckland Rail", "Wellington Rail", "Avondale-Southdown", "heritage rail"]
     }
   ]
 }
