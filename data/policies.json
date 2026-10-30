@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-29",
+    "lastUpdated": "2026-10-30",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -5097,6 +5097,40 @@
         "url": "https://www.labour.org.nz/renting-better"
       },
       "tags": ["renting", "no-cause evictions", "tenancy notice", "Healthy Homes Standards", "landlord duty of care", "property managers", "boarding houses"]
+    },
+    {
+      "id": "labour-fair-go-law-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Tax & Economy",
+      "subtopic": "Consumer protection",
+      "title": "Introduce a Fair Go Law for consumer contracts",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-10-30",
+      "summary": "Labour proposes banning junk car insurance and secret commissions; requiring upfront total prices for credit, tickets and contracts; restricting checkout sales of extended warranties; making subscriptions and gym memberships easy to cancel; and banning unfair exit fees, excessive notice periods and unclear renewals for phone and internet services.",
+      "officialSource": {
+        "label": "Labour Fair Go Law policy",
+        "url": "https://www.labour.org.nz/fair-go-for-families"
+      },
+      "tags": ["consumer protection", "hidden fees", "junk insurance", "subscriptions", "ticket fees", "phone contracts", "gym memberships"]
+    },
+    {
+      "id": "labour-maori-skilled-work-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Work & Business",
+      "subtopic": "Skills and training",
+      "title": "Fund Māori-led training into skilled work",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-10-30",
+      "summary": "Labour proposes investing $21 million a year from Budget 2027 in a contestable fund for marae, iwi trusts and Māori providers to deliver practical training linked to local jobs and recognised qualifications, with mentoring and support for Māori of all ages.",
+      "officialSource": {
+        "label": "Labour Māori skilled-work policy",
+        "url": "https://www.labour.org.nz/maori-trades-training"
+      },
+      "tags": ["Māori training", "skills", "employment", "marae", "iwi providers", "qualifications", "Budget 2027"]
     }
   ]
 }
