@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-10-30",
+    "lastUpdated": "2026-11-01",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -5131,6 +5131,57 @@
         "url": "https://www.labour.org.nz/maori-trades-training"
       },
       "tags": ["Māori training", "skills", "employment", "marae", "iwi providers", "qualifications", "Budget 2027"]
+    },
+    {
+      "id": "labour-banking-for-everyone-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Tax & Economy",
+      "subtopic": "Banking competition",
+      "title": "Open banking to more competition",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-11-01",
+      "summary": "Labour proposes requiring major banks to give smaller competitors fair access to payment systems and banking information; creating a digital banking licence; delivering secure real-time payments for fintechs by 2030; simplifying customer switching and insurance comparisons; and keeping Kiwibank fully New Zealand-owned.",
+      "officialSource": {
+        "label": "Labour Banking for Everyone policy",
+        "url": "https://www.labour.org.nz/banking-for-everyone"
+      },
+      "tags": ["banking competition", "fintech", "digital banking licence", "real-time payments", "Kiwibank", "insurance comparison"]
+    },
+    {
+      "id": "labour-better-deal-flying-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Tax & Economy",
+      "subtopic": "Air travel competition",
+      "title": "Give air passengers clearer prices and stronger rights",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-11-01",
+      "summary": "Labour proposes requiring major airlines to show full prices, provide automatic refunds for cancelled or significantly changed flights, compensate for badly delayed baggage, publish reliability data and disclose fares, costs and profits; it would also require fair airport access for smaller airlines and curb airport overcharging.",
+      "officialSource": {
+        "label": "Labour Better Deal When You Fly policy",
+        "url": "https://www.labour.org.nz/better-deal-when-you-fly"
+      },
+      "tags": ["airfares", "airline competition", "passenger rights", "automatic refunds", "baggage", "airport access", "regional routes"]
+    },
+    {
+      "id": "labour-first-home-rent-to-buy-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Housing",
+      "subtopic": "First-home ownership",
+      "title": "Expand 5% deposits and introduce rent-to-buy",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-11-01",
+      "summary": "Labour proposes lifting the First Home Loan income cap to $300,000 while retaining a 5% deposit and adding more participating banks. It would introduce rent-to-buy for eligible Kāinga Ora and community-housing tenants, crediting $100 a week toward a protected deposit and building three public homes for every Kāinga Ora home sold through the scheme.",
+      "officialSource": {
+        "label": "Labour first-home and rent-to-buy policy",
+        "url": "https://www.labour.org.nz/election-policy-pages/buy-your-first-home/"
+      },
+      "tags": ["First Home Loan", "5% deposit", "rent-to-buy", "Kāinga Ora", "community housing", "first-home buyers"]
     }
   ]
 }
