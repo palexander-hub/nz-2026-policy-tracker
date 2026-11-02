@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-11-01",
+    "lastUpdated": "2026-11-02",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -5182,6 +5182,23 @@
         "url": "https://www.labour.org.nz/election-policy-pages/buy-your-first-home/"
       },
       "tags": ["First Home Loan", "5% deposit", "rent-to-buy", "Kāinga Ora", "community housing", "first-home buyers"]
+    },
+    {
+      "id": "labour-fair-charges-on-bills-2026",
+      "electionYear": 2026,
+      "partyId": "labour",
+      "topic": "Tax & Economy",
+      "subtopic": "Consumer pricing",
+      "title": "Crack down on loyalty penalties and fake discounts",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy page",
+      "lastChecked": "2026-11-02",
+      "summary": "Labour proposes preventing phone and insurance companies from charging longstanding customers more than new customers for the same service without good reason; requiring clearer and fairer treatment when introductory power and phone deals end; and making fake discounts a specific Fair Trading Act offence based on the lowest price charged during the previous 30 days.",
+      "officialSource": {
+        "label": "Labour fair-charges-on-bills policy",
+        "url": "https://www.labour.org.nz/fair-charges-on-bills"
+      },
+      "tags": ["loyalty penalty", "phone bills", "insurance", "introductory deals", "fake discounts", "Fair Trading Act", "consumer pricing"]
     }
   ]
 }
