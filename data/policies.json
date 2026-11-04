@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-11-03",
+    "lastUpdated": "2026-11-04",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -5199,6 +5199,23 @@
         "url": "https://www.labour.org.nz/fair-charges-on-bills"
       },
       "tags": ["loyalty penalty", "phone bills", "insurance", "introductory deals", "fake discounts", "Fair Trading Act", "consumer pricing"]
+    },
+    {
+      "id": "nzfirst-accessibility-standards-legislation-2026",
+      "electionYear": 2026,
+      "partyId": "nz-first",
+      "topic": "Health",
+      "subtopic": "Disability and accessibility",
+      "title": "Create legally recognised accessibility standards",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy announcement",
+      "lastChecked": "2026-11-04",
+      "summary": "New Zealand First proposes legislation enabling sector-specific accessibility standards for services, facilities, infrastructure and public-facing organisations, developed with disability and human-rights bodies. Covered organisations could be required to publish accessibility plans and feedback processes, with complaints handled through the Human Rights Commission and standards reviewed regularly.",
+      "officialSource": {
+        "label": "New Zealand First accessibility standards policy announcement",
+        "url": "https://www.nzfirst.nz/nzfirst_policy_announcement_establish_legally_recognised_accessibility_standards"
+      },
+      "tags": ["accessibility standards", "disability", "Human Rights Commission", "accessibility plans", "complaints", "public services"]
     }
   ]
 }
