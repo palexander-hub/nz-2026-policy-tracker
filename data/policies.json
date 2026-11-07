@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "NZ 2026 Policy Tracker",
-    "lastUpdated": "2026-11-04",
+    "lastUpdated": "2026-11-07",
     "note": "Only explicit, decided 2026 election commitments from official party sources are shown.",
     "jurisdiction": "New Zealand",
     "election": "2026 General Election"
@@ -5216,6 +5216,91 @@
         "url": "https://www.nzfirst.nz/nzfirst_policy_announcement_establish_legally_recognised_accessibility_standards"
       },
       "tags": ["accessibility standards", "disability", "Human Rights Commission", "accessibility plans", "complaints", "public services"]
+    },
+    {
+      "id": "national-community-conservation-expansion-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Climate & Environment",
+      "subtopic": "Community conservation",
+      "title": "Expand community conservation programmes",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy document",
+      "lastChecked": "2026-11-07",
+      "summary": "National proposes doubling the DOC Community Fund to $9.2 million, piloting a tangata whenua partnership to develop a multi-day Tarawera visitor experience, and establishing a voluntary outdoor service and conservation pathway for young people.",
+      "officialSource": {
+        "label": "National Party Bluegreen Policy 2026",
+        "url": "https://assets.national.org.nz/web/prod/National%20Party%20Bluegreen%20Policy%202026.pdf"
+      },
+      "tags": ["DOC Community Fund", "community conservation", "Tarawera", "tangata whenua", "youth service", "biodiversity"]
+    },
+    {
+      "id": "national-predator-control-modernisation-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Climate & Environment",
+      "subtopic": "Predator control",
+      "title": "Expand and modernise predator control",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy document",
+      "lastChecked": "2026-11-07",
+      "summary": "National proposes scaling up predator elimination, piloting verified bounties for priority pests, completing a national wilding-conifer plan, simplifying pest-control approvals through a single portal, and making it easier to trial AI-enabled traps and detection technology.",
+      "officialSource": {
+        "label": "National Party Bluegreen Policy 2026",
+        "url": "https://assets.national.org.nz/web/prod/National%20Party%20Bluegreen%20Policy%202026.pdf"
+      },
+      "tags": ["Predator Free 2050", "pest bounty", "wilding conifers", "AI traps", "pest control", "conservation technology"]
+    },
+    {
+      "id": "national-coast-ocean-cleanup-fund-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Climate & Environment",
+      "subtopic": "Marine pollution",
+      "title": "Create a Coast and Ocean Clean-Up Fund",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy document",
+      "lastChecked": "2026-11-07",
+      "summary": "National proposes an $8 million contestable Coast and Ocean Clean-Up Fund over four years, funded from the Waste Disposal Levy, for councils, iwi and community groups to prevent dumping, intercept waste and remove litter from waterways, beaches and coastlines.",
+      "officialSource": {
+        "label": "National Party Bluegreen Policy 2026",
+        "url": "https://assets.national.org.nz/web/prod/National%20Party%20Bluegreen%20Policy%202026.pdf"
+      },
+      "tags": ["marine pollution", "coastal clean-up", "Waste Disposal Levy", "litter", "community groups", "iwi"]
+    },
+    {
+      "id": "national-climate-adaptation-planning-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Climate & Environment",
+      "subtopic": "Climate adaptation",
+      "title": "Map flood risk and require local adaptation plans",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy document",
+      "lastChecked": "2026-11-07",
+      "summary": "National proposes a regularly updated national flood-risk map, mandatory adaptation plans for the highest-risk communities, climate-risk requirements in long-term infrastructure and spatial planning, and streamlined council processes for implementing agreed plans.",
+      "officialSource": {
+        "label": "National Party Bluegreen Policy 2026",
+        "url": "https://assets.national.org.nz/web/prod/National%20Party%20Bluegreen%20Policy%202026.pdf"
+      },
+      "tags": ["climate adaptation", "flood risk map", "coastal hazards", "councils", "infrastructure planning", "spatial planning"]
+    },
+    {
+      "id": "national-environmental-law-reforms-2026",
+      "electionYear": 2026,
+      "partyId": "national",
+      "topic": "Climate & Environment",
+      "subtopic": "Environmental law",
+      "title": "Complete conservation, waste and reporting reforms",
+      "status": "Confirmed 2026 policy",
+      "sourceType": "Official party 2026 election policy document",
+      "lastChecked": "2026-11-07",
+      "summary": "National proposes passing reforms to conservation management, waste minimisation and environmental reporting; reinvesting selected international visitor charges in conservation; strengthening product stewardship; reducing landfill waste; and improving environmental data and monitoring.",
+      "officialSource": {
+        "label": "National Party Bluegreen Policy 2026",
+        "url": "https://assets.national.org.nz/web/prod/National%20Party%20Bluegreen%20Policy%202026.pdf"
+      },
+      "tags": ["Conservation Amendment Bill", "Waste Minimisation Act", "Environmental Reporting Act", "product stewardship", "landfill", "environmental monitoring"]
     }
   ]
 }
